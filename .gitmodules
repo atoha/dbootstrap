@@ -1,0 +1,12 @@
+[submodule "source/dojo"]
+	path = source/dojo
+	url = https://github.com/dojo/dojo.git
+[submodule "source/dijit"]
+	path = source/dijit
+	url = https://github.com/dojo/dijit.git
+[submodule "source/dojox"]
+	path = source/dojox
+	url = https://github.com/dojo/dojox.git
+[submodule "source/util"]
+	path = source/util
+	url = https://github.com/dojo/util.git
