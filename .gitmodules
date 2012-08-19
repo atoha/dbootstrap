@@ -10,3 +10,6 @@
 [submodule "source/util"]
 	path = source/util
 	url = https://github.com/dojo/util.git
+[submodule "source/dgrid"]
+	path = source/dgrid
+	url = https://github.com/SitePen/dgrid.git
