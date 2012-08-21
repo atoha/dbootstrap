@@ -13,3 +13,9 @@
 [submodule "source/dgrid"]
 	path = source/dgrid
 	url = https://github.com/SitePen/dgrid.git
+[submodule "source/put-selector"]
+	path = source/put-selector
+	url = https://github.com/kriszyp/put-selector.git
+[submodule "source/xstyle"]
+	path = source/xstyle
+	url = https://github.com/kriszyp/xstyle.git
