@@ -1,0 +1,117 @@
+/*
+    :copyright: Copyright 2012 Martin Pengelly-Phillips
+    :license: See LICENSE.txt.
+*/
+
+// Common styling
+//
+
+.bootstrap .dijitButtonNode {
+    border: none;
+    padding-bottom: 1px;
+}
+
+.bootstrap .dijitButton .dijitButtonNode,
+.bootstrap .dijitDropDownButton .dijitButtonNode,
+.bootstrap .dijitComboButton .dijitButtonNode,
+.bootstrap .dijitToggleButton .dijitButtonNode {
+    display: block; // Stretch to fill space
+    padding: 4px 10px;
+    margin-bottom: 0; // For input.btn
+    font-size: @baseFontSize;
+    line-height: @baseLineHeight;
+    *line-height: @baseLineHeight;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    .buttonBackground(@btnBackground, @btnBackgroundHighlight, @grayDark, 0 1px 1px rgba(255,255,255,.75));
+    border: 1px solid @btnBorder;
+    *border: 0; // Remove the border to prevent IE7s black border on input:focus
+    border-bottom-color: darken(@btnBorder, 10%);
+    .border-radius(4px);
+    .ie7-restore-left-whitespace(); // Give IE7 some love
+    .box-shadow(~"inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05)");
+}
+
+// Hover
+.bootstrap .dijitButtonHover .dijitButtonNode,
+.bootstrap .dijitDropDownButtonHover .dijitButtonNode,
+.bootstrap .dijitComboButton .dijitButtonNodeHover,
+.bootstrap .dijitComboButton .dijitDownArrowButtonHover,
+.bootstrap .dijitToggleButtonHover .dijitButtonNode {
+    color: @grayDark;
+    text-decoration: none;
+    background-color: darken(@white, 10%);
+    *background-color: darken(@white, 15%); /* Buttons in IE7 don't get borders, so darken on hover */
+    background-position: 0 -15px;
+
+    // transition is only when going to hover, otherwise the background
+    // behind the gradient (there for IE<=9 fallback) gets mismatched
+    .transition(background-position .1s linear);
+}
+
+// Active - pressed
+.bootstrap .dijitButtonActive .dijitButtonNode,
+.bootstrap .dijitComboButton  .dijitButtonNodeActive,
+.bootstrap .dijitToggleButtonActive .dijitButtonNode {
+    background-color: darken(@white, 10%);
+    background-color: darken(@white, 15%) e("\9");
+    background-image: none;
+    outline: 0;
+    .box-shadow(~"inset 0 2px 4px rgba(0,0,0,.15), 0 1px 2px rgba(0,0,0,.05)");
+}
+
+.bootstrap .dijitDropDownButtonActive .dijitButtonNode {
+    .bootstrap.dijitDropDownButtonHover.dijitButtonNode;
+}
+
+// Disabled
+.bootstrap .dijitButtonDisabled .dijitButtonNode,
+.bootstrap .dijitDropDownButtonDisabled .dijitButtonNode,
+.bootstrap .dijitComboButtonDisabled .dijitButtonNode,
+.bootstrap .dijitToggleButtonDisabled .dijitButtonNode {
+    cursor: default;
+    background-color: darken(@white, 10%);
+    background-image: none;
+    .opacity(65);
+    .box-shadow(none);
+}
+
+// Content
+.bootstrap .dijitButtonText {
+    padding: 0 0.3em;
+    text-align: center;
+}
+
+// Arrow
+.bootstrap .dijitArrowButtonInner {
+    .bootstrap.caret;
+}
+
+.bootstrap .dijitDropDownButton .dijitArrowButtonInner {
+    margin-left: 5px;
+}
+
+// Specific Styling
+//
+
+// Combo Box
+.bootstrap .dijitComboButton td.dijitStretch,
+.bootstrap .dijitComboButton td.dijitArrowButton {
+    display: table-cell;
+}
+
+.bootstrap .dijitComboButton .dijitArrowButton {
+    border-left-width: 0;
+    padding: 0px;
+    width: 25px; // Fixed so remains same size even when whole button grows
+    .border-radius(0 4px 4px 0);
+}
+
+.bootstrap .dijitComboButton .dijitStretch {
+    .border-radius(4px 0 0 4px);
+}
+
+.bootstrap table.dijitComboButton {
+    border-collapse: separate;
+}
