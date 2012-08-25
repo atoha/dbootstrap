@@ -19,3 +19,6 @@
 [submodule "source/xstyle"]
 	path = source/xstyle
 	url = https://github.com/kriszyp/xstyle.git
+[submodule "source/nib"]
+	path = source/nib
+	url = https://github.com/visionmedia/nib.git
