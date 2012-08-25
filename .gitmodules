@@ -19,6 +19,3 @@
 [submodule "source/xstyle"]
 	path = source/xstyle
 	url = https://github.com/kriszyp/xstyle.git
-[submodule "source/less"]
-	path = source/less
-	url = https://github.com/cloudhead/less.js.git
