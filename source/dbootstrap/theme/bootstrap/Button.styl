@@ -1,7 +1,5 @@
-/*
-    :copyright: Copyright 2012 Martin Pengelly-Phillips
-    :license: See LICENSE.txt.
-*/
+// :copyright: Copyright 2012 Martin Pengelly-Phillips
+// :license: See LICENSE.txt.
 
 // Common styling
 //
@@ -18,44 +16,41 @@
     display: block; // Stretch to fill space
     padding: 4px 10px;
     margin-bottom: 0; // For input.btn
-    font-size: @baseFontSize;
-    line-height: @baseLineHeight;
-    *line-height: @baseLineHeight;
+    font-size: $baseFontSize;
+    line-height: $baseLineHeight;
     text-align: center;
     vertical-align: middle;
     cursor: pointer;
-    .buttonBackground(@btnBackground, @btnBackgroundHighlight, @grayDark, 0 1px 1px rgba(255,255,255,.75));
-    border: 1px solid @btnBorder;
-    *border: 0; // Remove the border to prevent IE7s black border on input:focus
-    border-bottom-color: darken(@btnBorder, 10%);
-    .border-radius(4px);
-    .ie7-restore-left-whitespace(); // Give IE7 some love
-    .box-shadow(~"inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05)");
+    buttonBackground($btnBackground, $btnBackgroundHighlight, $grayDark, 0 1px 1px rgba(255,255,255,.75));
+    border: 1px solid $btnBorder;
+    border-bottom-color: darken($btnBorder, 10%);
+    border-radius: 4px;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.2), 0 1px 2px rgba(0,0,0,0.05);
 }
 
 // Colours
 .bootstrap .primary .dijitButtonNode {
-  .buttonBackground(@btnPrimaryBackground, @btnPrimaryBackgroundHighlight);
+    buttonBackground($btnPrimaryBackground, $btnPrimaryBackgroundHighlight);
 }
 
 .bootstrap .warning .dijitButtonNode {
-  .buttonBackground(@btnWarningBackground, @btnWarningBackgroundHighlight);
+    buttonBackground($btnWarningBackground, $btnWarningBackgroundHighlight);
 }
 
 .bootstrap .danger .dijitButtonNode {
-  .buttonBackground(@btnDangerBackground, @btnDangerBackgroundHighlight);
+    buttonBackground($btnDangerBackground, $btnDangerBackgroundHighlight);
 }
 
 .bootstrap .success .dijitButtonNode {
-  .buttonBackground(@btnSuccessBackground, @btnSuccessBackgroundHighlight);
+    buttonBackground($btnSuccessBackground, $btnSuccessBackgroundHighlight);
 }
 
 .bootstrap .info .dijitButtonNode {
-  .buttonBackground(@btnInfoBackground, @btnInfoBackgroundHighlight);
+    buttonBackground($btnInfoBackground, $btnInfoBackgroundHighlight);
 }
 
 .bootstrap .inverse .dijitButtonNode {
-  .buttonBackground(@btnInverseBackground, @btnInverseBackgroundHighlight);
+    buttonBackground($btnInverseBackground, $btnInverseBackgroundHighlight);
 }
 
 // Hover
@@ -65,28 +60,21 @@
 .bootstrap .dijitComboButton .dijitDownArrowButtonHover,
 .bootstrap .dijitToggleButtonHover .dijitButtonNode {
     text-decoration: none;
-    background-color: darken(@white, 10%);
-    *background-color: darken(@white, 15%); /* Buttons in IE7 don't get borders, so darken on hover */
     background-position: 0 -15px;
-
-    // transition is only when going to hover, otherwise the background
-    // behind the gradient (there for IE<=9 fallback) gets mismatched
-    .transition(background-position .1s linear);
+    transition: background-position .1s linear;
 }
 
 // Active - pressed
 .bootstrap .dijitButtonActive .dijitButtonNode,
-.bootstrap .dijitComboButton  .dijitButtonNodeActive,
+.bootstrap .dijitComboButton .dijitButtonNodeActive,
 .bootstrap .dijitToggleButtonActive .dijitButtonNode {
-    background-color: darken(@white, 10%);
-    background-color: darken(@white, 15%) e("\9");
     background-image: none;
     outline: 0;
-    .box-shadow(~"inset 0 2px 4px rgba(0,0,0,.15), 0 1px 2px rgba(0,0,0,.05)");
+    box-shadow: inset 0 2px 4px rgba(0,0,0,.15), 0 1px 2px rgba(0,0,0,.05);
 }
 
 .bootstrap .dijitDropDownButtonActive .dijitButtonNode {
-    .bootstrap.dijitDropDownButtonHover.dijitButtonNode;
+    @extend .bootstrap .dijitDropDownButtonHover .dijitButtonNode;
 }
 
 // Disabled
@@ -95,10 +83,9 @@
 .bootstrap .dijitComboButtonDisabled .dijitButtonNode,
 .bootstrap .dijitToggleButtonDisabled .dijitButtonNode {
     cursor: default;
-    background-color: darken(@white, 10%);
     background-image: none;
-    .opacity(65);
-    .box-shadow(none);
+    opacity: 0.65;
+    box-shadow: none;
 }
 
 // Content
@@ -109,7 +96,7 @@
 
 // Arrow
 .bootstrap .dijitArrowButtonInner {
-    .bootstrap.caret;
+    @extend .bootstrap .caret;
 }
 
 .bootstrap .dijitDropDownButton .dijitArrowButtonInner {
@@ -129,15 +116,15 @@
     border-left-width: 0;
     padding: 0px;
     width: 25px; // Fixed so remains same size even when whole button grows
-    .border-radius(0 4px 4px 0);
+    border-radius: 0 4px 4px 0;
 }
 
 .bootstrap .dijitComboButton .dijitArrowButton.dijitHasDropDownOpen {
-    .bootstrap.dijitButtonActive.dijitButtonNode;
+    @extend .bootstrap .dijitButtonActive .dijitButtonNode;
 }
 
 .bootstrap .dijitComboButton .dijitStretch {
-    .border-radius(4px 0 0 4px);
+    border-radius: 4px 0 0 4px;
 }
 
 .bootstrap table.dijitComboButton {
