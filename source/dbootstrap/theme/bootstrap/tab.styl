@@ -1,0 +1,45 @@
+// :copyright: Copyright 2012 Martin Pengelly-Phillips
+// :license: See LICENSE.txt.
+
+.dijitTabContainerBottom-container,
+.dijitTabContainerTop-container,
+.dijitTabContainerLeft-container,
+.dijitTabContainerRight-container {
+    border: 1px solid #ddd;
+}
+
+.dijitTabContainerTop-container {
+    margin-top: -1px;
+}
+
+.bootstrap .dijitTabContainerTop-tabs {
+    color: $linkColor;
+    border-bottom: 1px solid transparent;
+    text-shadow: 0 1px 0 rgba(255,255,255,.5);
+}
+
+.bootstrap .dijitTab {
+    margin-bottom: -1px;
+    margin-right: 2px;
+    padding-right: 12px;
+    padding-left: 12px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    line-height: $baseLineHeight;
+    border: 1px solid transparent;
+    border-radius: 4px 4px 0 0;
+}
+
+.bootstrap .dijitTabHover {
+    color: $linkColorHover;
+    background-color: $grayLighter;
+    border-color: $grayLighter $grayLighter #ddd;
+}
+
+.bootstrap .dijitTabContainerTop-tabs .dijitTabChecked {
+    color: $gray;
+    background-color: $white;
+    border: 1px solid #ddd;
+    border-bottom-color: transparent;
+    cursor: default;
+}
