@@ -85,7 +85,6 @@
 }
 
 .bootstrap .dijitMenuItem {
-    padding: 5px 4px;
     font-weight: normal;
     line-height: $baseLineHeight;
     color: $dropdownLinkColor;
@@ -103,13 +102,15 @@
     @extend .bootstrap .dijitMenuItemHover;
 }
 
-.bootstrap td {
-    padding: 2px;
-}
-
 .bootstrap td.dijitMenuItemLabel {
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 3px;
+    padding-bottom: 3px;
 }
 
+.bootstrap tr.dijitMenuItem td:first-child {
+    padding-left: 20px;
+}
 
+.bootstrap tr.dijitMenuItem td:last-child {
+    padding-right: 20px;
+}
