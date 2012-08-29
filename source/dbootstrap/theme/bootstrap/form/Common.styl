@@ -2,6 +2,7 @@
 // :license: See LICENSE.txt.
 
 @import '../well';
+@import 'Button';
 
 .bootstrap fieldset {
     @extend .bootstrap .well;
@@ -10,12 +11,7 @@
 // TextBox
 .bootstrap .dijitTextBox {
     display: inline-block;
-    height: $baseLineHeight;
-    padding: 4px 6px;
-    margin-top: 4px;
-    margin-bottom: 6px;
     font-size: $baseFontSize;
-    line-height: $baseLineHeight;
     color: $gray;
     border-radius: $inputBorderRadius;
     background-color: $inputBackground;
@@ -29,10 +25,28 @@
     box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(82,168,236,.6);
 }
 
-.bootstrap .dijitInputInner {
-    height: $baseLineHeight;
+.bootstrap .dijitInputField {
+    padding: 6px 6px;
 }
 
 .bootstrap .dijitPlaceHolder {
     font-style: normal;
 }
+
+// ComboBox
+.bootstrap .dijitComboBox .dijitButtonNode {
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    buttonBackground($btnBackground, $btnBackgroundHighlight, $grayDark, 0 1px 1px rgba(255,255,255,.75));
+    border: 1px solid $btnBorder;
+    border-bottom-color: darken($btnBorder, 10%);
+    border-radius: 4px;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.2), 0 1px 2px rgba(0,0,0,0.05);
+}
+
+.bootstrap .dijitComboBox .dijitButtonNode.dijitArrowButton {
+    @extend .bootstrap .dijitComboButton .dijitArrowButton;
+    padding: 6px 0px;
+}
+
