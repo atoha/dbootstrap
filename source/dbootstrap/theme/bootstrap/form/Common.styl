@@ -33,6 +33,12 @@
     font-style: normal;
 }
 
+.bootstrap .dijitTextBoxDisabled {
+    background-image: none;
+    box-shadow: none;
+    background-color: $inputDisabledBackground;
+}
+
 // ComboBox
 .bootstrap .dijitComboBox .dijitButtonNode {
     text-align: center;
@@ -50,3 +56,8 @@
     padding: 6px 0px;
 }
 
+.bootstrap .dijitComboBoxDisabled .dijitButtonNode {
+    background-color: $inputDisabledBackground;
+    opacity: 0.65;
+    cursor: not-allowed;
+}
