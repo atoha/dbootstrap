@@ -1,49 +1,74 @@
 // :copyright: Copyright 2012 Martin Pengelly-Phillips
 // :license: See LICENSE.txt.
 
-.bootstrap .dijitTabContainerBottom-container,
-.bootstrap .dijitTabContainerTop-container,
-.bootstrap .dijitTabContainerLeft-container,
-.bootstrap .dijitTabContainerRight-container {
-    border: 1px solid #ddd;
+// Common
+.bootstrap .dijitTabPaneWrapper {
+    border: 1px solid $grayLighter;
 }
 
-.bootstrap .dijitTabContainerTop-container {
-    margin-top: -1px;
-}
-
-.bootstrap .dijitTabContainerTop-tabs {
-    color: $linkColor;
-    border-bottom: 1px solid transparent;
-    text-shadow: 0 1px 0 rgba(255,255,255,.5);
+.bootstrap .dijitTabContainerBottom-tabs,
+.bootstrap .dijitTabContainerTop-tabs,
+.bootstrap .dijitTabContainerLeft-tabs,
+.bootstrap .dijitTabContainerRight-tabs {
+    border: none;
 }
 
 .bootstrap .dijitTab {
-    margin-bottom: -1px;
-    margin-right: 2px;
+    color: $linkColor;
+    text-shadow: 0 1px 0 rgba(255,255,255,.5);
+    margin-left: 1px;
+    margin-right: 1px;
     padding-right: 12px;
     padding-left: 12px;
     padding-top: 8px;
     padding-bottom: 8px;
     line-height: $baseLineHeight;
     border: 1px solid transparent;
-    border-radius: 4px 4px 0 0;
+    border-radius: 4px;
 }
 
 .bootstrap .dijitTabHover {
     color: $linkColorHover;
     background-color: $grayLighter;
-    border-color: $grayLighter $grayLighter #ddd;
+    border-color: $grayLighter;
 }
 
-.bootstrap .dijitTabContainerTop-tabs .dijitTabChecked {
+.bootstrap .dijitTabChecked {
     color: $gray;
     background-color: $white;
-    border: 1px solid #ddd;
-    border-bottom-color: transparent;
+    border-color: $grayLighter;
     cursor: default;
 }
 
+// Top
+.bootstrap .dijitTabContainerTop-container {
+    margin-top: -1px;
+}
+
+.bootstrap .dijitTabContainerTop .dijitTab {
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.bootstrap .dijitTabContainerTop .dijitTabChecked {
+    border-bottom-color: transparent;
+}
+
+// Bottom
+.bootstrap .dijitTabContainerBottom-container {
+    margin-bottom: -1px;
+}
+
+.bootstrap .dijitTabContainerBottom .dijitTab {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+.bootstrap .dijitTabContainerBottom .dijitTabChecked {
+    border-top-color: transparent;
+}
+
+// Tab strip buttons
 .bootstrap .tabStripButtonHover {
     background-color: transparent;
     border: 1px solid transparent;
