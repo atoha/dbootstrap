@@ -1,5 +1,9 @@
 <div>
-    <div id="header" data-dojo-type="dijit/MenuBar" data-dojo-props="region:'top'">
+    <div id="header" 
+        data-dojo-type="dijit/MenuBar" 
+        data-dojo-props="
+            region:'top', 'class':'primary inverse'
+    ">
         <span class='brand'>Dojo Bootstrap Theme</span>
         <div data-dojo-type="dijit/PopupMenuBarItem" id="file">
             <span>File</span>
@@ -763,7 +767,7 @@ nulla &#8234;facilisi.&#8236;
     <div data-dojo-type="dijit/layout/TabContainer" id="bottomTabs"
         data-dojo-props="
             tabPosition:'bottom', selectedchild:'btab1', region:'bottom',
-            splitter:true, tabStrip:true
+            splitter:true, tabStrip:true, layoutPriority: 2
         ">
         <!-- btab 1 -->
         <div id="btab1" data-dojo-type="dijit/layout/ContentPane" data-dojo-props='title:"Info", style:" padding:10px; "'>

@@ -71,7 +71,7 @@ function(declare, template, TemplatedMixin, WidgetsInTemplateMixin,
 
         templateString: template,
         'class': 'application',
-        design: 'sidebar',
+        design: 'headline',
         liveSplitters: false,
 
         constructor: function(options) {
