@@ -160,11 +160,17 @@ function(declare, template, TemplatedMixin, WidgetsInTemplateMixin,
         },
 
         showDialog: function() {
-
+            var dlg = dijit.byId('dialog1');
+            dlg.show();
+            // avoid (trying to) restore focus to a closed menu, go to MenuBar instead
+            dlg._savedFocus = dojo.byId("header");
         },
 
         showDialogAb: function() {
-
+            var dlg = dijit.byId('dialogAB');
+            dlg.show();
+            // avoid (trying to) restore focus to a closed menu, go to MenuBar instead
+            dlg._savedFocus = dojo.byId("header");
         },
 
         setBackground: function(color) {

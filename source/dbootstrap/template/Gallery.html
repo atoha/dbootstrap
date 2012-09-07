@@ -1,6 +1,6 @@
 <div>
-    <div id="header" 
-        data-dojo-type="dijit/MenuBar" 
+    <div id="header"
+        data-dojo-type="dijit/MenuBar"
         data-dojo-props="
             region:'top', 'class':'primary inverse'
     ">
@@ -792,4 +792,30 @@ nulla &#8234;facilisi.&#8236;
             </div>
         </div>
     </div>
+
+    <div id="dialogAB" data-dojo-type="dijit/Dialog" data-dojo-props="title:'Floating Modal Dialog'" style="display:none;">
+        <div class="dijitDialogPaneContentArea">
+            <table>
+                <tr>
+                    <td><label for="name">Name: </label></td>
+                    <td><input data-dojo-type="dijit/form/TextBox" type="text" name="name" id="name"></td>
+                </tr>
+                <tr>
+                    <td><label for="loc">Location: </label></td>
+                    <td><input data-dojo-type="dijit/form/TextBox" type="text" name="loc" id="loc"></td>
+                </tr>
+                <tr>
+                    <td><label for="date">Date: </label></td>
+                    <td><input data-dojo-type="dijit/form/DateTextBox" type="text" name="date" id="date"></td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="dijitDialogPaneActionBar">
+            <button data-dojo-type="dijit/form/Button" data-dojo-props="'class':'primary'" type="submit" id="ABdialog1button1">OK</button>
+            <button data-dojo-type="dijit/form/Button" type="button" data-dojo-props="onClick:function(){ dijit.byId('dialogAB').onCancel(); }"
+                    id="ABdialog1button2">Cancel</button>
+        </div>
+    </div>
+
 </div>
