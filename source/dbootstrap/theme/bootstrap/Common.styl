@@ -5,11 +5,34 @@
     outline: none;
 }
 
+// Body reset
+// -------------------------
+
 body {
-    color: $grayDark;
+    margin: 0;
     font-family: $baseFontFamily;
     font-size: $baseFontSize;
+    line-height: $baseLineHeight;
+    color: $textColor;
+    background-color: $bodyBackground;
 }
+
+
+// Links
+// -------------------------
+
+a {
+    color: $linkColor;
+    text-decoration: none;
+}
+a:hover {
+    color: $linkColorHover;
+    text-decoration: underline;
+}
+
+
+// Disabled
+// -------------------------
 
 .bootstrap .dijitReadOnly *,
 .bootstrap .dijitDisabled *,
