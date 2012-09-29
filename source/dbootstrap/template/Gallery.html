@@ -208,6 +208,37 @@
     <!-- top tabs (marked as "center" to take up the main part of the BorderContainer) -->
     <div data-dojo-type="dijit/layout/TabContainer" data-dojo-props="region:'center', tabStrip:true" id="topTabs">
 
+        <div id="aboutTab" data-dojo-type="dijit/layout/ContentPane" data-dojo-props="title:'About', style:''">
+            <h2>Dojo Bootstrap Theme <small>A Dojo theme based on the awesome Bootstrap framework.</small></h2>
+            <div class="alert">
+                This theme is still under active development so some widgets
+                have not yet been themed. Also, it has only been tested on
+                Firefox 15 (Mac). Contributions and testing welcome!
+            </div>
+
+            <p><strong>Hi there!</strong> This is a live preview of the new Dojo
+            Bootstrap theme. The existing Dojo themes are great, but I wanted
+            to try and bring the beauty of Twitter's <a href="http://twitter.github.com/bootstrap">Bootstrap</a>
+            to Dojo.</p>
+
+            <p>Utilising the ease of <a href="http://learnboost.github.com/stylus/">Stylus</a> for 
+            managing the CSS and testing against the Dojo Theme Tester the 
+            project has really started to come together.
+            </p>
+            <p>
+            However, there is still lots to do (especially testing 
+            cross-browser/platform) so if you discover an issue please 
+            <a href="https://github.com/thesociable/dbootstrap/issues">report it</a> or even
+            better <a href="https://github.com/thesociable/dbootstrap">fork</a> the project and submit a pull request.
+            </p>
+            <div class="well">
+                <a href="https://github.com/thesociable/dbootstrap/tarball/master"><button data-dojo-type="dijit/form/Button" 
+                        data-dojo-props="iconClass:'dijitIconTask', 'class': 'primary'">
+                    Download latest (dev)
+            </button></a>
+            </div>
+        </div>
+
         <div id="alertsTab" data-dojo-type="dijit/layout/ContentPane" data-dojo-props="title:'Alerts', style:''">
             <h2>Alerts</h2>
             <div class="alert">
