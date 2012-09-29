@@ -208,6 +208,35 @@
     <!-- top tabs (marked as "center" to take up the main part of the BorderContainer) -->
     <div data-dojo-type="dijit/layout/TabContainer" data-dojo-props="region:'center', tabStrip:true" id="topTabs">
 
+        <div id="alertsTab" data-dojo-type="dijit/layout/ContentPane" data-dojo-props="title:'Alerts', style:''">
+            <h2>Alerts</h2>
+            <div class="alert">
+                <strong>Warning!</strong> Best check yo self, you're not looking too good.
+            </div>
+
+            <div class="alert alert-error">
+                <strong>Oh snap!</strong> Change a few things up and try submitting again.
+            </div>
+            
+            <div class="alert alert-success">
+                <strong>Well done!</strong> You successfully read this important alert message. 
+            </div>
+            
+            <div class="alert alert-info">
+                <strong>Heads up!</strong> This alert needs your attention, but it's not super important. 
+            </div>
+            
+            <hr class="spacer">
+
+            <h3>Block level</h3>
+
+            <div class="alert alert-block">
+                <h4>Warning!</h4> 
+                <p>Best check yo self, you're not looking too good. Nulla vitae elit libero, a pharetra augue. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
+            </div>
+
+        </div>
+
         <div id="basicFormTab" data-dojo-type="dijit/layout/ContentPane" data-dojo-props="title:'Basic Form Widgets', style:'padding:10px;display:none;'">
 
             <h2>Buttons</h2>
