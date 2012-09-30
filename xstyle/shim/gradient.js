@@ -1,0 +1,3 @@
+//>>built
+define("xstyle/shim/gradient",[],function(f){var e=/#(\w{6})/,g={"-webkit-":function(d,c,a,b){return"background-image: -webkit-gradient("+d.substring(0,6)+", left top, left bottom, from("+a+"), to("+b+"))"},"-moz-":function(d,c,a,b){return"background-image: -moz-"+d+"("+c+","+a+","+b+")"},"-o-":function(d,c,a,b){return"background-image: -o-"+d+"("+c+","+a+","+b+")"},"-ms-":function(d,c,a,b){a=a.match(e);b=b.match(e);if(a&&b)return"border-radius: 0px; filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FF"+
+a[1]+",endColorstr=#FF"+b[1]+",gradientType="+("left"==c?1:0)+");"}}[f.prefix];return{onIdentifier:function(d,c){var a=c.match(/(\w+-gradient)\(([^\)]*)\)/),b=a[1],a=a[2].split(/,\s*/);return g(b,a[0],a[1],a[2])}}});

@@ -1,0 +1,3 @@
+//>>built
+define("dgrid/util/misc",[],function(){var c={defaultDelay:15,throttle:function(d,e,b){var a=!1,b=b||c.defaultDelay;return function(){a||(a=!0,d.apply(e,arguments),setTimeout(function(){a=!1},b))}},throttleDelayed:function(d,e,b){var a=!1,b=b||c.defaultDelay;return function(){if(!a){a=!0;var c=arguments;setTimeout(function(){d.apply(e,c);a=!1},b)}}},debounce:function(d,e,b){var a,b=b||c.defaultDelay;return function(){a&&(clearTimeout(a),a=null);var c=arguments;a=setTimeout(function(){d.apply(e,c)},
+b)}}};return c});

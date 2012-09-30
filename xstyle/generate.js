@@ -1,0 +1,2 @@
+//>>built
+define("xstyle/generate",[],function(){function a(){return{layout:function(a){return function(b){for(var d=0;d<a.length;d++){var e=a[d],f=e.selector,c=document.createElement("div");f.replace(/\.([\w-]+)/,function(a,b){c.className=b});f.replace(/#([\w-]+)/,function(a,b){c.id=b});e.apply(c);b.appendChild(c)}}},content:function(a){return function(b){b.innerHTML=eval(a)}},role:"layout"}}var b=new a({});a.layout=b.layout;a.content=b.content;a.role=b.role;return a});
