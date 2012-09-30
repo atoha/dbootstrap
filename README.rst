@@ -10,16 +10,16 @@ Bootstrap theme for Dojo.
 Quick start
 ***********
 
-Clone the repo:
+#. Clone the repo::
 
     $ git clone --recursive git@github.com:thesociable/dbootstrap.git
 
-Build it:
+#. Build it::
 
     $ cd /path/to/dbootstrap
     $ ./build.sh
 
-Take a look:
+#. Take a look::
 
     Point your browser at file:///path/to/dbootstrap/build/index.html
 
