@@ -28,13 +28,42 @@
     text-shadow: 0 -1px 0 rgba(0,0,0,.25);
 }
 
+// Colours
+// -------------------
+
+// Danger (red)
+.bootstrap .dijitProgressBar.danger .dijitProgressBarFull {
+    background-color: #ee5f5b;
+    background-image: linear-gradient(center top, #ee5f5b, #c43c35);
+}
+
+// Success (green)
+.bootstrap .dijitProgressBar.success .dijitProgressBarFull {
+    background-color: #62c462;
+    background-image: linear-gradient(center top, #62c462, #57a957);
+}
+
+// Info (teal)
+.bootstrap .dijitProgressBar.info .dijitProgressBarFull {
+    background-color: #5bc0de;
+    background-image: linear-gradient(center top, #5bc0de, #339bb9);
+}
+
+// Warning (orange)
+.bootstrap .dijitProgressBar.warning .dijitProgressBarFull {
+    background-color: lighten($orange, 15%);
+    background-image: linear-gradient(center top, @background-color, $orange);
+}
+
 // Striped
 .bootstrap .dijitProgressBar.striped .dijitProgressBarFull {
     background-size: 40px 40px;
-    background-image: linear-gradient(left bottom, rgba(255,255,255,.15) 25%, transparent 25%, transparent 50%, rgba(255,255,255,.15) 50%, rgba(255,255,255,.15) 75%, transparent 75%, transparent);
+    background-image: linear-gradient(left bottom, rgba(255,255,255,.15) 25%, transparent 25%, transparent 50%, rgba(255,255,255,.15) 50%, rgba(255,255,255,.15) 75%, transparent 75%, transparent) !important;
 }
 
 // Animated (stripes)
+// -------------------
+
 @keyframes progress-bar-stripes {
     from {
         background-position: 40px 0;
@@ -48,10 +77,9 @@
     animation: progress-bar-stripes 2s linear infinite;
 }
 
-// Colours
-
-
 // Indeterminate
+// -------------------
+
 .bootstrap .dijitProgressBarIndeterminate .dijitProgressBarFull {
     @extend .bootstrap .dijitProgressBar.striped .dijitProgressBarFull;
     @extend .bootstrap .dijitProgressBar.animated .dijitProgressBarFull;
