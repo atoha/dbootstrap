@@ -705,6 +705,80 @@ nulla &#8234;facilisi.&#8236;
             </div>
         </div>
 
+        <div id="progressBarTab"
+            data-dojo-type="dijit/layout/ContentPane"
+            data-dojo-props='title:"Progress Bars", style:"display: none;"'>
+
+            <h2>ProgressBar</h2>
+            <div data-dojo-type="dijit/ProgressBar"
+                data-dojo-props="value:20"
+                id="setTestBar">
+            </div>
+
+            <div data-dojo-type="dijit/ProgressBar"
+                data-dojo-props="'class': 'info', value:40">
+            </div>
+
+            <div data-dojo-type="dijit/ProgressBar"
+                data-dojo-props="'class': 'success', value:60">
+            </div>
+
+            <div data-dojo-type="dijit/ProgressBar"
+                data-dojo-props="'class': 'warning', value:80">
+            </div>
+
+            <div data-dojo-type="dijit/ProgressBar"
+                data-dojo-props="'class': 'danger', value:100">
+            </div>
+
+            <hr class="spacer">
+
+            <h2>Striped</h2>
+            <div data-dojo-type="dijit/ProgressBar"
+                data-dojo-props="'class': 'striped', value:20">
+            </div>
+
+            <div data-dojo-type="dijit/ProgressBar"
+                data-dojo-props="'class': 'striped info', value:40">
+            </div>
+
+            <div data-dojo-type="dijit/ProgressBar"
+                data-dojo-props="'class': 'striped success', value:60">
+            </div>
+
+            <div data-dojo-type="dijit/ProgressBar"
+                data-dojo-props="'class': 'striped warning', value:80">
+            </div>
+
+            <div data-dojo-type="dijit/ProgressBar"
+                data-dojo-props="'class': 'striped danger', value:100">
+            </div>
+
+            <hr class="spacer">
+
+            <h2>Indeterminate</h2>
+            <div data-dojo-type="dijit/ProgressBar"
+                data-dojo-props="indeterminate: true">
+            </div>
+
+            <div data-dojo-type="dijit/ProgressBar"
+                data-dojo-props="'class': 'info', indeterminate: true">
+            </div>
+
+            <div data-dojo-type="dijit/ProgressBar"
+                data-dojo-props="'class': 'success', indeterminate: true">
+            </div>
+
+            <div data-dojo-type="dijit/ProgressBar"
+                data-dojo-props="'class': 'warning', indeterminate: true">
+            </div>
+
+            <div data-dojo-type="dijit/ProgressBar"
+                data-dojo-props="'class': 'danger', indeterminate: true">
+            </div>
+
+        </div><!-- end:progress bars upper tab -->
+
         <div id="variousTab" data-dojo-type="dijit/layout/ContentPane" data-dojo-props='title:"Various Dijits", style:"padding:10px; display:none;"'>
 
             <h2>TitlePane</h2>
@@ -717,14 +791,6 @@ nulla &#8234;facilisi.&#8236;
                 sit amet, consectetuer adipiscing elit.</p>
 
             </div><!-- end title pane -->
-
-            <hr class="spacer">
-
-            <h2>ProgressBar</h2>
-            <div data-dojo-props="maximum:200, value:20" id="setTestBar" data-dojo-type="dijit/ProgressBar"></div>
-
-            Indeterminate:
-            <div id="indTestBar" data-dojo-props="indeterminate:true" data-dojo-type="dijit/ProgressBar"></div>
 
         </div><!-- end:various dijits upper tab -->
 
