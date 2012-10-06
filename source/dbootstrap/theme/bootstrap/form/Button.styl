@@ -8,6 +8,15 @@
     border: none;
 }
 
+.bootstrap .dijitButtonNode * {
+    vertical-align: baseline;
+}
+
+.bootstrap .dijitButtonNode .dijitIcon {
+    // Keeps button heights with and without icons the same
+    line-height: $baseLineHeight * 0.65;
+}
+
 .bootstrap .dijitButton .dijitButtonNode,
 .bootstrap .dijitDropDownButton .dijitButtonNode,
 .bootstrap .dijitComboButton .dijitButtonNode,
@@ -99,17 +108,18 @@
 
 // Arrow
 .bootstrap .dijitArrowButtonInner {
-    width: 15px;
-    height: 15px;
-    background-image: url("bootstrap/image/arrows.png");
-    background-position: -70px 60%;
-    background-repeat: no-repeat;
-    padding: 0px;
-    margin-left: 4px;
+    @extend .bootstrap .dijitButtonNode .dijitIcon;
+    height: auto;
+    width: auto;
+}
+
+.bootstrap .dijitArrowButtonInner:before {
+    @extend .dijitIcon:before;
+    @extend .icon-caret-down:before;
 }
 
 .bootstrap .dijitUpArrowButton .dijitArrowButtonInner {
-    background-position: -175px 60%;
+    @extend .icon-caret-up:before;
 }
 
 // Specific Styling
@@ -123,8 +133,7 @@
 
 .bootstrap .dijitComboButton .dijitArrowButton {
     border-left-width: 0;
-    padding: 0px;
-    width: 25px; // Fixed so remains same size even when whole button grows
+    padding: 6px 10px;
     border-radius: 0 4px 4px 0;
 }
 
