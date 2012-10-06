@@ -22,6 +22,7 @@ function (require) {
             query('img.dijitIcon, ' +
                   'img.dijitTabStripIcon, ' +
                   'img.dijitCalendarIncrementControl, ' +
+                  'img.dijitMenuExpand, ' +
                   'input.dijitArrowButtonInner'
             ).forEach(function(node) {
                 var span = domConstruct.create('span', {

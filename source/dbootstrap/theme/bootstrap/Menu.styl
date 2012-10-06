@@ -148,8 +148,13 @@
 }
 
 // Icon
-.bootstrap .dijitMenuItemIcon {
+.bootstrap .dijitMenuItemIcon,
+.bootstrap .dijitMenuExpand  {
     // Keep in line with labels
     line-height: $baseLineHeight * 0.65;
 }
 
+.bootstrap .dijitMenuArrowCell .dijitMenuExpand:before {
+    @extend .dijitIcon:before;
+    @extend .icon-caret-right:before;
+}
