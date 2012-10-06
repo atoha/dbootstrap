@@ -1,0 +1,135 @@
+// :copyright: Copyright 2012 Martin Pengelly-Phillips
+// :license: See LICENSE.txt.
+
+@import 'font_awesome';
+
+// General
+// -------------------
+
+.dijitIcon:before {
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    display: inline-block;
+    text-decoration: inherit;
+}
+
+.dijitNoIcon {
+    display: none;
+}
+
+
+// Icons
+// Backwards compatibility for those not using the newer style icon classes.
+// For example: dijitIconCut instead of icon-cut
+// -------------------
+
+.dijitIconSave:before {
+    @extend .icon-save:before;
+}
+.dijitIconPrint:before {
+    @extend .icon-print:before;
+}
+.dijitIconCut:before {
+    @extend .icon-cut:before;
+}
+.dijitIconCopy:before {
+    @extend .icon-copy:before;
+}
+.dijitIconPaste:before {
+    @extend .icon-paste:before;
+}
+.dijitIconClear:before {
+    // @extend .icon-;
+}
+.dijitIconDelete:before {
+    @extend .icon-remove:before;
+}
+.dijitIconUndo:before {
+    @extend .icon-undo:before;
+}
+.dijitIconEdit:before {
+    @extend .icon-edit:before;
+}
+.dijitIconNewTask:before {
+    // @extend .icon-task:before;
+}
+.dijitIconEditTask:before {
+    // @extend .icon-;
+}
+.dijitIconEditProperty:before {
+    // @extend .icon-;
+}
+.dijitIconTask:before {
+    @extend .icon-tasks:before;
+}
+.dijitIconFilter:before {
+    @extend .icon-filter:before;
+}
+.dijitIconConfigure:before {
+    @extend .icon-cog:before;
+}
+.dijitIconSearch:before {
+    @extend .icon-search:before;
+}
+.dijitIconApplication:before {
+    // @extend .icon-;
+}
+.dijitIconBookmark:before {
+    @extend .icon-bookmark:before;
+}
+.dijitIconChart:before {
+    @extend .icon-bar-chart:before;
+}
+.dijitIconConnector:before {
+    // @extend .icon-;
+}
+.dijitIconDatabase:before {
+    // @extend .icon-;
+}
+.dijitIconDocuments:before {
+    // @extend .icon-;
+}
+.dijitIconMail:before {
+    @extend .icon-envelope:before;
+}
+.dijitLeaf {
+    @extend .icon-leaf:before;
+}
+.dijitIconFile:before {
+    @extend .icon-file:before;
+}
+.dijitIconFunction:before {
+    // @extend .icon-;
+}
+.dijitIconKey:before {
+    @extend .icon-key:before;
+}
+.dijitIconPackage:before {
+    // @extend .icon-;
+}
+.dijitIconSample:before {
+    // @extend .icon-;
+}
+.dijitIconTable:before {
+    @extend .icon-table:before;
+}
+.dijitIconUsers:before {
+    @extend .icon-group:before;
+}
+.dijitFolderClosed {
+    @extend .icon-folder-close:before;
+}
+.dijitIconFolderClosed:before {
+    @extend .icon-folder-close:before;
+}
+.dijitFolderOpened {
+    @extend .icon-folder-open:before;
+}
+.dijitIconFolderOpen:before {
+    @extend .icon-folder-open:before;
+}
+.dijitIconError:before {
+    @extend .icon-exclamation-sign:before;
+}
+
