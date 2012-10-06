@@ -8,6 +8,10 @@
     @extend .bootstrap .well;
 }
 
+.bootstrap label {
+    vertical-align: middle;
+}
+
 // TextBox
 .bootstrap .dijitTextBox {
     display: inline-block;
@@ -25,12 +29,16 @@
     box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(82,168,236,.6);
 }
 
-.bootstrap .dijitInputField {
+.bootstrap .dijitInputContainer {
     padding: 6px 6px;
+}
+
+.bootstrap .dijitInputField .dijitInputInner {
 }
 
 .bootstrap .dijitPlaceHolder {
     font-style: normal;
+    padding: 4px 6px;
 }
 
 .bootstrap .dijitTextBoxDisabled {
@@ -53,7 +61,10 @@
 
 .bootstrap .dijitComboBox .dijitButtonNode.dijitArrowButton {
     @extend .bootstrap .dijitComboButton .dijitArrowButton;
-    padding: 6px 0px;
+}
+
+.bootstrap .dijitComboBox input.dijitArrowButtonInner {
+    display: none;
 }
 
 .bootstrap .dijitComboBoxDisabled .dijitButtonNode {
