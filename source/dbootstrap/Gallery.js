@@ -217,7 +217,7 @@ function(declare, template, query, window, array, functional, domConstruct,
         setBackground: function(color) {
             query('.dijitAccordionBody').style('background', color);
             query('.dijitTabPaneWrapper').style('background', color);
-        },
+        }
 
     })
 });
