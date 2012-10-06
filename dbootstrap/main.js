@@ -1,2 +1,2 @@
 //>>built
-define("dbootstrap/main",["require"],function(a){var b={};a(["./Gallery","dojo/domReady!"],function(a){b=new a;b.placeAt(document.body);b.startup()})});
+define("dbootstrap/main",["require"],function(b){var a={};b(["./Gallery","dojo/query","dojo/dom-construct","dojo/dom-attr","dojo/domReady!"],function(b,c,d,e){a=new b;a.placeAt(document.body);a.startup();c("img.dijitIcon, img.dijitTabStripIcon, img.dijitCalendarIncrementControl, img.dijitMenuExpand, input.dijitArrowButtonInner").forEach(function(a){d.create("span",{"class":e.get(a,"class")},a,"before")});a.resize()})});
