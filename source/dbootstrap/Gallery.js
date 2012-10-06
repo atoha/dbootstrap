@@ -7,6 +7,11 @@ define(
 [
     'dojo/_base/declare',
     'dojo/text!./template/Gallery.html',
+    'dojo/query',
+    'dojo/_base/window',
+    'dojo/_base/array',
+    'dojox/lang/functional',
+    'dojo/dom-construct',
 
     'dijit/_TemplatedMixin',
     'dijit/_WidgetsInTemplateMixin',
@@ -62,7 +67,8 @@ define(
     'dijit/Dialog'
 ],
 
-function(declare, template, TemplatedMixin, WidgetsInTemplateMixin,
+function(declare, template, query, window, array, functional, domConstruct,
+         TemplatedMixin, WidgetsInTemplateMixin,
          BorderContainer, Observable, Memory, ObjectStoreModel) {
 
     return declare('dbootstrap.Gallery', [BorderContainer,
@@ -133,6 +139,7 @@ function(declare, template, TemplatedMixin, WidgetsInTemplateMixin,
 
         buildRendering: function() {
             this.inherited(arguments);
+            this.buildIcons();
         },
 
         postCreate: function() {
@@ -141,6 +148,40 @@ function(declare, template, TemplatedMixin, WidgetsInTemplateMixin,
 
         startup: function() {
             this.inherited(arguments);
+        },
+
+        buildIcons: function() {
+            // Build icons from available icon classes and add to
+            // iconsContainer
+
+            // Get icon classes
+            var iconClasses = {};
+            array.forEach(window.doc.styleSheets, function(sheet) {
+                array.forEach(sheet.cssRules, function(rule) {
+                    if (rule.type == rule.STYLE_RULE) {
+                        var iconClass = rule.selectorText.match(/icon-[a-z\-]+/g);
+                        if (iconClass &&
+                            iconClass.lastIndexOf('icon-large', 0) !== 0) {
+                            iconClasses[iconClass] = true;
+                        }
+                    }
+                });
+            });
+
+            iconClasses = functional.keys(iconClasses).sort();
+
+            // Add icons
+            array.forEach(iconClasses, function(iconClass) {
+                domConstruct.create(
+                    'span',
+                    {
+                        'class': iconClass,
+                        'innerHTML': iconClass
+                    },
+                    this.iconsContainer
+                );
+            }, this);
+
         },
 
         setTextPadding: function() {
@@ -174,8 +215,9 @@ function(declare, template, TemplatedMixin, WidgetsInTemplateMixin,
         },
 
         setBackground: function(color) {
-            dojo.query('.dijitAccordionBody').style('background', color);
-            dojo.query('.dijitTabPaneWrapper').style('background', color);
-        }
+            query('.dijitAccordionBody').style('background', color);
+            query('.dijitTabPaneWrapper').style('background', color);
+        },
+
     })
 });

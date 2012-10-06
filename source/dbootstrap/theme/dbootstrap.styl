@@ -22,3 +22,27 @@ html, body {
 #progressBarTab .dijitProgressBar {
     margin-bottom: 9px;
 }
+
+#iconsTab {
+    [class^='icon-'] {
+        display: inline-block;
+        width: 200px;
+        line-height: $baseLineHeight * 2;
+        border-radius: 12px;
+        cursor: pointer;
+
+        &:hover {
+            background-color: #fbf4f4;
+        }
+        &:hover:before {
+            font-size: $baseFontSize * 1.5;
+        }
+    }
+
+    [class^='icon-']:before {
+        width: 30px;
+        text-align: center;
+        vertical-align: middle;
+    }
+}
+
