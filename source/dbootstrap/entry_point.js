@@ -16,6 +16,11 @@ require({
         'dbootstrap'
     ],
 
+    paths: {
+        'dijit/_TemplatedMixin': 'dbootstrap/TemplatedMixin',
+        'dijit/_OriginalTemplatedMixin': 'dijit/_TemplatedMixin'
+    },
+
     cache: {}
 
 }, ['dbootstrap']);
