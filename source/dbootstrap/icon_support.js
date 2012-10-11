@@ -10,7 +10,7 @@ define(
     'dojo/_base/array',
     'dojo/dom-construct',
     'dojo/dom-class',
-    'dijit/_OriginalTemplatedMixin'
+    'dijit/_TemplatedMixin'
 ],
 
 function(declare, lang, array, domConstruct, domClass, TemplatedMixin) {
@@ -18,63 +18,61 @@ function(declare, lang, array, domConstruct, domClass, TemplatedMixin) {
     // states with nodes that do. This enables Font-Awesome to be used
     // everywhere for the icons.
     //
-    // To use, add the following to your require setup:
-    //     paths: {
-    //         'dijit/_TemplatedMixin': 'dbootstrap/TemplatedMixin',
-    //         'dijit/_OriginalTemplatedMixin': 'dijit/_TemplatedMixin'
-    //     },
+    // To use, require this module *before* Dijit.
     //
-    return declare(TemplatedMixin, {
+    var _attachTemplateNodes = TemplatedMixin.prototype._attachTemplateNodes;
 
-        _attachTemplateNodes: function(rootNode, getAttrFunc) {
-            // Replace nodes with appropriate ones, before calling parent
-            // method.
-            //
-            var reference_tag_names = ['IMG', 'INPUT'];
-            var reference_classes = [
-                'dijitIcon', 'dijitTabStripIcon', 'dijitMenuExpand',
-                'dijitCalendarIncrementControl', 'dijitArrowButtonInner'
-            ];
-            var reference_attributes = ['class', 'data-dojo-attach-point'];
+    TemplatedMixin.prototype._attachTemplateNodes = function(rootNode,
+                                                             getAttrFunc) {
+        // Replace nodes with appropriate ones, before calling original
+        // method.
+        //
+        var reference_tag_names = ['IMG', 'INPUT'];
+        var reference_classes = [
+            'dijitIcon', 'dijitTabStripIcon', 'dijitMenuExpand',
+            'dijitCalendarIncrementControl', 'dijitArrowButtonInner'
+        ];
+        var reference_attributes = ['class', 'data-dojo-attach-point'];
 
-            var nodes = rootNode;
-            if (!lang.isArray(nodes)) {
-                nodes = (rootNode.all || rootNode.getElementsByTagName("*"));
-            }
-
-            var x = lang.isArray(rootNode) ? 0 : -1;
-            for (; x < 0 || nodes[x]; x++) {
-                // Don't access nodes.length on IE, see #14346
-                var node = (x == -1) ? rootNode : nodes[x];
-
-                // Only deal with known problem node types.
-                if (array.indexOf(reference_tag_names, node.tagName) === -1) {
-                    continue;
-                }
-
-                // If node contains one of the reference classes then replace
-                // it with a suitable pseudo state friendly node, copying
-                // relevant attributes to the new node.
-                for (var i=0, l=reference_classes.length; i<l; i++) {
-                    if (domClass.contains(node, reference_classes[i])) {
-                        var attributes = {};
-                        array.forEach(reference_attributes, function(name) {
-                            var attribute = getAttrFunc(node, name);
-                            if (attribute) {
-                                attributes[name] = attribute;
-                            }
-                        });
-
-                        var newNode = domConstruct.create(
-                            'span', attributes, node, 'replace'
-                        );
-                        break;
-                    }
-                }
-            }
-
-            // Continue with normal parent method.
-            return this.inherited(arguments);
+        var nodes = rootNode;
+        if (!lang.isArray(nodes)) {
+            nodes = (rootNode.all || rootNode.getElementsByTagName("*"));
         }
-    });
+
+        var x = lang.isArray(rootNode) ? 0 : -1;
+        for (; x < 0 || nodes[x]; x++) {
+            // Don't access nodes.length on IE, see #14346
+            var node = (x == -1) ? rootNode : nodes[x];
+
+            // Only deal with known problem node types.
+            if (array.indexOf(reference_tag_names, node.tagName) === -1) {
+                continue;
+            }
+
+            // If node contains one of the reference classes then replace
+            // it with a suitable pseudo state friendly node, copying
+            // relevant attributes to the new node.
+            for (var i=0, l=reference_classes.length; i<l; i++) {
+                if (domClass.contains(node, reference_classes[i])) {
+                    var attributes = {};
+                    array.forEach(reference_attributes, function(name) {
+                        var attribute = getAttrFunc(node, name);
+                        if (attribute) {
+                            attributes[name] = attribute;
+                        }
+                    });
+
+                    var newNode = domConstruct.create(
+                        'span', attributes, node, 'replace'
+                    );
+                    break;
+                }
+            }
+        }
+
+        // Continue with normal parent method.
+        return _attachTemplateNodes.call(this, rootNode, getAttrFunc);
+    }
+
+    return TemplatedMixin;
 });

@@ -10,8 +10,8 @@ define([
 function (require) {
     var app = {};
 
-    require(['./Gallery', 'dojo/domReady!'],
-        function (Gallery) {
+    require(['./icon_support', './Gallery', 'dojo/domReady!'],
+        function (icon_support, Gallery) {
             app = new Gallery();
             app.placeAt(document.body);
             app.startup();
