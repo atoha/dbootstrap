@@ -1,11 +1,26 @@
 // :copyright: Copyright 2012 Martin Pengelly-Phillips
 // :license: See LICENSE.txt.
 
+.bootstrap .dijitTreeRow {
+    padding: 2px 0;
+}
+
+.bootstrap .dijitTreeRowSelected {
+    color: $treeRowColorSelected;
+    background-color: $treeRowBackgroundSelected;
+}
+
+.bootstrap .dijitTreeRowHover {
+    color: $textColor;
+    background-color: $treeRowBackgroundHover;
+}
 
 .bootstrap .dijitTreeExpando:before {
     @extend .dijitIcon:before;
     cursor: pointer;
     opacity: 0.3;
+    padding-left: 4px;
+    padding-right: 2px;
 }
 
 .bootstrap .dijitTreeExpandoOpened:before {
