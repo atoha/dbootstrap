@@ -16,6 +16,7 @@ var profile = {
     layers: {
         'dojo/dojo': {
             include: [
+                'dojo/dojo',
                 'dojo/i18n',
                 'dojo/domReady',
                 'dbootstrap/main',
@@ -24,7 +25,11 @@ var profile = {
             boot: true,
             customBase: true
         },
-        'dbootstrap/Gallery': {}
+        'dbootstrap/Gallery': {
+            include: [
+                'dbootstrap/Gallery'
+            ]
+        }
     },
 
     staticHasFeatures: {
