@@ -501,10 +501,12 @@ ul.icons li .icon-large:before {
 .bootstrap .dijitTabStripSlideRightIcon:before {
   content: "\f054";
 }
-.icon-plus-sign:before {
+.icon-plus-sign:before,
+.bootstrap .dijitTreeExpandoClosed:before {
   content: "\f055";
 }
-.icon-minus-sign:before {
+.icon-minus-sign:before,
+.bootstrap .dijitTreeExpandoOpened:before {
   content: "\f056";
 }
 .icon-remove-sign:before {
@@ -806,7 +808,8 @@ ul.icons li .icon-large:before {
 .dijitIconSave:before {
   content: "\f0c7";
 }
-.icon-sign-blank:before {
+.icon-sign-blank:before,
+.bootstrap .dijitTreeExpandoLeaf:before {
   content: "\f0c8";
 }
 .icon-reorder:before {
@@ -923,7 +926,8 @@ ul.icons li .icon-large:before {
 .bootstrap .dijitArrowButtonInner:before,
 .bootstrap .dijitCheckBox:before,
 .bootstrap .dijitRadio:before,
-.bootstrap .dijitCalendarIncrementControl:before {
+.bootstrap .dijitCalendarIncrementControl:before,
+.bootstrap .dijitTreeExpando:before {
   font-family: FontAwesome;
   font-weight: normal;
   font-style: normal;
@@ -2143,6 +2147,30 @@ a:hover {
   100% {
     background-position: 0 0;
   }
+}
+.bootstrap .dijitTreeRow {
+  padding: 2px 0;
+}
+.bootstrap .dijitTreeRowSelected,
+.bootstrap .dijitTreeRowSelected.dijitTreeRowHover {
+  color: #fff;
+  background-color: #08c;
+}
+.bootstrap .dijitTreeRowHover {
+  color: #333;
+  background-color: #f5f5f5;
+}
+.bootstrap .dijitTreeExpando:before {
+  cursor: pointer;
+  opacity: 0.3;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=30);
+  filter: alpha(opacity=30);
+  padding-left: 4px;
+  padding-right: 2px;
+}
+.bootstrap .dijitTreeExpandoLeaf:before {
+  cursor: none;
+  visibility: hidden;
 }
 html,
 body {
