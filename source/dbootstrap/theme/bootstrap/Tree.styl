@@ -1,0 +1,23 @@
+// :copyright: Copyright 2012 Martin Pengelly-Phillips
+// :license: See LICENSE.txt.
+
+
+.bootstrap .dijitTreeExpando:before {
+    @extend .dijitIcon:before;
+    cursor: pointer;
+    opacity: 0.3;
+}
+
+.bootstrap .dijitTreeExpandoOpened:before {
+    @extend .icon-minus-sign:before;
+}
+
+.bootstrap .dijitTreeExpandoClosed:before {
+    @extend .icon-plus-sign:before;
+}
+
+.bootstrap .dijitTreeExpandoLeaf:before {
+    @extend .icon-sign-blank:before;
+    cursor: none;
+    visibility: hidden;
+}

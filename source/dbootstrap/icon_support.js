@@ -30,7 +30,8 @@ function(declare, lang, array, domConstruct, domClass, TemplatedMixin) {
         var reference_tag_names = ['IMG', 'INPUT'];
         var reference_classes = [
             'dijitIcon', 'dijitTabStripIcon', 'dijitMenuExpand',
-            'dijitCalendarIncrementControl', 'dijitArrowButtonInner'
+            'dijitCalendarIncrementControl', 'dijitArrowButtonInner',
+            'dijitTreeExpando'
         ];
         var reference_attributes = ['class', 'data-dojo-attach-point'];
 
