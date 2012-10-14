@@ -312,14 +312,16 @@ ul.icons li .icon-large:before {
 .dijitIconConfigure:before {
   content: "\f013";
 }
-.icon-trash:before {
+.icon-trash:before,
+.dijitEditorIconDelete:before {
   content: "\f014";
 }
 .icon-home:before {
   content: "\f015";
 }
 .icon-file:before,
-.dijitIconFile:before {
+.dijitIconFile:before,
+.dijitEditorIconNewPage:before {
   content: "\f016";
 }
 .icon-time:before {
@@ -343,7 +345,8 @@ ul.icons li .icon-large:before {
 .icon-play-circle:before {
   content: "\f01d";
 }
-.icon-repeat:before {
+.icon-repeat:before,
+.dijitEditorIconRedo:before {
   content: "\f01e";
 }
 .icon-refresh:before {
@@ -390,7 +393,8 @@ ul.icons li .icon-large:before {
   content: "\f02e";
 }
 .icon-print:before,
-.dijitIconPrint:before {
+.dijitIconPrint:before,
+.dijitEditorIconPrint:before {
   content: "\f02f";
 }
 .icon-camera:before {
@@ -399,10 +403,12 @@ ul.icons li .icon-large:before {
 .icon-font:before {
   content: "\f031";
 }
-.icon-bold:before {
+.icon-bold:before,
+.dijitEditorIconBold:before {
   content: "\f032";
 }
-.icon-italic:before {
+.icon-italic:before,
+.dijitEditorIconItalic:before {
   content: "\f033";
 }
 .icon-text-height:before {
@@ -411,31 +417,38 @@ ul.icons li .icon-large:before {
 .icon-text-width:before {
   content: "\f035";
 }
-.icon-align-left:before {
+.icon-align-left:before,
+.dijitEditorIconJustifyLeft:before {
   content: "\f036";
 }
-.icon-align-center:before {
+.icon-align-center:before,
+.dijitEditorIconJustifyCenter:before {
   content: "\f037";
 }
-.icon-align-right:before {
+.icon-align-right:before,
+.dijitEditorIconJustifyRight:before {
   content: "\f038";
 }
-.icon-align-justify:before {
+.icon-align-justify:before,
+.dijitEditorIconJustifyFull:before {
   content: "\f039";
 }
 .icon-list:before {
   content: "\f03a";
 }
-.icon-indent-left:before {
+.icon-indent-left:before,
+.dijitEditorIconOutdent:before {
   content: "\f03b";
 }
-.icon-indent-right:before {
+.icon-indent-right:before,
+.dijitEditorIconIndent:before {
   content: "\f03c";
 }
 .icon-facetime-video:before {
   content: "\f03d";
 }
-.icon-picture:before {
+.icon-picture:before,
+.dijitEditorIconInsertImage:before {
   content: "\f03e";
 }
 .icon-pencil:before {
@@ -530,7 +543,8 @@ ul.icons li .icon-large:before {
 .icon-ok-circle:before {
   content: "\f05d";
 }
-.icon-ban-circle:before {
+.icon-ban-circle:before,
+.dijitEditorIconCancel:before {
   content: "\f05e";
 }
 .icon-arrow-left:before,
@@ -777,14 +791,17 @@ ul.icons li .icon-large:before {
 .icon-briefcase:before {
   content: "\f0b1";
 }
-.icon-fullscreen:before {
+.icon-fullscreen:before,
+.dijitEditorIconFullScreen:before {
   content: "\f0b2";
 }
 .icon-group:before,
 .dijitIconUsers:before {
   content: "\f0c0";
 }
-.icon-link:before {
+.icon-link:before,
+.dijitEditorIconCreateLink:before,
+.dijitEditorIconUnlink:before {
   content: "\f0c1";
 }
 .icon-cloud:before {
@@ -794,18 +811,21 @@ ul.icons li .icon-large:before {
   content: "\f0c3";
 }
 .icon-cut:before,
-.dijitIconCut:before {
+.dijitIconCut:before,
+.dijitEditorIconCut:before {
   content: "\f0c4";
 }
 .icon-copy:before,
-.dijitIconCopy:before {
+.dijitIconCopy:before,
+.dijitEditorIconCopy:before {
   content: "\f0c5";
 }
 .icon-paper-clip:before {
   content: "\f0c6";
 }
 .icon-save:before,
-.dijitIconSave:before {
+.dijitIconSave:before,
+.dijitEditorIconSave:before {
   content: "\f0c7";
 }
 .icon-sign-blank:before,
@@ -815,20 +835,29 @@ ul.icons li .icon-large:before {
 .icon-reorder:before {
   content: "\f0c9";
 }
-.icon-list-ul:before {
+.icon-list-ul:before,
+.dijitEditorIconListBulletIndent:before,
+.dijitEditorIconListBulletOutdent:before,
+.dijitEditorIconInsertUnorderedList:before {
   content: "\f0ca";
 }
-.icon-list-ol:before {
+.icon-list-ol:before,
+.dijitEditorIconListNumIndent:before,
+.dijitEditorIconListNumOutdent:before,
+.dijitEditorIconInsertOrderedList:before {
   content: "\f0cb";
 }
-.icon-strikethrough:before {
+.icon-strikethrough:before,
+.dijitEditorIconStrikethrough:before {
   content: "\f0cc";
 }
-.icon-underline:before {
+.icon-underline:before,
+.dijitEditorIconUnderline:before {
   content: "\f0cd";
 }
 .icon-table:before,
-.dijitIconTable:before {
+.dijitIconTable:before,
+.dijitEditorIconInsertTable:before {
   content: "\f0ce";
 }
 .icon-magic:before {
@@ -888,7 +917,8 @@ ul.icons li .icon-large:before {
   content: "\f0e1";
 }
 .icon-undo:before,
-.dijitIconUndo:before {
+.dijitIconUndo:before,
+.dijitEditorIconUndo:before {
   content: "\f0e2";
 }
 .icon-legal:before {
@@ -913,7 +943,8 @@ ul.icons li .icon-large:before {
   content: "\f0e9";
 }
 .icon-paste:before,
-.dijitIconPaste:before {
+.dijitIconPaste:before,
+.dijitEditorIconPaste:before {
   content: "\f0ea";
 }
 .icon-user-md:before {
@@ -2171,6 +2202,49 @@ a:hover {
 .bootstrap .dijitTreeExpandoLeaf:before {
   cursor: none;
   visibility: hidden;
+}
+.bootstrap .dijitTreeIcon {
+  width: 1em;
+  text-align: center;
+}
+.bootstrap .dijitToolbar {
+  overflow: visible;
+  margin-bottom: 20px;
+  color: #555;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff), color-stop(1, #f2f2f2));
+  background-image: -webkit-linear-gradient(top, #fff 0%, #f2f2f2 100%);
+  background-image: -moz-linear-gradient(top, #fff 0%, #f2f2f2 100%);
+  background-image: -o-linear-gradient(top, #fff 0%, #f2f2f2 100%);
+  background-image: -ms-linear-gradient(top, #fff 0%, #f2f2f2 100%);
+  background-image: linear-gradient(top, #fff 0%, #f2f2f2 100%);
+  border-bottom: 1px solid #d5d5d5;
+  -webkit-box-shadow: 0 1px 4px rgba(0,0,0,0.065);
+  box-shadow: 0 1px 4px rgba(0,0,0,0.065);
+  padding: 4px;
+}
+.bootstrap .dijitToolbar .dijitButton,
+.bootstrap .dijitToolbar .dijitDropDownButton,
+.bootstrap .dijitToolbar .dijitComboButton,
+.bootstrap .dijitToolbar .dijitToggleButton {
+  margin-left: 2px;
+  margin-right: 2px;
+}
+.bootstrap .dijitToolbar .dijitButton .dijitButtonNode,
+.bootstrap .dijitToolbar .dijitDropDownButton .dijitButtonNode,
+.bootstrap .dijitToolbar .dijitComboButton .dijitButtonNode,
+.bootstrap .dijitToolbar .dijitToggleButton .dijitButtonNode {
+  padding: 0px;
+}
+.bootstrap .dijitToolbar .dijitButtonContents {
+  padding: 4px 8px;
+}
+.bootstrap .dijitEditor {
+  border: 1px solid #d5d5d5;
+}
+.bootstrap .dijitEditorDisabled {
+  opacity: 0.65;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=65);
+  filter: alpha(opacity=65);
 }
 html,
 body {
