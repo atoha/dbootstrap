@@ -1,0 +1,23 @@
+// :copyright: Copyright 2012 Martin Pengelly-Phillips
+// :license: See LICENSE.txt.
+
+.bootstrap .dijitSelect {
+    border: none;
+    color: $gray;
+    transition: border linear .2s, box-shadow linear .2s;
+    background-color: $inputBackground;
+}
+
+.bootstrap .dijitSelect .dijitButtonNode {
+    @extend .bootstrap .dijitComboBox .dijitButtonNode;
+}
+
+.bootstrap .dijitSelect .dijitButtonNode.dijitArrowButton {
+    @extend .bootstrap .dijitComboBox .dijitButtonNode.dijitArrowButton;
+}
+
+.bootstrap .dijitSelect .dijitButtonContents {
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    border-radius: $inputBorderRadius 0 0 $inputBorderRadius;
+    border: 1px solid $inputBorder;
+}
