@@ -10,6 +10,7 @@ define(
 
     'dojo/text!./template/Gallery.html',
     'dojo/text!./data/continent.json',
+    'dojo/text!./data/state.json',
 
     'dojo/query',
     'dojo/_base/window',
@@ -71,7 +72,7 @@ define(
     'dijit/Dialog'
 ],
 
-function(declare, json, template, continentData,
+function(declare, json, template, continentData, stateData,
          query, window, array, functional, domConstruct,
          TemplatedMixin, WidgetsInTemplateMixin,
          BorderContainer, Observable, Memory, ObjectStoreModel) {
@@ -88,7 +89,10 @@ function(declare, json, template, continentData,
         constructor: function(options) {
             declare.safeMixin(this, options);
 
-            this.stateStore = Memory();
+            this.stateStore = Memory({
+                data: json.parse(stateData)
+            });
+
             this.continentStore = Memory({
                 data: json.parse(continentData)
             });
