@@ -882,12 +882,10 @@ ul.icons li .icon-large:before {
   content: "\f0d6";
 }
 .icon-caret-down:before,
-.bootstrap .dijitArrowButtonInner:before,
 .bootstrap .dijitArrowButtonInner:before {
   content: "\f0d7";
 }
 .icon-caret-up:before,
-.bootstrap .dijitUpArrowButton .dijitArrowButtonInner:before,
 .bootstrap .dijitUpArrowButton .dijitArrowButtonInner:before {
   content: "\f0d8";
 }
@@ -953,7 +951,6 @@ ul.icons li .icon-large:before {
 .dijitIcon:before,
 .bootstrap .dijitMenuArrowCell .dijitMenuExpand:before,
 .bootstrap .dijitTabStripIcon:before,
-.bootstrap .dijitArrowButtonInner:before,
 .bootstrap .dijitArrowButtonInner:before,
 .bootstrap .dijitCheckBox:before,
 .bootstrap .dijitRadio:before,
@@ -1309,32 +1306,30 @@ a:hover {
 .bootstrap .dijitAccordionTitleHover {
   color: #0074ad;
 }
-.bootstrap .well,
-.bootstrap fieldset {
-  min-height: 20px;
-  padding: 19px;
-  margin-bottom: 20px;
-  background-color: #f5f5f5;
-  border: 1px solid #e4e4e4;
-  -webkit-border-radius: 4px;
-  border-radius: 4px;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.05);
-  box-shadow: inset 0 1px 1px rgba(0,0,0,0.05);
+* {
+  outline: none;
 }
-.bootstrap .well blockquote,
-.bootstrap fieldset blockquote {
-  border-color: #ddd;
-  border-color: rgba(0,0,0,0.15);
+body {
+  margin: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: #333;
+  background-color: #fff;
 }
-.bootstrap .well-large {
-  padding: 24px;
-  -webkit-border-radius: 6px;
-  border-radius: 6px;
+a {
+  color: #08c;
+  text-decoration: none;
 }
-.bootstrap .well-small {
-  padding: 9px;
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
+a:hover {
+  color: #0074ad;
+  text-decoration: underline;
+}
+.bootstrap .dijitReadOnly *,
+.bootstrap .dijitDisabled *,
+.bootstrap .dijitReadOnly,
+.bootstrap .dijitDisabled {
+  cursor: not-allowed;
 }
 .bootstrap .dijitButtonNode {
   border: none;
@@ -1343,7 +1338,6 @@ a:hover {
   vertical-align: baseline;
 }
 .bootstrap .dijitButtonNode .dijitIcon,
-.bootstrap .dijitArrowButtonInner,
 .bootstrap .dijitArrowButtonInner {
   line-height: 13px;
 }
@@ -1469,7 +1463,6 @@ a:hover {
 .bootstrap .dijitComboButton .dijitButtonNodeHover,
 .bootstrap .dijitComboButton .dijitDownArrowButtonHover,
 .bootstrap .dijitToggleButtonHover .dijitButtonNode,
-.bootstrap .dijitDropDownButtonActive .dijitButtonNode,
 .bootstrap .dijitDropDownButtonActive .dijitButtonNode {
   text-decoration: none;
   background-position: 0 -15px;
@@ -1483,7 +1476,6 @@ a:hover {
 .bootstrap .dijitComboButton .dijitButtonNodeActive,
 .bootstrap .dijitToggleButtonActive .dijitButtonNode,
 .bootstrap .dijitToggleButtonChecked .dijitButtonNode,
-.bootstrap .dijitComboButton .dijitArrowButton.dijitHasDropDownOpen,
 .bootstrap .dijitComboButton .dijitArrowButton.dijitHasDropDownOpen {
   background-image: none;
   outline: 0;
@@ -1537,69 +1529,32 @@ a:hover {
 .bootstrap table.dijitComboButton {
   border-collapse: separate;
 }
-.bootstrap label {
-  vertical-align: middle;
+.bootstrap .well,
+.bootstrap fieldset {
+  min-height: 20px;
+  padding: 19px;
+  margin-bottom: 20px;
+  background-color: #f5f5f5;
+  border: 1px solid #e4e4e4;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.05);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,0.05);
 }
-.bootstrap .dijitTextBox {
-  display: inline-block;
-  font-size: 14px;
-  color: #555;
+.bootstrap .well blockquote,
+.bootstrap fieldset blockquote {
+  border-color: #ddd;
+  border-color: rgba(0,0,0,0.15);
+}
+.bootstrap .well-large {
+  padding: 24px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+}
+.bootstrap .well-small {
+  padding: 9px;
   -webkit-border-radius: 3px;
   border-radius: 3px;
-  background-color: #fff;
-  border: 1px solid #ccc;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
-  box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
-  -webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
-  -moz-transition: border linear 0.2s, box-shadow linear 0.2s;
-  -o-transition: border linear 0.2s, box-shadow linear 0.2s;
-  -ms-transition: border linear 0.2s, box-shadow linear 0.2s;
-  transition: border linear 0.2s, box-shadow linear 0.2s;
-}
-.bootstrap .dijitTextBoxFocused {
-  border-color: rgba(82,168,236,0.8);
-  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075), 0 0 8px rgba(82,168,236,0.6);
-  box-shadow: inset 0 1px 1px rgba(0,0,0,0.075), 0 0 8px rgba(82,168,236,0.6);
-}
-.bootstrap .dijitInputContainer {
-  padding: 6px 6px;
-}
-.bootstrap .dijitPlaceHolder {
-  font-style: normal;
-  padding: 4px 6px;
-}
-.bootstrap .dijitTextBoxDisabled,
-.bootstrap .dijitSelect.dijitSelectDisabled .dijitButtonContents {
-  background-image: none;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  background-color: #eee;
-}
-.bootstrap .dijitTextArea {
-  padding: 4px 6px;
-  line-height: 1.5;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-.bootstrap .dijitComboBox input.dijitArrowButtonInner {
-  display: none;
-}
-.bootstrap .dijitComboBoxDisabled .dijitButtonNode,
-.bootstrap .dijitSpinnerDisabled .dijitButtonNode,
-.bootstrap .dijitSelectDisabled .dijitButtonNode {
-  background-color: #eee;
-}
-.bootstrap .dijitTextBoxError {
-  color: #b94a48;
-  border-color: #b94a48;
-}
-.bootstrap .dijitTextBoxError.dijitTextBoxFocused {
-  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075), 0 0 8px #c76e6d;
-  box-shadow: inset 0 1px 1px rgba(0,0,0,0.075), 0 0 8px #c76e6d;
-}
-.bootstrap .dijitValidationContainer {
-  display: none;
 }
 .bootstrap .dijitButtonNode {
   border: none;
@@ -1615,6 +1570,7 @@ a:hover {
 .bootstrap .dijitDropDownButton .dijitButtonNode,
 .bootstrap .dijitComboButton .dijitButtonNode,
 .bootstrap .dijitToggleButton .dijitButtonNode,
+.bootstrap .dijitComboBox .dijitButtonNode,
 .bootstrap .dijitSpinnerButtonContainer.dijitButtonNode,
 .bootstrap .dijitSelect .dijitButtonNode {
   display: block;
@@ -1755,6 +1711,7 @@ a:hover {
 .bootstrap .dijitDropDownButtonDisabled .dijitButtonNode,
 .bootstrap .dijitComboButtonDisabled .dijitButtonNode,
 .bootstrap .dijitToggleButtonDisabled .dijitButtonNode,
+.bootstrap .dijitComboBoxDisabled .dijitButtonNode,
 .bootstrap .dijitSpinnerDisabled .dijitButtonNode,
 .bootstrap .dijitSelectDisabled .dijitButtonNode {
   cursor: not-allowed;
@@ -1782,6 +1739,7 @@ a:hover {
   display: table-cell;
 }
 .bootstrap .dijitComboButton .dijitArrowButton,
+.bootstrap .dijitComboBox .dijitButtonNode.dijitArrowButton,
 .bootstrap .dijitSpinnerButtonContainer.dijitButtonNode,
 .bootstrap .dijitSelect .dijitButtonNode.dijitArrowButton {
   border-left-width: 0;
@@ -1795,6 +1753,70 @@ a:hover {
 }
 .bootstrap table.dijitComboButton {
   border-collapse: separate;
+}
+.bootstrap label {
+  vertical-align: middle;
+}
+.bootstrap .dijitTextBox {
+  display: inline-block;
+  font-size: 14px;
+  color: #555;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+  -webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
+  -moz-transition: border linear 0.2s, box-shadow linear 0.2s;
+  -o-transition: border linear 0.2s, box-shadow linear 0.2s;
+  -ms-transition: border linear 0.2s, box-shadow linear 0.2s;
+  transition: border linear 0.2s, box-shadow linear 0.2s;
+}
+.bootstrap .dijitTextBoxFocused {
+  border-color: rgba(82,168,236,0.8);
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075), 0 0 8px rgba(82,168,236,0.6);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,0.075), 0 0 8px rgba(82,168,236,0.6);
+}
+.bootstrap .dijitInputContainer {
+  padding: 6px 6px;
+}
+.bootstrap .dijitPlaceHolder {
+  font-style: normal;
+  padding: 4px 6px;
+}
+.bootstrap .dijitTextBoxDisabled,
+.bootstrap .dijitSelect.dijitSelectDisabled .dijitButtonContents {
+  background-image: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background-color: #eee;
+}
+.bootstrap .dijitTextArea {
+  padding: 4px 6px;
+  line-height: 1.5;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.bootstrap .dijitComboBox input.dijitArrowButtonInner {
+  display: none;
+}
+.bootstrap .dijitComboBoxDisabled .dijitButtonNode,
+.bootstrap .dijitSpinnerDisabled .dijitButtonNode,
+.bootstrap .dijitSelectDisabled .dijitButtonNode {
+  background-color: #eee;
+}
+.bootstrap .dijitTextBoxError {
+  color: #b94a48;
+  border-color: #b94a48;
+}
+.bootstrap .dijitTextBoxError.dijitTextBoxFocused {
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075), 0 0 8px #c76e6d;
+  box-shadow: inset 0 1px 1px rgba(0,0,0,0.075), 0 0 8px #c76e6d;
+}
+.bootstrap .dijitValidationContainer {
+  display: none;
 }
 .bootstrap .dijitCheckBox,
 .bootstrap .dijitRadio {
@@ -1944,6 +1966,291 @@ a:hover {
   opacity: 0.65;
   -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=65);
   filter: alpha(opacity=65);
+}
+.bootstrap .well,
+.bootstrap fieldset {
+  min-height: 20px;
+  padding: 19px;
+  margin-bottom: 20px;
+  background-color: #f5f5f5;
+  border: 1px solid #e4e4e4;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.05);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,0.05);
+}
+.bootstrap .well blockquote,
+.bootstrap fieldset blockquote {
+  border-color: #ddd;
+  border-color: rgba(0,0,0,0.15);
+}
+.bootstrap .well-large {
+  padding: 24px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+}
+.bootstrap .well-small {
+  padding: 9px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+.bootstrap .dijitButtonNode {
+  border: none;
+}
+.bootstrap .dijitButtonNode * {
+  vertical-align: baseline;
+}
+.bootstrap .dijitButtonNode .dijitIcon,
+.bootstrap .dijitArrowButtonInner {
+  line-height: 13px;
+}
+.bootstrap .dijitButton .dijitButtonNode,
+.bootstrap .dijitDropDownButton .dijitButtonNode,
+.bootstrap .dijitComboButton .dijitButtonNode,
+.bootstrap .dijitToggleButton .dijitButtonNode,
+.bootstrap .dijitComboBox .dijitButtonNode,
+.bootstrap .dijitSelect .dijitButtonNode {
+  display: block;
+  padding: 6px 14px;
+  margin-bottom: 0;
+  font-size: 14px;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  color: #333;
+  text-shadow: 0 1px 1px rgba(255,255,255,0.75);
+  background-color: #e6e6e6;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff), color-stop(1, #e6e6e6));
+  background-image: -webkit-linear-gradient(top, #fff 0%, #e6e6e6 100%);
+  background-image: -moz-linear-gradient(top, #fff 0%, #e6e6e6 100%);
+  background-image: -o-linear-gradient(top, #fff 0%, #e6e6e6 100%);
+  background-image: -ms-linear-gradient(top, #fff 0%, #e6e6e6 100%);
+  background-image: linear-gradient(top, #fff 0%, #e6e6e6 100%);
+  background-repeat: repeat-x;
+  border-color: #e6e6e6 #e6e6e6 #c4c4c4;
+  border-color: rgba(0,0,0,0.1) rgba(0,0,0,0.1) rgba(0,0,0,0.25);
+  border: 1px solid #bbb;
+  border-bottom-color: #a8a8a8;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,0.2), 0 1px 2px rgba(0,0,0,0.05);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.2), 0 1px 2px rgba(0,0,0,0.05);
+}
+.bootstrap .primary .dijitButtonNode {
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
+  background-color: #04c;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #08c), color-stop(1, #04c));
+  background-image: -webkit-linear-gradient(top, #08c 0%, #04c 100%);
+  background-image: -moz-linear-gradient(top, #08c 0%, #04c 100%);
+  background-image: -o-linear-gradient(top, #08c 0%, #04c 100%);
+  background-image: -ms-linear-gradient(top, #08c 0%, #04c 100%);
+  background-image: linear-gradient(top, #08c 0%, #04c 100%);
+  background-repeat: repeat-x;
+  border-color: #04c #04c #003aad;
+  border-color: rgba(0,0,0,0.1) rgba(0,0,0,0.1) rgba(0,0,0,0.25);
+}
+.bootstrap .warning .dijitButtonNode {
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
+  background-color: #f89406;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #faa42b), color-stop(1, #f89406));
+  background-image: -webkit-linear-gradient(top, #faa42b 0%, #f89406 100%);
+  background-image: -moz-linear-gradient(top, #faa42b 0%, #f89406 100%);
+  background-image: -o-linear-gradient(top, #faa42b 0%, #f89406 100%);
+  background-image: -ms-linear-gradient(top, #faa42b 0%, #f89406 100%);
+  background-image: linear-gradient(top, #faa42b 0%, #f89406 100%);
+  background-repeat: repeat-x;
+  border-color: #f89406 #f89406 #d37e05;
+  border-color: rgba(0,0,0,0.1) rgba(0,0,0,0.1) rgba(0,0,0,0.25);
+}
+.bootstrap .danger .dijitButtonNode {
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
+  background-color: #bd362f;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #ee5f5b), color-stop(1, #bd362f));
+  background-image: -webkit-linear-gradient(top, #ee5f5b 0%, #bd362f 100%);
+  background-image: -moz-linear-gradient(top, #ee5f5b 0%, #bd362f 100%);
+  background-image: -o-linear-gradient(top, #ee5f5b 0%, #bd362f 100%);
+  background-image: -ms-linear-gradient(top, #ee5f5b 0%, #bd362f 100%);
+  background-image: linear-gradient(top, #ee5f5b 0%, #bd362f 100%);
+  background-repeat: repeat-x;
+  border-color: #bd362f #bd362f #a12e28;
+  border-color: rgba(0,0,0,0.1) rgba(0,0,0,0.1) rgba(0,0,0,0.25);
+}
+.bootstrap .success .dijitButtonNode {
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
+  background-color: #51a351;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #62c462), color-stop(1, #51a351));
+  background-image: -webkit-linear-gradient(top, #62c462 0%, #51a351 100%);
+  background-image: -moz-linear-gradient(top, #62c462 0%, #51a351 100%);
+  background-image: -o-linear-gradient(top, #62c462 0%, #51a351 100%);
+  background-image: -ms-linear-gradient(top, #62c462 0%, #51a351 100%);
+  background-image: linear-gradient(top, #62c462 0%, #51a351 100%);
+  background-repeat: repeat-x;
+  border-color: #51a351 #51a351 #458b45;
+  border-color: rgba(0,0,0,0.1) rgba(0,0,0,0.1) rgba(0,0,0,0.25);
+}
+.bootstrap .info .dijitButtonNode {
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
+  background-color: #2f96b4;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #5bc0de), color-stop(1, #2f96b4));
+  background-image: -webkit-linear-gradient(top, #5bc0de 0%, #2f96b4 100%);
+  background-image: -moz-linear-gradient(top, #5bc0de 0%, #2f96b4 100%);
+  background-image: -o-linear-gradient(top, #5bc0de 0%, #2f96b4 100%);
+  background-image: -ms-linear-gradient(top, #5bc0de 0%, #2f96b4 100%);
+  background-image: linear-gradient(top, #5bc0de 0%, #2f96b4 100%);
+  background-repeat: repeat-x;
+  border-color: #2f96b4 #2f96b4 #287f99;
+  border-color: rgba(0,0,0,0.1) rgba(0,0,0,0.1) rgba(0,0,0,0.25);
+}
+.bootstrap .inverse .dijitButtonNode {
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
+  background-color: #222;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #444), color-stop(1, #222));
+  background-image: -webkit-linear-gradient(top, #444 0%, #222 100%);
+  background-image: -moz-linear-gradient(top, #444 0%, #222 100%);
+  background-image: -o-linear-gradient(top, #444 0%, #222 100%);
+  background-image: -ms-linear-gradient(top, #444 0%, #222 100%);
+  background-image: linear-gradient(top, #444 0%, #222 100%);
+  background-repeat: repeat-x;
+  border-color: #222 #222 #1d1d1d;
+  border-color: rgba(0,0,0,0.1) rgba(0,0,0,0.1) rgba(0,0,0,0.25);
+}
+.bootstrap .dijitButtonHover .dijitButtonNode,
+.bootstrap .dijitDropDownButtonHover .dijitButtonNode,
+.bootstrap .dijitComboButton .dijitButtonNodeHover,
+.bootstrap .dijitComboButton .dijitDownArrowButtonHover,
+.bootstrap .dijitToggleButtonHover .dijitButtonNode,
+.bootstrap .dijitDropDownButtonActive .dijitButtonNode {
+  text-decoration: none;
+  background-position: 0 -15px;
+  -webkit-transition: background-position 0.1s linear;
+  -moz-transition: background-position 0.1s linear;
+  -o-transition: background-position 0.1s linear;
+  -ms-transition: background-position 0.1s linear;
+  transition: background-position 0.1s linear;
+}
+.bootstrap .dijitButtonActive .dijitButtonNode,
+.bootstrap .dijitComboButton .dijitButtonNodeActive,
+.bootstrap .dijitToggleButtonActive .dijitButtonNode,
+.bootstrap .dijitToggleButtonChecked .dijitButtonNode,
+.bootstrap .dijitComboButton .dijitArrowButton.dijitHasDropDownOpen {
+  background-image: none;
+  outline: 0;
+  -webkit-box-shadow: inset 0 2px 4px rgba(0,0,0,0.15), 0 1px 2px rgba(0,0,0,0.05);
+  box-shadow: inset 0 2px 4px rgba(0,0,0,0.15), 0 1px 2px rgba(0,0,0,0.05);
+}
+.bootstrap .dijitButtonDisabled .dijitButtonNode,
+.bootstrap .dijitDropDownButtonDisabled .dijitButtonNode,
+.bootstrap .dijitComboButtonDisabled .dijitButtonNode,
+.bootstrap .dijitToggleButtonDisabled .dijitButtonNode,
+.bootstrap .dijitComboBoxDisabled .dijitButtonNode,
+.bootstrap .dijitSelectDisabled .dijitButtonNode {
+  cursor: not-allowed;
+  background-image: none;
+  opacity: 0.65;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=65);
+  filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.bootstrap .dijitToggleButtonDisabled.dijitToggleButtonChecked .dijitButtonNode {
+  -webkit-box-shadow: inset 0 2px 4px rgba(0,0,0,0.15), 0 1px 2px rgba(0,0,0,0.05);
+  box-shadow: inset 0 2px 4px rgba(0,0,0,0.15), 0 1px 2px rgba(0,0,0,0.05);
+}
+.bootstrap .dijitButtonText {
+  padding: 0 0.3em;
+  text-align: center;
+}
+.bootstrap .dijitArrowButtonInner {
+  height: auto;
+  width: auto;
+}
+.bootstrap .dijitComboButton td.dijitStretch,
+.bootstrap .dijitComboButton td.dijitArrowButton {
+  display: table-cell;
+}
+.bootstrap .dijitComboButton .dijitArrowButton,
+.bootstrap .dijitComboBox .dijitButtonNode.dijitArrowButton,
+.bootstrap .dijitSelect .dijitButtonNode.dijitArrowButton {
+  border-left-width: 0;
+  padding: 6px 10px;
+  -webkit-border-radius: 0 4px 4px 0;
+  border-radius: 0 4px 4px 0;
+}
+.bootstrap .dijitComboButton .dijitStretch {
+  -webkit-border-radius: 4px 0 0 4px;
+  border-radius: 4px 0 0 4px;
+}
+.bootstrap table.dijitComboButton {
+  border-collapse: separate;
+}
+.bootstrap label {
+  vertical-align: middle;
+}
+.bootstrap .dijitTextBox {
+  display: inline-block;
+  font-size: 14px;
+  color: #555;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+  -webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
+  -moz-transition: border linear 0.2s, box-shadow linear 0.2s;
+  -o-transition: border linear 0.2s, box-shadow linear 0.2s;
+  -ms-transition: border linear 0.2s, box-shadow linear 0.2s;
+  transition: border linear 0.2s, box-shadow linear 0.2s;
+}
+.bootstrap .dijitTextBoxFocused {
+  border-color: rgba(82,168,236,0.8);
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075), 0 0 8px rgba(82,168,236,0.6);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,0.075), 0 0 8px rgba(82,168,236,0.6);
+}
+.bootstrap .dijitInputContainer {
+  padding: 6px 6px;
+}
+.bootstrap .dijitPlaceHolder {
+  font-style: normal;
+  padding: 4px 6px;
+}
+.bootstrap .dijitTextBoxDisabled,
+.bootstrap .dijitSelect.dijitSelectDisabled .dijitButtonContents {
+  background-image: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background-color: #eee;
+}
+.bootstrap .dijitTextArea {
+  padding: 4px 6px;
+  line-height: 1.5;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.bootstrap .dijitComboBox input.dijitArrowButtonInner {
+  display: none;
+}
+.bootstrap .dijitComboBoxDisabled .dijitButtonNode,
+.bootstrap .dijitSelectDisabled .dijitButtonNode {
+  background-color: #eee;
+}
+.bootstrap .dijitTextBoxError {
+  color: #b94a48;
+  border-color: #b94a48;
+}
+.bootstrap .dijitTextBoxError.dijitTextBoxFocused {
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075), 0 0 8px #c76e6d;
+  box-shadow: inset 0 1px 1px rgba(0,0,0,0.075), 0 0 8px #c76e6d;
+}
+.bootstrap .dijitValidationContainer {
+  display: none;
 }
 .bootstrap .dijitSelect {
   border: none;
