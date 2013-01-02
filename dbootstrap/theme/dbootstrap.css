@@ -1781,6 +1781,15 @@ a:hover {
 .bootstrap .dijitInputContainer {
   padding: 6px 6px;
 }
+.dj_webkit .bootstrap .dijitInputContainer {
+  padding: 4px 4px;
+}
+.dj_webkit .bootstrap .dijitInputField .dijitInputInner {
+  height: 20px;
+}
+.dj_webkit .bootstrap .dijitInline .dijitInputField .dijitInputInner {
+  height: inherit;
+}
 .bootstrap .dijitPlaceHolder {
   font-style: normal;
   padding: 4px 6px;
@@ -1817,6 +1826,9 @@ a:hover {
 }
 .bootstrap .dijitValidationContainer {
   display: none;
+}
+.dj_webkit .bootstrap .dijitSpinnerButtonContainer.dijitButtonNode {
+  padding: 4px 10px !important;
 }
 .bootstrap .dijitCheckBox,
 .bootstrap .dijitRadio {
@@ -2215,6 +2227,15 @@ a:hover {
 }
 .bootstrap .dijitInputContainer {
   padding: 6px 6px;
+}
+.dj_webkit .bootstrap .dijitInputContainer {
+  padding: 4px 4px;
+}
+.dj_webkit .bootstrap .dijitInputField .dijitInputInner {
+  height: 20px;
+}
+.dj_webkit .bootstrap .dijitInline .dijitInputField .dijitInputInner {
+  height: inherit;
 }
 .bootstrap .dijitPlaceHolder {
   font-style: normal;
