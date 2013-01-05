@@ -7,7 +7,7 @@ BASE_DIRECTORY=$(cd $(dirname $0) && pwd)
 SOURCE_DIRECTORY="$BASE_DIRECTORY/source"
 TOOLS_DIRECTORY="$SOURCE_DIRECTORY/util/buildscripts"
 BUILD_DIRECTORY="$BASE_DIRECTORY/build"
-LOADER_MODULE="dbootstrap/entry_point"
+LOADER_MODULE="gallery/entry_point"
 LOADER_CONFIG="$SOURCE_DIRECTORY/$LOADER_MODULE.js"
 PROFILE="$BASE_DIRECTORY/resource/profile.js"
 
@@ -51,7 +51,13 @@ node ../../dojo/dojo.js\
 
 cp -R $SOURCE_DIRECTORY/nib $BUILD_DIRECTORY/
 stylus --include "$BUILD_DIRECTORY/nib/lib"\
-    "$BUILD_DIRECTORY/dbootstrap/theme/dbootstrap.styl"
+    "$BUILD_DIRECTORY/gallery/theme/gallery.styl"
+
+stylus --include "$BUILD_DIRECTORY/nib/lib"\
+    --include "$BUILD_DIRECTORY/dbootstrap/theme/bootstrap"\
+    < "$BUILD_DIRECTORY/dbootstrap/theme/bootstrap/index.styl"\
+    > "$BUILD_DIRECTORY/dbootstrap/theme/bootstrap/bootstrap.css"
+
 
 cd "$BASE_DIRECTORY"
 

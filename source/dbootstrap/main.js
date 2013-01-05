@@ -4,18 +4,13 @@
 */
 
 define([
-    'require'
+    'xstyle/css!./theme/bootstrap/bootstrap.css',
+    './icon_support'
 ],
 
-function (require) {
-    var app = {};
-
-    require(['./icon_support', './Gallery', 'dojo/domReady!'],
-        function (icon_support, Gallery) {
-            app = new Gallery();
-            app.placeAt(document.body);
-            app.startup();
-        }
-    );
+function (TemplatedMixin) {
+    return {
+        'TemplatedMixin': TemplatedMixin
+    };
 });
 

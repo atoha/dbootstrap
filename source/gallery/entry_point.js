@@ -13,9 +13,10 @@ require({
         'dgrid',
         'put-selector',
         'xstyle',
-        'dbootstrap'
+        'dbootstrap',
+        'gallery'
     ],
 
     cache: {}
 
-}, ['dbootstrap']);
+}, ['gallery']);
