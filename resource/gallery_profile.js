@@ -18,15 +18,20 @@ var profile = {
             include: [
                 'dojo/dojo',
                 'dojo/i18n',
-                'dojo/domReady',
-                'gallery/main',
-                'gallery/entry_point'
+                'dojo/domReady'
             ],
             boot: true,
             customBase: true
         },
-        'gallery/Gallery': {
+        'dbootstrap/main': {
             include: [
+                'dbootstrap/main',
+            ],
+        },
+        'gallery/main': {
+            include: [
+                'gallery/main',
+                'gallery/entry_point',
                 'gallery/Gallery'
             ]
         }
