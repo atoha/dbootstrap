@@ -145,6 +145,21 @@ def main(arguments=None):
 
         if target == 'gallery':
             keepers = [
+                '*index.html',
+
+                # Gallery
+                '*gallery/main.js',
+                '*gallery/theme/gallery.css',
+
+                # Dojo
+                '*dojo/dojo.js',
+
+                # Dbootstrap theme
+                '*dbootstrap/main.js',
+                '*package.json',
+                '*bootstrap.css',
+                '*bootstrap/dijit.css',
+                '*font/fontawesome-webfont*'
             ]
 
         elif target == 'theme':
