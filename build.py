@@ -149,12 +149,12 @@ def main(arguments=None):
 
         elif target == 'theme':
             keepers = [
-            '*dbootstrap/main.js',
-            '*package.json',
-            '*bootstrap.css',
-            '*bootstrap/dijit.css',
-            '*font/fontawesome-webfont*'
-        ]
+                '*dbootstrap/main.js',
+                '*package.json',
+                '*bootstrap.css',
+                '*bootstrap/dijit.css',
+                '*font/fontawesome-webfont*'
+            ]
 
         for path, directories, files in os.walk(build_path, topdown=False):
             for name in files:
