@@ -11,6 +11,7 @@ import logging
 import subprocess
 import Queue
 import threading
+from fnmatch import fnmatch
 
 
 def main(arguments=None):
@@ -148,19 +149,19 @@ def main(arguments=None):
 
         elif target == 'theme':
             keepers = [
-            'dbootstrap/main.js',
-            'package.json',
-            'bootstrap.css',
-            'bootstrap/dijit.css',
-            'font/fontawesome-webfont'
+            '*dbootstrap/main.js',
+            '*package.json',
+            '*bootstrap.css',
+            '*bootstrap/dijit.css',
+            '*font/fontawesome-webfont*'
         ]
 
         for path, directories, files in os.walk(build_path, topdown=False):
             for name in files:
                 keep = False
                 filepath = os.path.join(path, name)
-                for keeper in keepers:
-                    if keeper in filepath:
+                for pattern in keepers:
+                    if fnmatch(filepath, pattern):
                         keep = True
                         break
 
