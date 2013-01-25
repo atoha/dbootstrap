@@ -26,6 +26,7 @@ var profile = {
         'dbootstrap/main': {
             include: [
                 'dbootstrap/main',
+                'xstyle/load-css'
             ],
         },
         'gallery/main': {
