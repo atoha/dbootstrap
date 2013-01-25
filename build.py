@@ -22,7 +22,7 @@ def main(arguments=None):
 
     # Parse arguments
     parser = argparse.ArgumentParser(description='Dbootstrap build.')
-    parser.add_argument('target', choices=['theme', 'gallery'],
+    parser.add_argument('target', choices=['theme', 'demo'],
                         help='Target to build.')
     parser.add_argument('--no-prune', action='store_true',
                         help='If set, prevent removal of unnecessary files.')
@@ -75,7 +75,7 @@ def main(arguments=None):
     )
     temporary_files.add(bootstrap_css_path)
 
-    if target == 'gallery':
+    if target == 'demo':
         result = execute([
             'stylus', '--include', nib_lib_path,
             os.path.join(source_path, 'gallery', 'theme', 'gallery.styl')
@@ -143,7 +143,7 @@ def main(arguments=None):
             log.debug('Removing {0}'.format(filepath))
             os.remove(filepath)
 
-        if target == 'gallery':
+        if target == 'demo':
             for package in ('dojox', 'dgrid', 'put-selector',
                             'xstyle'):
                 package_path = os.path.join(build_path, package)
@@ -156,7 +156,7 @@ def main(arguments=None):
                 log.debug('Removing {0}'.format(package_path))
                 shutil.rmtree(package_path)
 
-        if target == 'gallery':
+        if target == 'demo':
             keepers = [
                 '*index.html',
                 '*nls*',
