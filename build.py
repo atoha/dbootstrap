@@ -12,6 +12,7 @@ import subprocess
 import Queue
 import threading
 from fnmatch import fnmatch
+import re
 
 
 def main(arguments=None):
@@ -103,10 +104,22 @@ def main(arguments=None):
         # Copy html index file and alter to run from built files instead of
         # source.
         log.info('Copying and modifying HTML index file.')
+        index_file = os.path.join(build_path, 'index.html')
         shutil.copy(
             os.path.join(source_path, 'index.html'),
-            os.path.join(build_path, 'index.html'),
+            index_file
         )
+        with open(index_file, 'r+') as file:
+            contents = file.read()
+            contents = re.sub('isDebug: 1', 'deps: ["gallery"]', contents)
+            contents = re.sub(
+                '.+src=\'gallery/entry_point\.js\'.+\n.+\</script\>.*\n',
+                '',
+                contents
+            )
+            file.seek(0)
+            file.truncate()
+            file.write(contents)
 
     elif target == 'theme':
         log.info('Building Javascript packages.')
