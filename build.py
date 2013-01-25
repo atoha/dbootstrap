@@ -144,7 +144,7 @@ def main(arguments=None):
             os.remove(filepath)
 
         if target == 'gallery':
-            for package in ('dijit', 'dojox', 'dgrid', 'put-selector',
+            for package in ('dojox', 'dgrid', 'put-selector',
                             'xstyle'):
                 package_path = os.path.join(build_path, package)
                 log.debug('Removing {0}'.format(package_path))
@@ -159,6 +159,7 @@ def main(arguments=None):
         if target == 'gallery':
             keepers = [
                 '*index.html',
+                '*nls*',
 
                 # Gallery
                 '*gallery/main.js',
