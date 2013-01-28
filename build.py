@@ -167,6 +167,8 @@ def main(arguments=None):
 
                 # Dojo
                 '*dojo/dojo.js',
+                '*dojo/resources/blank.gif',
+                '*dijit/themes/a11y/indeterminate_progress.gif',
 
                 # Dbootstrap theme
                 '*dbootstrap/main.js',
