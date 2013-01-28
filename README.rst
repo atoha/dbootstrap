@@ -6,22 +6,11 @@ Bootstrap theme for Dojo.
 
 .. image:: https://raw.github.com/thesociable/dbootstrap/master/resource/preview.png
 
-***********
-Quick start
-***********
-
-#. Clone the repo::
+************
+Get The Code
+************
 
     $ git clone --recursive git@github.com:thesociable/dbootstrap.git
-
-#. Build it::
-
-    $ cd /path/to/dbootstrap
-    $ ./build.sh
-
-#. Take a look::
-
-    Point your browser at file:///path/to/dbootstrap/build/index.html
 
 ****
 Demo
@@ -29,6 +18,109 @@ Demo
 
 For a live preview of the theme using Dojo's Theme Tester, see
 http://thesociable.github.com/dbootstrap/
+
+To build the demo locally:
+
+#. Navigate to your clone of the repo::
+
+    $ cd /path/to/dbootstrap
+
+#. Build it::
+
+    $ ./build.py demo
+
+.. note::
+
+    If you like to see what is going on under the hood, run with a lower
+    logging level::
+
+        $ ./build.py -v debug demo
+
+#. Fire up a server::
+
+    $ cd build/demo
+    $ python -m SimpleHTTPServer 8000
+
+#. Take a look::
+
+    Point your browser at http://0.0.0.0:8000/
+
+***********
+Integration
+***********
+
+Want to use the theme in your own project? Here's a short guide to integrating
+it successfully.
+
+Standalone Package
+==================
+
+Useful if you just want a quick play of the theme with your project. For a
+better solution see the integrated build below.
+
+#. Navigate to your clone of the repo::
+
+    $ cd /path/to/dbootstrap
+
+#. Build just the theme::
+
+    $ ./build.py theme
+
+.. note::
+
+    If you like to see what is going on under the hood, run with a lower
+    logging level::
+
+        $ ./build.py -v debug theme
+
+#. Copy the resulting package into the appropriate location in your project
+and add a require call to dbootstrap. You must require dbootstrap before any
+Dijit widgets are loaded for the icons to work correctly.
+
+    require(['dbootstrap', ...], function(dbootstrap) {
+        // Start application.
+    });
+
+#. Add *dbootstrap* as a css class to your <body> element::
+
+    <body class='dbootstrap'>
+
+#. View your project as normal.
+
+Integrated Build
+================
+
+#. Copy or link the *dbootstrap* folder into your project so that it is a
+sibling to your Dojo and Dijit packages. You will also need to link the
+*xstyle* package if you don't already have it.
+
+.. note::
+
+    Only tested with Dojo 1.8+
+
+#. Add the following to you build profile.js to include dbootstrap as a
+separate build layer::
+
+        'dbootstrap/main': {
+            include: [
+                'dbootstrap/main',
+                'xstyle/load-css'
+            ],
+        },
+
+#. In your main application entry point (or index.html) require the dbootstrap
+package before any Dijit widgets are loaded::
+
+    require(['dbootstrap', ...], function(dbootstrap) {
+        // Start application.
+    });
+
+#. Add *dbootstrap* as a css class to your <body> element::
+
+    <body class='dbootstrap'>
+
+#. Build your project and view as normal.
+
 
 ***********
 Bug tracker
