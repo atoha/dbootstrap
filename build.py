@@ -56,24 +56,24 @@ def main(arguments=None):
     # Build
     log.info('Building CSS.')
     nib_lib_path = os.path.join(source_path, 'nib', 'lib')
-    bootstrap_theme_path = os.path.join(
-        source_path, 'dbootstrap', 'theme', 'bootstrap'
+    dbootstrap_theme_path = os.path.join(
+        source_path, 'dbootstrap', 'theme', 'dbootstrap'
     )
 
     result = execute([
         'stylus', '--include', nib_lib_path,
-        '--include', bootstrap_theme_path,
-        os.path.join(bootstrap_theme_path, 'index.styl')
+        '--include', dbootstrap_theme_path,
+        os.path.join(dbootstrap_theme_path, 'index.styl')
     ])
     if not result:
         issues += 1
 
-    bootstrap_css_path = os.path.join(bootstrap_theme_path, 'bootstrap.css')
+    dbootstrap_css_path = os.path.join(dbootstrap_theme_path, 'dbootstrap.css')
     os.rename(
-        os.path.join(bootstrap_theme_path, 'index.css'),
-        bootstrap_css_path
+        os.path.join(dbootstrap_theme_path, 'index.css'),
+        dbootstrap_css_path
     )
-    temporary_files.add(bootstrap_css_path)
+    temporary_files.add(dbootstrap_css_path)
 
     if target == 'demo':
         result = execute([
@@ -173,8 +173,8 @@ def main(arguments=None):
                 # Dbootstrap theme
                 '*dbootstrap/main.js',
                 '*package.json',
-                '*bootstrap.css',
-                '*bootstrap/dijit.css',
+                '*dbootstrap.css',
+                '*dbootstrap/dijit.css',
                 '*font/fontawesome-webfont*'
             ]
 
@@ -182,8 +182,8 @@ def main(arguments=None):
             keepers = [
                 '*dbootstrap/main.js',
                 '*package.json',
-                '*bootstrap.css',
-                '*bootstrap/dijit.css',
+                '*dbootstrap.css',
+                '*dbootstrap/dijit.css',
                 '*font/fontawesome-webfont*'
             ]
 

@@ -4,7 +4,7 @@
 */
 
 define([
-    'xstyle/css!./theme/bootstrap/bootstrap.css',
+    'xstyle/css!./theme/dbootstrap/dbootstrap.css',
     './icon_support'
 ],
 
