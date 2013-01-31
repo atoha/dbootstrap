@@ -1,22 +1,22 @@
 // :copyright: Copyright 2012 Martin Pengelly-Phillips
 // :license: See LICENSE.txt.
 
-.bootstrap .dijitTreeRow {
+.dbootstrap .dijitTreeRow {
     padding: 2px 0;
 }
 
-.bootstrap .dijitTreeRowSelected,
-.bootstrap .dijitTreeRowSelected.dijitTreeRowHover {
+.dbootstrap .dijitTreeRowSelected,
+.dbootstrap .dijitTreeRowSelected.dijitTreeRowHover {
     color: $treeRowColorSelected;
     background-color: $treeRowBackgroundSelected;
 }
 
-.bootstrap .dijitTreeRowHover {
+.dbootstrap .dijitTreeRowHover {
     color: $textColor;
     background-color: $treeRowBackgroundHover;
 }
 
-.bootstrap .dijitTreeExpando:before {
+.dbootstrap .dijitTreeExpando:before {
     @extend .dijitIcon:before;
     cursor: pointer;
     opacity: 0.3;
@@ -24,21 +24,21 @@
     padding-right: 2px;
 }
 
-.bootstrap .dijitTreeExpandoOpened:before {
+.dbootstrap .dijitTreeExpandoOpened:before {
     @extend .icon-minus-sign:before;
 }
 
-.bootstrap .dijitTreeExpandoClosed:before {
+.dbootstrap .dijitTreeExpandoClosed:before {
     @extend .icon-plus-sign:before;
 }
 
-.bootstrap .dijitTreeExpandoLeaf:before {
+.dbootstrap .dijitTreeExpandoLeaf:before {
     @extend .icon-sign-blank:before;
     cursor: none;
     visibility: hidden;
 }
 
-.bootstrap .dijitTreeIcon {
+.dbootstrap .dijitTreeIcon {
     width: 1em; // So labels are aligned.
     text-align: center;
 }

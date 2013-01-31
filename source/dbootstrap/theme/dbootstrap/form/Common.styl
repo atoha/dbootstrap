@@ -4,16 +4,16 @@
 @import '../well';
 @import 'Button';
 
-.bootstrap fieldset {
-    @extend .bootstrap .well;
+.dbootstrap fieldset {
+    @extend .dbootstrap .well;
 }
 
-.bootstrap label {
+.dbootstrap label {
     vertical-align: middle;
 }
 
 // TextBox
-.bootstrap .dijitTextBox {
+.dbootstrap .dijitTextBox {
     display: inline-block;
     font-size: $baseFontSize;
     color: $gray;
@@ -24,76 +24,76 @@
     transition: border linear .2s, box-shadow linear .2s;
 }
 
-.bootstrap .dijitTextBoxFocused {
+.dbootstrap .dijitTextBoxFocused {
     border-color: rgba(82,168,236,.8);
     box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(82,168,236,.6);
 }
 
-.bootstrap .dijitInputContainer {
+.dbootstrap .dijitInputContainer {
     padding: 6px 6px;
 }
 
-.bootstrap .dijitInputField .dijitInputInner {
+.dbootstrap .dijitInputField .dijitInputInner {
 }
 
-.dj_webkit .bootstrap .dijitInputContainer {
+.dj_webkit .dbootstrap .dijitInputContainer {
     padding: 4px 4px;
 }
 
-.dj_webkit .bootstrap .dijitInputField .dijitInputInner {
+.dj_webkit .dbootstrap .dijitInputField .dijitInputInner {
     height: $baseLineHeight;
 }
 
-.dj_webkit .bootstrap .dijitInline .dijitInputField .dijitInputInner {
+.dj_webkit .dbootstrap .dijitInline .dijitInputField .dijitInputInner {
     height: inherit;
 }
 
-.bootstrap .dijitPlaceHolder {
+.dbootstrap .dijitPlaceHolder {
     font-style: normal;
     padding: 4px 6px;
 }
 
-.bootstrap .dijitTextBoxDisabled {
+.dbootstrap .dijitTextBoxDisabled {
     background-image: none;
     box-shadow: none;
     background-color: $inputDisabledBackground;
 }
 
 // TextArea
-.bootstrap .dijitTextArea {
+.dbootstrap .dijitTextArea {
     padding: 4px 6px;
     line-height: 1.5;
     box-sizing: border-box;
 }
 
 // ComboBox
-.bootstrap .dijitComboBox .dijitButtonNode {
-    @extend .bootstrap .dijitComboButton .dijitButtonNode;
+.dbootstrap .dijitComboBox .dijitButtonNode {
+    @extend .dbootstrap .dijitComboButton .dijitButtonNode;
 }
 
-.bootstrap .dijitComboBox .dijitButtonNode.dijitArrowButton {
-    @extend .bootstrap .dijitComboButton .dijitArrowButton;
+.dbootstrap .dijitComboBox .dijitButtonNode.dijitArrowButton {
+    @extend .dbootstrap .dijitComboButton .dijitArrowButton;
 }
 
-.bootstrap .dijitComboBox input.dijitArrowButtonInner {
+.dbootstrap .dijitComboBox input.dijitArrowButtonInner {
     display: none;
 }
 
-.bootstrap .dijitComboBoxDisabled .dijitButtonNode {
-    @extend .bootstrap .dijitComboButtonDisabled .dijitButtonNode;
+.dbootstrap .dijitComboBoxDisabled .dijitButtonNode {
+    @extend .dbootstrap .dijitComboButtonDisabled .dijitButtonNode;
     background-color: $inputDisabledBackground;
 }
 
 // Validation
-.bootstrap .dijitTextBoxError {
+.dbootstrap .dijitTextBoxError {
     color: $errorText;
     border-color: $errorText;
 }
 
-.bootstrap .dijitTextBoxError.dijitTextBoxFocused {
+.dbootstrap .dijitTextBoxError.dijitTextBoxFocused {
     box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px lighten($errorText, 20%);
 }
 
-.bootstrap .dijitValidationContainer {
+.dbootstrap .dijitValidationContainer {
     display: none;
 }

@@ -3,21 +3,21 @@
 
 @import 'Common';
 
-.bootstrap .dijitSelect {
+.dbootstrap .dijitSelect {
     border: none;
     color: $gray;
     transition: border linear .2s, box-shadow linear .2s;
 }
 
-.bootstrap .dijitSelect .dijitButtonNode {
-    @extend .bootstrap .dijitComboBox .dijitButtonNode;
+.dbootstrap .dijitSelect .dijitButtonNode {
+    @extend .dbootstrap .dijitComboBox .dijitButtonNode;
 }
 
-.bootstrap .dijitSelect .dijitButtonNode.dijitArrowButton {
-    @extend .bootstrap .dijitComboBox .dijitButtonNode.dijitArrowButton;
+.dbootstrap .dijitSelect .dijitButtonNode.dijitArrowButton {
+    @extend .dbootstrap .dijitComboBox .dijitButtonNode.dijitArrowButton;
 }
 
-.bootstrap .dijitSelect .dijitButtonContents {
+.dbootstrap .dijitSelect .dijitButtonContents {
     background-color: $inputBackground;
     box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
     border-radius: $inputBorderRadius 0 0 $inputBorderRadius;
@@ -25,14 +25,14 @@
 }
 
 // Disabled
-.bootstrap .dijitSelect.dijitSelectDisabled .dijitButtonContents {
-    @extend .bootstrap .dijitTextBoxDisabled;
+.dbootstrap .dijitSelect.dijitSelectDisabled .dijitButtonContents {
+    @extend .dbootstrap .dijitTextBoxDisabled;
 }
 
-.bootstrap .dijitSelectDisabled .dijitButtonNode {
-    @extend .bootstrap .dijitComboBoxDisabled .dijitButtonNode;
+.dbootstrap .dijitSelectDisabled .dijitButtonNode {
+    @extend .dbootstrap .dijitComboBoxDisabled .dijitButtonNode;
 }
 
-.bootstrap .dijitSelectDisabled .dijitButtonContents .dijitButtonText {
+.dbootstrap .dijitSelectDisabled .dijitButtonContents .dijitButtonText {
     opacity: 0.5;
 }
