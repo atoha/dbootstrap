@@ -73,9 +73,10 @@ better solution see the integrated build below.
 
         $ ./build.py -v debug theme
 
-#. Copy the resulting package into the appropriate location in your project
-and add a require call to dbootstrap. You must require dbootstrap before any
-Dijit widgets are loaded for the icons to work correctly.
+#. Copy (or link) the resulting package *dbootstrap/build/theme/dbootstrap*
+into the appropriate location in your project and add a require call to
+dbootstrap. You must require dbootstrap before any Dijit widgets are loaded for
+the icons to work correctly.
 
     require(['dbootstrap', ...], function(dbootstrap) {
         // Start application.
@@ -90,23 +91,38 @@ Dijit widgets are loaded for the icons to work correctly.
 Integrated Build
 ================
 
-#. Copy or link the *dbootstrap* folder into your project so that it is a
-sibling to your Dojo and Dijit packages. You will also need to link the
-*xstyle* package if you don't already have it.
+#. Copy or link the *dbootstrap/source/dbootstrap* folder into your project
+(typically so that it is a sibling to your Dojo and Dijit packages). You will
+also need to link the *xstyle* package if you don't already have it.
 
 .. note::
 
     Only tested with Dojo 1.8+
 
-#. Add the following to you build profile.js to include dbootstrap as a
-separate build layer::
+#. Add the following to your build profile.js to include dbootstrap as a
+package and separate build layer::
 
-        'dbootstrap/main': {
-            include: [
-                'dbootstrap/main',
-                'xstyle/load-css'
-            ],
-        },
+        packages: [
+            ...
+            'dbootstrap',
+            'xstyle'
+        ],
+
+        layers: {
+            ...
+            'dbootstrap/main': {
+                include: [
+                    'dbootstrap/main',
+                    'xstyle/load-css'
+                ],
+            }
+        }
+
+.. note::
+
+    If you have placed your dbootstrap package somewhere that isn't directly
+    accessible as a child directory of your *basePath* then you must use the
+    fuller package syntax in the packages list.
 
 #. In your main application entry point (or index.html) require the dbootstrap
 package before any Dijit widgets are loaded::
