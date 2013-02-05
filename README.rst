@@ -93,7 +93,8 @@ Integrated Build
 
 #. Copy or link the *dbootstrap/source/dbootstrap* folder into your project
 (typically so that it is a sibling to your Dojo and Dijit packages). You will
-also need to link the *xstyle* package if you don't already have it.
+also need to link the *xstyle* and *nib* packages if you don't already have
+them.
 
 .. note::
 
@@ -134,6 +135,23 @@ package before any Dijit widgets are loaded::
 #. Add *dbootstrap* as a css class to your <body> element::
 
     <body class='dbootstrap'>
+
+#. Add to your build process relevant calls to Stylus to compile the CSS files
+into one dbootstrap.css file::
+
+    $ stylus --include path/to/dbootstrap/nib/lib \
+             --include path/to/dbootstrap/theme/dbootstrap \
+             path/to/dbootstrap/theme/dbootstrap/index.styl
+
+    $ mv path/to/dbootstrap/theme/dbootstrap/index.css \
+         path/to/dbootstrap/theme/dbootstrap/dbootstrap.css
+
+.. note::
+
+    The CSS build must happen before the Dojo build is performed as the
+    generated css file is required as part of the build. Therefore, the css
+    file is built in the source tree to be copied to the build directory during
+    the Dojo build step.
 
 #. Build your project and view as normal.
 
