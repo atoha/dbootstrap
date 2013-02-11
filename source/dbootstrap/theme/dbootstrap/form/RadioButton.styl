@@ -1,0 +1,23 @@
+// :copyright: Copyright 2012 Martin Pengelly-Phillips
+// :license: See LICENSE.txt.
+
+.dbootstrap .dijitRadio {
+    @extend .dbootstrap .dijitCheckBox;
+    border-radius: 20px;
+}
+
+.dbootstrap .dijitRadio input {
+    @extend .dbootstrap .dijitCheckBox input;
+}
+
+.dbootstrap .dijitRadioDisabled {
+    @extend .dbootstrap .dijitCheckBoxDisabled;
+}
+
+.dbootstrap .dijitRadio:before {
+    @extend .dbootstrap .dijitCheckBox:before;
+}
+
+.dbootstrap .dijitRadio.dijitRadioChecked:before {
+    @extend .dbootstrap .dijitCheckBox.dijitCheckBoxChecked:before;
+}

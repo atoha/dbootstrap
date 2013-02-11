@@ -1,0 +1,43 @@
+// :copyright: Copyright 2012 Martin Pengelly-Phillips
+// :license: See LICENSE.txt.
+
+* {
+    outline: none;
+}
+
+// Body reset
+// -------------------------
+
+body {
+    margin: 0;
+    font-family: $baseFontFamily;
+    font-size: $baseFontSize;
+    line-height: $baseLineHeight;
+    color: $textColor;
+    background-color: $bodyBackground;
+}
+
+
+// Links
+// -------------------------
+
+a {
+    color: $linkColor;
+    text-decoration: none;
+}
+a:hover {
+    color: $linkColorHover;
+    text-decoration: underline;
+}
+
+
+// Disabled
+// -------------------------
+
+.dbootstrap .dijitReadOnly *,
+.dbootstrap .dijitDisabled *,
+.dbootstrap .dijitReadOnly,
+.dbootstrap .dijitDisabled {
+    cursor: not-allowed;
+}
+

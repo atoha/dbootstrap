@@ -1,0 +1,160 @@
+// :copyright: Copyright 2012 Martin Pengelly-Phillips
+// :license: See LICENSE.txt.
+
+// Dialogs
+.dbootstrap .dijitDialog {
+    background-color: $white;
+    border: 1px solid rgba(0,0,0,0.3);
+    border-radius: 6px;
+    box-shadow: 0 3px 7px rgba(0,0,0,0.3);
+}
+
+.dbootstrap .dijitDialogCloseIcon .closeText {
+    float: right;
+    font-size: 20px;
+    font-weight: bold;
+    color: $black;
+    text-shadow: 0 1px 0 rgba(255,255,255,1);
+    opacity: 0.2;
+    display: inline;
+    position: relative;
+    margin-top: 2px;
+}
+
+.dbootstrap .dijitDialogCloseIconHover .closeText {
+    opacity: 0.4;
+}
+
+.dbootstrap .dijitDialogUnderlay {
+    background-color: $black;
+    opacity: 0.8;
+}
+
+.dbootstrap .dijitDialogTitleBar {
+    padding: 9px 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.dbootstrap .dijitDialogTitle {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.dbootstrap .dijitDialogPaneContentArea {
+    padding: 15px;
+}
+
+.dbootstrap .dijitDialogPaneActionBar {
+    padding: 14px 15px 15px;
+    margin-bottom: 0;
+    text-align: right;
+    background-color: #f5f5f5;
+    border-top: 1px solid #ddd;
+    border-radius: 0 0 6px 6px;
+    box-shadow: inset 0 1px 0 $white;
+}
+
+// Tooltips
+.dbootstrap .dijitTooltipContainer {
+    background-color: $popoverBackground;
+    border: 1px solid $popoverArrowOuterColor;
+    border-radius: 6px;
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    padding: 9px 14px;
+}
+
+.dbootstrap .dijitTooltipConnector,
+.dbootstrap .dijitTooltipConnector:after {
+    position: absolute;
+    width: 0;
+    height: 0;
+    display: inline-block;
+    border-color: transparent;
+    border-style: solid;
+}
+
+.dbootstrap .dijitTooltipConnector {
+}
+
+.dbootstrap .dijitTooltipConnector:after {
+    content: "";
+    z-index: -1;
+}
+
+// Above
+.dbootstrap .dijitTooltipAbove {
+    padding-bottom: $popoverArrowWidth;
+}
+
+.dbootstrap .dijitTooltipAbove .dijitTooltipConnector {
+    bottom: 1px;
+    border-width: $popoverArrowWidth $popoverArrowWidth 0;
+    border-top-color: $popoverArrowColor;
+    &:after {
+        border-width: $popoverArrowOuterWidth $popoverArrowOuterWidth 0;
+        border-top-color: $popoverArrowOuterColor;
+        left: -($popoverArrowOuterWidth);
+        bottom: -1px;
+    }
+}
+
+// Below
+.dbootstrap .dijitTooltipBelow {
+    padding-top: $popoverArrowWidth;
+}
+
+.dbootstrap .dijitTooltipBelow .dijitTooltipConnector {
+    top: 1px;
+    border-width: 0 $popoverArrowWidth $popoverArrowWidth;
+    border-bottom-color: $popoverArrowColor;
+    &:after {
+        border-width: 0 $popoverArrowOuterWidth $popoverArrowOuterWidth;
+        border-bottom-color: $popoverArrowOuterColor;
+        left: -($popoverArrowOuterWidth);
+        top: -1px;
+    }
+}
+
+// Left
+.dbootstrap .dijitTooltipLeft {
+    padding-right: $popoverArrowWidth;
+}
+
+.dbootstrap .dijitTooltipLeft .dijitTooltipConnector {
+    right: 1px;
+    border-width: $popoverArrowWidth 0 $popoverArrowWidth $popoverArrowWidth;
+    border-left-color: $popoverArrowColor;
+    &:after {
+        border-width: $popoverArrowOuterWidth 0 $popoverArrowOuterWidth $popoverArrowOuterWidth;
+        border-left-color: $popoverArrowOuterColor;
+        bottom: -($popoverArrowOuterWidth);
+        right: -1px;
+    }
+}
+
+// Right
+.dbootstrap .dijitTooltipRight {
+    padding-left: $popoverArrowWidth;
+}
+
+.dbootstrap .dijitTooltipRight .dijitTooltipConnector {
+    left: 1px;
+    border-width: $popoverArrowWidth $popoverArrowWidth $popoverArrowWidth 0;
+    border-right-color: $popoverArrowColor;
+    &:after {
+        border-width: $popoverArrowOuterWidth $popoverArrowOuterWidth $popoverArrowOuterWidth 0;
+        border-right-color: $popoverArrowOuterColor;
+        bottom: -($popoverArrowOuterWidth);
+        left: -1px;
+    }
+}
+
+// Special
+.dbootstrap .dijitTooltipABLeft .dijitTooltipConnector {
+    left: 20px;
+}
+
+.dbootstrap .dijitTooltipABRight .dijitTooltipConnector {
+    right: 20px;
+}

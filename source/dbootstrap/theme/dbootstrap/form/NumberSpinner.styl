@@ -1,0 +1,17 @@
+// :copyright: Copyright 2012 Martin Pengelly-Phillips
+// :license: See LICENSE.txt.
+
+@import 'Common';
+
+.dbootstrap .dijitSpinnerButtonContainer.dijitButtonNode {
+    @extend .dbootstrap .dijitComboBox .dijitButtonNode;
+    @extend .dbootstrap .dijitComboBox .dijitButtonNode.dijitArrowButton;
+}
+
+.dbootstrap .dijitSpinnerDisabled .dijitButtonNode {
+    @extend .dbootstrap .dijitComboBoxDisabled .dijitButtonNode;
+}
+
+.dj_webkit .dbootstrap .dijitSpinnerButtonContainer.dijitButtonNode {
+    padding: 4px 10px !important
+}

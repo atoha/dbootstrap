@@ -1,0 +1,151 @@
+// :copyright: Copyright 2012 Martin Pengelly-Phillips
+// :license: See LICENSE.txt.
+
+// Common styling
+//
+
+.dbootstrap .dijitButtonNode {
+    border: none;
+}
+
+.dbootstrap .dijitButtonNode * {
+    vertical-align: baseline;
+}
+
+.dbootstrap .dijitButtonNode .dijitIcon {
+    // Keeps button heights with and without icons the same
+    line-height: $baseLineHeight * 0.65;
+}
+
+.dbootstrap .dijitButton .dijitButtonNode,
+.dbootstrap .dijitDropDownButton .dijitButtonNode,
+.dbootstrap .dijitComboButton .dijitButtonNode,
+.dbootstrap .dijitToggleButton .dijitButtonNode {
+    display: block; // Stretch to fill space
+    padding: 6px 14px;
+    margin-bottom: 0; // For input.btn
+    font-size: $baseFontSize;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    buttonBackground($btnBackground, $btnBackgroundHighlight, $grayDark, 0 1px 1px rgba(255,255,255,.75));
+    border: 1px solid $btnBorder;
+    border-bottom-color: darken($btnBorder, 10%);
+    border-radius: 4px;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.2), 0 1px 2px rgba(0,0,0,0.05);
+}
+
+// Colours
+.dbootstrap .primary .dijitButtonNode {
+    buttonBackground($btnPrimaryBackground, $btnPrimaryBackgroundHighlight);
+}
+
+.dbootstrap .warning .dijitButtonNode {
+    buttonBackground($btnWarningBackground, $btnWarningBackgroundHighlight);
+}
+
+.dbootstrap .danger .dijitButtonNode {
+    buttonBackground($btnDangerBackground, $btnDangerBackgroundHighlight);
+}
+
+.dbootstrap .success .dijitButtonNode {
+    buttonBackground($btnSuccessBackground, $btnSuccessBackgroundHighlight);
+}
+
+.dbootstrap .info .dijitButtonNode {
+    buttonBackground($btnInfoBackground, $btnInfoBackgroundHighlight);
+}
+
+.dbootstrap .inverse .dijitButtonNode {
+    buttonBackground($btnInverseBackground, $btnInverseBackgroundHighlight);
+}
+
+// Hover
+.dbootstrap .dijitButtonHover .dijitButtonNode,
+.dbootstrap .dijitDropDownButtonHover .dijitButtonNode,
+.dbootstrap .dijitComboButton .dijitButtonNodeHover,
+.dbootstrap .dijitComboButton .dijitDownArrowButtonHover,
+.dbootstrap .dijitToggleButtonHover .dijitButtonNode {
+    text-decoration: none;
+    background-position: 0 -15px;
+    transition: background-position .1s linear;
+}
+
+// Active - pressed
+.dbootstrap .dijitButtonActive .dijitButtonNode,
+.dbootstrap .dijitComboButton .dijitButtonNodeActive,
+.dbootstrap .dijitToggleButtonActive .dijitButtonNode,
+.dbootstrap .dijitToggleButtonChecked .dijitButtonNode {
+    background-image: none;
+    outline: 0;
+    box-shadow: inset 0 2px 4px rgba(0,0,0,.15), 0 1px 2px rgba(0,0,0,.05);
+}
+
+.dbootstrap .dijitDropDownButtonActive .dijitButtonNode {
+    @extend .dbootstrap .dijitDropDownButtonHover .dijitButtonNode;
+}
+
+// Disabled
+.dbootstrap .dijitButtonDisabled .dijitButtonNode,
+.dbootstrap .dijitDropDownButtonDisabled .dijitButtonNode,
+.dbootstrap .dijitComboButtonDisabled .dijitButtonNode,
+.dbootstrap .dijitToggleButtonDisabled .dijitButtonNode {
+    cursor: not-allowed;
+    background-image: none;
+    opacity: 0.65;
+    box-shadow: none;
+}
+
+.dbootstrap .dijitToggleButtonDisabled.dijitToggleButtonChecked .dijitButtonNode {
+    box-shadow: inset 0 2px 4px rgba(0,0,0,.15), 0 1px 2px rgba(0,0,0,.05);
+}
+
+// Content
+.dbootstrap .dijitButtonText {
+    padding: 0 0.3em;
+    text-align: center;
+}
+
+// Arrow
+.dbootstrap .dijitArrowButtonInner {
+    @extend .dbootstrap .dijitButtonNode .dijitIcon;
+    height: auto;
+    width: auto;
+}
+
+.dbootstrap .dijitArrowButtonInner:before {
+    @extend .dijitIcon:before;
+    @extend .icon-caret-down:before;
+}
+
+.dbootstrap .dijitUpArrowButton .dijitArrowButtonInner:before {
+    @extend .icon-caret-up:before;
+}
+
+// Specific Styling
+//
+
+// Combo Box
+.dbootstrap .dijitComboButton td.dijitStretch,
+.dbootstrap .dijitComboButton td.dijitArrowButton {
+    display: table-cell;
+}
+
+.dbootstrap .dijitComboButton .dijitArrowButton {
+    border-left-width: 0;
+    padding: 6px 10px;
+    border-radius: 0 4px 4px 0;
+}
+
+.dbootstrap .dijitComboButton .dijitArrowButton.dijitHasDropDownOpen {
+    @extend .dbootstrap .dijitButtonActive .dijitButtonNode;
+}
+
+.dbootstrap .dijitComboButton .dijitStretch {
+    border-radius: 4px 0 0 4px;
+}
+
+.dbootstrap table.dijitComboButton {
+    border-collapse: separate;
+}
+
