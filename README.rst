@@ -74,9 +74,19 @@ better solution see the integrated build below.
         $ ./build.py -v debug theme
 
 #. Copy (or link) the resulting package *dbootstrap/build/theme/dbootstrap*
-into the appropriate location in your project and add a require call to
-dbootstrap. You must require dbootstrap before any Dijit widgets are loaded for
-the icons to work correctly.
+into the appropriate location in your project and ensure you notify Dojo about
+the location. One way to do this is through the Dojo config::
+
+    'packages': [
+        ...,
+        {
+            location: '/path/to/dbootstrap',
+            name: 'dbootstrap'
+        }
+    ]
+
+#. Add a require call for dbootstrap. You must require dbootstrap
+before any Dijit widgets are loaded for the icons to work correctly.
 
     require(['dbootstrap', ...], function(dbootstrap) {
         // Start application.
@@ -123,7 +133,12 @@ package and separate build layer::
 
     If you have placed your dbootstrap package somewhere that isn't directly
     accessible as a child directory of your *basePath* then you must use the
-    fuller package syntax in the packages list.
+    fuller package syntax in the packages list::
+
+        {
+            location: '/path/to/dbootstrap',
+            name: 'dbootstrap'
+        }
 
 #. In your main application entry point (or index.html) require the dbootstrap
 package before any Dijit widgets are loaded::
