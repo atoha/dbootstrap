@@ -1,0 +1,27 @@
+// :copyright: Copyright 2012 Martin Pengelly-Phillips
+// :license: See LICENSE.txt.
+
+.dbootstrap .dijitTimePickerItem {
+    font-weight: normal;
+    color: $dropdownLinkColor;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 1px solid transparent;
+}
+
+.dbootstrap .dijitTimePickerItem .dijitTimePickerItemInner {
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+.dbootstrap .dijitTimePickerItemHover {
+    text-decoration: none;
+    color: $dropdownLinkColorHover;
+    background-color: $dropdownLinkBackgroundHover;
+    background-image: linear-gradient(top, $dropdownLinkBackgroundHover, darken($dropdownLinkBackgroundHover, 5%));
+}
+
+.dbootstrap .dijitTimePickerItemSelected {
+    @extend .dbootstrap .dijitTimePickerItemHover;
+}
+

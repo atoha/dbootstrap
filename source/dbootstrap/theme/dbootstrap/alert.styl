@@ -1,0 +1,57 @@
+// :copyright: Copyright 2012 Martin Pengelly-Phillips
+// :license: See LICENSE.txt.
+
+.dbootstrap .alert {
+    padding: 8px 35px 8px 14px;
+    margin-bottom: $baseLineHeight;
+    text-shadow: 0 1px 0 rgba(255,255,255,.5);
+    background-color: $warningBackground;
+    border: 1px solid $warningBorder;
+    border-radius(4px);
+    color: $warningText;
+}
+
+.dbootstrap .alert h1,
+.dbootstrap .alert h2,
+.dbootstrap .alert h3,
+.dbootstrap .alert h4 {
+    margin: 0;
+}
+
+// Alternate styles
+// -------------------------
+
+.dbootstrap .alert-success {
+    background-color: $successBackground;
+    border-color: $successBorder;
+    color: $successText;
+}
+
+.dbootstrap .alert-danger,
+.dbootstrap .alert-error {
+    background-color: $errorBackground;
+    border-color: $errorBorder;
+    color: $errorText;
+}
+
+.dbootstrap .alert-info {
+    background-color: $infoBackground;
+    border-color: $infoBorder;
+    color: $infoText;
+}
+
+
+// Block alerts
+// -------------------------
+
+.dbootstrap .alert-block {
+    padding-top: 14px;
+    padding-bottom: 14px;
+}
+.dbootstrap .alert-block > p,
+.dbootstrap .alert-block > ul {
+    margin-bottom: 0;
+}
+.dbootstrap .alert-block p + p {
+    margin-top: 5px;
+}

@@ -1,0 +1,44 @@
+// :copyright: Copyright 2012 Martin Pengelly-Phillips
+// :license: See LICENSE.txt.
+
+.dbootstrap .dijitTreeRow {
+    padding: 2px 0;
+}
+
+.dbootstrap .dijitTreeRowSelected,
+.dbootstrap .dijitTreeRowSelected.dijitTreeRowHover {
+    color: $treeRowColorSelected;
+    background-color: $treeRowBackgroundSelected;
+}
+
+.dbootstrap .dijitTreeRowHover {
+    color: $textColor;
+    background-color: $treeRowBackgroundHover;
+}
+
+.dbootstrap .dijitTreeExpando:before {
+    @extend .dijitIcon:before;
+    cursor: pointer;
+    opacity: 0.3;
+    padding-left: 4px;
+    padding-right: 2px;
+}
+
+.dbootstrap .dijitTreeExpandoOpened:before {
+    @extend .icon-minus-sign:before;
+}
+
+.dbootstrap .dijitTreeExpandoClosed:before {
+    @extend .icon-plus-sign:before;
+}
+
+.dbootstrap .dijitTreeExpandoLeaf:before {
+    @extend .icon-sign-blank:before;
+    cursor: none;
+    visibility: hidden;
+}
+
+.dbootstrap .dijitTreeIcon {
+    width: 1em; // So labels are aligned.
+    text-align: center;
+}

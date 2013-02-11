@@ -1,0 +1,38 @@
+// :copyright: Copyright 2012 Martin Pengelly-Phillips
+// :license: See LICENSE.txt.
+
+@import 'Common';
+
+.dbootstrap .dijitSelect {
+    border: none;
+    color: $gray;
+    transition: border linear .2s, box-shadow linear .2s;
+}
+
+.dbootstrap .dijitSelect .dijitButtonNode {
+    @extend .dbootstrap .dijitComboBox .dijitButtonNode;
+}
+
+.dbootstrap .dijitSelect .dijitButtonNode.dijitArrowButton {
+    @extend .dbootstrap .dijitComboBox .dijitButtonNode.dijitArrowButton;
+}
+
+.dbootstrap .dijitSelect .dijitButtonContents {
+    background-color: $inputBackground;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    border-radius: $inputBorderRadius 0 0 $inputBorderRadius;
+    border: 1px solid $inputBorder;
+}
+
+// Disabled
+.dbootstrap .dijitSelect.dijitSelectDisabled .dijitButtonContents {
+    @extend .dbootstrap .dijitTextBoxDisabled;
+}
+
+.dbootstrap .dijitSelectDisabled .dijitButtonNode {
+    @extend .dbootstrap .dijitComboBoxDisabled .dijitButtonNode;
+}
+
+.dbootstrap .dijitSelectDisabled .dijitButtonContents .dijitButtonText {
+    opacity: 0.5;
+}

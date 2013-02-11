@@ -1,0 +1,132 @@
+// :copyright: Copyright 2012 Martin Pengelly-Phillips
+// :license: See LICENSE.txt.
+
+// Common
+.dbootstrap .dijitTabPaneWrapper {
+    border: 1px solid $grayLighter;
+}
+
+.dbootstrap .dijitTabContainerBottom-tabs,
+.dbootstrap .dijitTabContainerTop-tabs,
+.dbootstrap .dijitTabContainerLeft-tabs,
+.dbootstrap .dijitTabContainerRight-tabs {
+    border: none;
+}
+
+.dbootstrap .dijitTab {
+    color: $linkColor;
+    text-shadow: 0 1px 0 rgba(255,255,255,.5);
+    margin-right: 2px;
+    padding-right: 12px;
+    padding-left: 12px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    line-height: $baseLineHeight;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.dbootstrap .dijitTabHover {
+    color: $linkColorHover;
+    background-color: $grayLighter;
+    border-color: $grayLighter;
+}
+
+.dbootstrap .dijitTabChecked {
+    color: $gray;
+    background-color: $white;
+    border-color: $grayLighter;
+    cursor: default;
+}
+
+.dbootstrap .dijitTabCloseButton {
+    font-weight: bold;
+    text-shadow: 0 1px 0 rgba(255,255,255,1);
+    opacity: 0.2;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.dbootstrap .dijitTabCloseButtonHover {
+    opacity: 0.5;
+}
+
+.dbootstrap .dijitTabCloseButton .dijitTabCloseText {
+    display: inline;
+}
+
+// Top
+.dbootstrap .dijitTabContainerTop-container {
+    margin-top: -1px;
+}
+
+.dbootstrap .dijitTabContainerTop .dijitTab {
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.dbootstrap .dijitTabContainerTop .dijitTabChecked {
+    border-bottom-color: transparent;
+}
+
+// Bottom
+.dbootstrap .dijitTabContainerBottom-container {
+    margin-bottom: -1px;
+}
+
+.dbootstrap .dijitTabContainerBottom .dijitTab {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+.dbootstrap .dijitTabContainerBottom .dijitTabChecked {
+    border-top-color: transparent;
+}
+
+// Tab strip buttons
+.dbootstrap .tabStripButtonHover {
+    background-color: transparent;
+    border: 1px solid transparent;
+}
+
+.dbootstrap .dijitTabStripIcon:before {
+    @extend .dijitIcon:before;
+}
+
+.dbootstrap .dijitTabStripSlideLeftIcon:before {
+    @extend .icon-chevron-left:before;
+}
+
+.dbootstrap .dijitTabStripSlideRightIcon:before {
+    @extend .icon-chevron-right:before;
+}
+
+.dbootstrap .dijitTabStripMenuIcon:before {
+    @extend .icon-chevron-down:before;
+}
+
+.dbootstrap .dijitTabDisabled .dijitTabStripIcon {
+    opacity: 0.65;
+}
+
+// Nested
+.dbootstrap .dijitTabContainerTop.dijitTabContainerNested {
+    margin-top: 5px;
+}
+
+.dbootstrap .dijitTabContainerTop .dijitTabPaneWrapperNested {
+    border-bottom: none;
+    border-right: none;
+    border-left: none;
+}
+
+.dbootstrap .dijitTabContainerBottom.dijitTabContainerNested {
+    margin-bottom: 5px;
+}
+
+.dbootstrap .dijitTabContainerBottom .dijitTabPaneWrapperNested {
+    border-top: none;
+    border-right: none;
+    border-left: none;
+}
+

@@ -1,0 +1,161 @@
+// :copyright: Copyright 2012 Martin Pengelly-Phillips
+// :license: See LICENSE.txt.
+
+// Menu bar
+.dbootstrap .dijitMenuBar {
+    overflow: visible;
+    margin-bottom: $baseLineHeight;
+    color: $navbarText;
+    padding-left:  20px;
+    padding-right: 20px;
+    background-image: linear-gradient($navbarBackgroundHighlight, $navbarBackground);
+    border: 1px solid $navbarBorder;
+    border-radius: 4px;
+    box-shadow: 0 1px 4px rgba(0,0,0,.065);
+}
+
+.dbootstrap .dijitMenuBar .dijitMenuItem {
+    color: $navbarLinkColor;
+    padding: (($navbarHeight - $baseLineHeight) / 2) 15px (($navbarHeight - $baseLineHeight) / 2);
+    text-shadow: 0 1px 0 $navbarBackgroundHighlight;
+}
+
+.dbootstrap .dijitMenuBar .dijitMenuItemHover {
+    color: $navbarLinkColorHover;
+    background-image: none;
+    background-color: $navbarLinkBackgroundHover;
+}
+
+.dbootstrap .dijitMenuBar .dijitMenuItemActive,
+.dbootstrap .dijitMenuBar .dijitMenuItemSelected {
+    color: $navbarLinkColorActive;
+    text-decoration: none;
+    background-image: none;
+    background-color: $navbarLinkBackgroundActive;
+    box-shadow: inset 0 3px 8px rgba(0,0,0,.125);
+}
+
+.dbootstrap .dijitMenuBar .dijitMenuItemDisabled {
+    color: $navbarLinkColor;
+    box-shadow: none;
+    background-color: transparent;
+}
+
+// Brand
+.dbootstrap .dijitMenuBar .brand {
+    font-weight: 200;
+    color: $navbarBrandColor;
+    text-shadow: 0 1px 0 $navbarBackgroundHighlight;
+    font-size: ($baseFontSize * 1.5);
+    padding: 10px;
+    display: inline;
+    vertical-align: middle;
+}
+
+// Primary menu
+.dbootstrap .dijitMenuBar.primary {
+    border-radius: 0px;
+    margin-bottom: 5px;
+}
+
+// Menu bar inverse colour
+.dbootstrap .dijitMenuBar.inverse {
+    color: $navbarInverseText;
+    background-image: linear-gradient($navbarInverseBackgroundHighlight, $navbarInverseBackground);
+    border-color: $navbarInverseBorder;
+}
+
+.dbootstrap .dijitMenuBar.inverse .dijitMenuItem {
+    color: $navbarInverseLinkColor;
+    text-shadow: 0 -1px 0 rgba(0,0,0,.25);
+}
+
+.dbootstrap .dijitMenuBar.inverse .dijitMenuItemHover {
+    background-color: $navbarInverseLinkBackgroundHover;
+    color: $navbarInverseLinkColorHover;
+}
+
+.dbootstrap .dijitMenuBar.inverse .dijitMenuItemActive,
+.dbootstrap .dijitMenuBar.inverse .dijitMenuItemSelected {
+    color: $navbarInverseLinkColorActive;
+    background-color: $navbarInverseLinkBackgroundActive;
+    box-shadow: inset 0 3px 8px rgba(255,255,255,.125);
+}
+
+.dbootstrap .dijitMenuBar.inverse .dijitMenuItemDisabled {
+    color: $navbarInverseLinkColor;
+}
+
+.dbootstrap .dijitMenuBar.inverse .brand {
+    color: $navbarInverseBrandColor;
+    text-shadow: 0 -1px 0 rgba(0,0,0,.25);
+}
+
+// Menu
+.dbootstrap .dijitMenu {
+    z-index: $zindexDropdown;
+    padding: 5px 0;
+    margin: 2px 0 0; // override default ul
+    background-color: $dropdownBackground;
+    border: 1px solid #ccc; // Fallback for IE7-8
+    border: 1px solid $dropdownBorder;
+    border-radius: 6px;
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    border-collapse: separate;
+}
+
+.dbootstrap .dijitMenuItem {
+    font-weight: normal;
+    color: $dropdownLinkColor;
+    white-space: nowrap;
+    padding: 6px 20px;
+}
+
+.dbootstrap .dijitMenuItemHover {
+    text-decoration: none;
+    color: $dropdownLinkColorHover;
+    background-color: $dropdownLinkBackgroundHover;
+    background-image: linear-gradient(top, $dropdownLinkBackgroundHover, darken($dropdownLinkBackgroundHover, 5%));
+}
+
+.dbootstrap .dijitMenuItemSelected {
+    @extend .dbootstrap .dijitMenuItemHover;
+}
+
+.dbootstrap td.dijitMenuItemLabel {
+    padding: 6px 0.3em;
+}
+
+.dbootstrap tr.dijitMenuItem td:first-child {
+    padding-left: 20px;
+}
+
+.dbootstrap tr.dijitMenuItem td:last-child {
+    padding-right: 20px;
+}
+
+// Separator
+.dbootstrap .dijitMenuSeparator {
+    margin: (($baseLineHeight / 2) - 1) 1px;
+}
+
+.dbootstrap .dijitMenuSeparatorTop {
+    border-bottom: 1px solid $dropdownDividerTop;
+    height: auto;
+}
+
+.dbootstrap .dijitMenuSeparatorBottom {
+    height: auto;
+}
+
+// Icon
+.dbootstrap .dijitMenuItemIcon,
+.dbootstrap .dijitMenuExpand  {
+    // Keep in line with labels
+    line-height: $baseLineHeight * 0.65;
+}
+
+.dbootstrap .dijitMenuArrowCell .dijitMenuExpand:before {
+    @extend .dijitIcon:before;
+    @extend .icon-caret-right:before;
+}
