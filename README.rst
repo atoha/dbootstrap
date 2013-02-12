@@ -29,12 +29,12 @@ To build the demo locally:
 
     $ ./build.py demo
 
-.. note::
+   .. note::
 
-    If you like to see what is going on under the hood, run with a lower
-    logging level::
+        If you like to see what is going on under the hood, run with a lower
+        logging level::
 
-        $ ./build.py -v debug demo
+             $ ./build.py -v debug demo
 
 #. Fire up a server::
 
@@ -66,16 +66,16 @@ better solution see the integrated build below.
 
     $ ./build.py theme
 
-.. note::
+   .. note::
 
-    If you like to see what is going on under the hood, run with a lower
-    logging level::
+        If you like to see what is going on under the hood, run with a lower
+        logging level::
 
-        $ ./build.py -v debug theme
+            $ ./build.py -v debug theme
 
 #. Copy (or link) the resulting package *dbootstrap/build/theme/dbootstrap*
-into the appropriate location in your project and ensure you notify Dojo about
-the location. One way to do this is through the Dojo config::
+   into the appropriate location in your project and ensure you notify Dojo
+   about the location. One way to do this is through the Dojo config::
 
     'packages': [
         ...,
@@ -86,7 +86,7 @@ the location. One way to do this is through the Dojo config::
     ]
 
 #. Add a require call for dbootstrap. You must require dbootstrap
-before any Dijit widgets are loaded for the icons to work correctly.
+   before any Dijit widgets are loaded for the icons to work correctly::
 
     require(['dbootstrap', ...], function(dbootstrap) {
         // Start application.
@@ -102,46 +102,46 @@ Integrated Build
 ================
 
 #. Copy or link the *dbootstrap/source/dbootstrap* folder into your project
-(typically so that it is a sibling to your Dojo and Dijit packages). You will
-also need to link the *xstyle* and *nib* packages if you don't already have
-them.
+   (typically so that it is a sibling to your Dojo and Dijit packages). You
+   will also need to link the *xstyle* and *nib* packages if you don't already
+   have them.
 
-.. note::
+   .. note::
 
-    Only tested with Dojo 1.8+
+       Only tested with Dojo 1.8+
 
 #. Add the following to your build profile.js to include dbootstrap as a
-package and separate build layer::
+   package and separate build layer::
 
-        packages: [
-            ...
-            'dbootstrap',
-            'xstyle'
-        ],
+    packages: [
+        ...
+        'dbootstrap',
+        'xstyle'
+    ],
 
-        layers: {
-            ...
-            'dbootstrap/main': {
-                include: [
-                    'dbootstrap/main',
-                    'xstyle/load-css'
-                ],
+    layers: {
+        ...
+        'dbootstrap/main': {
+            include: [
+                'dbootstrap/main',
+                'xstyle/load-css'
+            ],
+        }
+    }
+
+   .. note::
+
+        If you have placed your dbootstrap package somewhere that isn't
+        directly accessible as a child directory of your *basePath* then you
+        must use the fuller package syntax in the packages list::
+
+            {
+                location: '/path/to/dbootstrap',
+                name: 'dbootstrap'
             }
-        }
-
-.. note::
-
-    If you have placed your dbootstrap package somewhere that isn't directly
-    accessible as a child directory of your *basePath* then you must use the
-    fuller package syntax in the packages list::
-
-        {
-            location: '/path/to/dbootstrap',
-            name: 'dbootstrap'
-        }
 
 #. In your main application entry point (or index.html) require the dbootstrap
-package before any Dijit widgets are loaded::
+   package before any Dijit widgets are loaded::
 
     require(['dbootstrap', ...], function(dbootstrap) {
         // Start application.
@@ -152,7 +152,7 @@ package before any Dijit widgets are loaded::
     <body class='dbootstrap'>
 
 #. Add to your build process relevant calls to Stylus to compile the CSS files
-into one dbootstrap.css file::
+   into one dbootstrap.css file::
 
     $ stylus --include path/to/dbootstrap/nib/lib \
              --include path/to/dbootstrap/theme/dbootstrap \
@@ -161,12 +161,12 @@ into one dbootstrap.css file::
     $ mv path/to/dbootstrap/theme/dbootstrap/index.css \
          path/to/dbootstrap/theme/dbootstrap/dbootstrap.css
 
-.. note::
+   .. note::
 
-    The CSS build must happen before the Dojo build is performed as the
-    generated css file is required as part of the build. Therefore, the css
-    file is built in the source tree to be copied to the build directory during
-    the Dojo build step.
+        The CSS build must happen before the Dojo build is performed as the
+        generated css file is required as part of the build. Therefore, the css
+        file is built in the source tree to be copied to the build directory
+        during the Dojo build step.
 
 #. Build your project and view as normal.
 
