@@ -1,14 +1,7 @@
-//
-// Variables
-// --------------------------------------------------
+// :copyright: Copyright 2012 Martin Pengelly-Phillips
+// :license: See LICENSE.txt.
 
-
-// Global values
-// --------------------------------------------------
-
-
-// Grays
-// -------------------------
+// Colours
 $black = #000;
 $grayDarker = #222;
 $grayDark = #333;
@@ -17,11 +10,7 @@ $grayLight = #999;
 $grayLighter = #eee;
 $white = #fff;
 
-
-// Accent colors
-// -------------------------
 $blue = #049cdb;
-$blueDark = #0064cd;
 $green = #46a546;
 $red = #9d261d;
 $yellow = #ffc40d;
@@ -31,19 +20,14 @@ $purple = #7a43b6;
 
 
 // Scaffolding
-// -------------------------
 $bodyBackground = $white;
 $textColor = $grayDark;
 
-
 // Links
-// -------------------------
 $linkColor = #08c;
 $linkColorHover = darken($linkColor, 15%);
 
-
 // Typography
-// -------------------------
 $sansFontFamily = "Helvetica Neue", Helvetica, Arial, sans-serif;
 $serifFontFamily = Georgia, "Times New Roman", Times, serif;
 $monoFontFamily = Monaco, Menlo, Consolas, "Courier New", monospace;
@@ -53,21 +37,11 @@ $baseFontFamily = $sansFontFamily;
 $baseLineHeight = 20px;
 $altFontFamily = $serifFontFamily;
 
-$headingsFontFamily = inherit; // empty to use BS default, $baseFontFamily
-$headingsFontWeight = bold; // instead of browser default, bold
-$headingsColor = inherit; // empty to use BS default, $textColor
-
-
-// Tables
-// -------------------------
-$tableBackground = transparent; // overall background-color
-$tableBackgroundAccent = #f9f9f9; // for striping
-$tableBackgroundHover = #f5f5f5; // for hover
-$tableBorder = #ddd; // table and cell border
-
+$headingsFontFamily = inherit;
+$headingsFontWeight = bold;
+$headingsColor = inherit;
 
 // Buttons
-// -------------------------
 $btnBackground = $white;
 $btnBackgroundHighlight = darken($white, 10%);
 $btnBorder = #bbb;
@@ -90,9 +64,7 @@ $btnDangerBackgroundHighlight = #bd362f;
 $btnInverseBackground = #444;
 $btnInverseBackgroundHighlight = $grayDarker;
 
-
 // Forms
-// -------------------------
 $inputBackground = $white;
 $inputBorder = #ccc;
 $inputBorderRadius = 3px;
@@ -100,60 +72,30 @@ $inputDisabledBackground = $grayLighter;
 $formActionsBackground = #f5f5f5;
 
 // Dropdowns
-// -------------------------
 $dropdownBackground = $white;
 $dropdownBorder = rgba(0,0,0,.2);
 $dropdownDividerTop = #e5e5e5;
 $dropdownDividerBottom = $white;
 
 $dropdownLinkColor = $grayDark;
-
 $dropdownLinkColorHover = $white;
 $dropdownLinkBackgroundHover = $dropdownLinkBackgroundActive;
-
 $dropdownLinkColorActive = $dropdownLinkColor;
 $dropdownLinkBackgroundActive = $linkColor;
 
 // Accordions
-// -------------------------
 $accordionBorderColor = #e5e5e5;
 
-// COMPONENT VARIABLES
-// --------------------------------------------------
-
-// Z-index master list
-// -------------------------
-// Used for a bird's eye view of components dependent on the z-axis
-// Try to avoid customizing these =)
-$zindexDropdown = 1000;
-$zindexPopover = 1010;
-$zindexTooltip = 1030;
-$zindexFixedNavbar = 1030;
-$zindexModalBackdrop = 1040;
-$zindexModal = 1050;
-
-
 // Icons path
-// -------------------------
 $fontPath = "./font";
 
-// Input placeholder text color
-// -------------------------
-$placeholderText = $grayLight;
-
-
 // Hr border color
-// -------------------------
 $hrBorder = $grayLighter;
 
-
 // Wells
-// -------------------------
 $wellBackground = #f5f5f5;
 
-
 // Navbar
-// -------------------------
 $navbarCollapseWidth = 979px;
 
 $navbarHeight = 40px;
@@ -182,30 +124,9 @@ $navbarInverseLinkColorActive = $navbarInverseLinkColorHover;
 $navbarInverseLinkBackgroundHover = transparent;
 $navbarInverseLinkBackgroundActive = $navbarInverseBackground;
 
-$navbarInverseSearchBackground = lighten($navbarInverseBackground, 25%);
-$navbarInverseSearchBackgroundFocus = $white;
-$navbarInverseSearchBorder = $navbarInverseBackground;
-$navbarInverseSearchPlaceholderColor = #ccc;
-
 $navbarInverseBrandColor = $white;
 
-
-// Pagination
-// -------------------------
-$paginationBackground = #fff;
-$paginationBorder = #ddd;
-$paginationActiveBackground = #f5f5f5;
-
-
-// Hero unit
-// -------------------------
-$heroUnitBackground = $grayLighter;
-$heroUnitHeadingColor = inherit;
-$heroUnitLeadColor = inherit;
-
-
 // Form states and alerts
-// -------------------------
 $warningText = #c09853;
 $warningBackground = #fcf8e3;
 $warningBorder = darken(spin($warningBackground, -10), 3%);
@@ -222,60 +143,15 @@ $infoText = #3a87ad;
 $infoBackground = #d9edf7;
 $infoBorder = darken(spin($infoBackground, -10), 7%);
 
-
 // Tooltips and popovers
-// -------------------------
-$tooltipColor = #fff;
-$tooltipBackground = #000;
+$tooltipBackground = $white;
 $tooltipArrowWidth = 5px;
-$tooltipArrowColor = $tooltipBackground;
-
-$popoverBackground = #fff;
-$popoverArrowWidth = 5px;
-$popoverArrowColor = #fff;
-$popoverTitleBackground = darken($popoverBackground, 3%);
-
-// Special enhancement for popovers
-$popoverArrowOuterWidth = $popoverArrowWidth + 1;
-$popoverArrowOuterColor = rgba(0,0,0,.25);
+$tooltipArrowColor = $white;
+$tooltipArrowOuterWidth = $tooltipArrowWidth + 1;
+$tooltipArrowOuterColor = rgba(0,0,0,.25);
 
 // Tree
-// -------------------------
 $treeRowBackgroundHover = #f5f5f5;
 $treeRowBackgroundSelected = #0088CC;
 $treeRowColorSelected = #fff;
 
-// GRID
-// --------------------------------------------------
-
-
-// Default 940px grid
-// -------------------------
-$gridColumns = 12;
-$gridColumnWidth = 60px;
-$gridGutterWidth = 20px;
-$gridRowWidth = ($gridColumns * $gridColumnWidth) + ($gridGutterWidth * ($gridColumns - 1));
-
-// 1200px min
-$gridColumnWidth1200 = 70px;
-$gridGutterWidth1200 = 30px;
-$gridRowWidth1200 = ($gridColumns * $gridColumnWidth1200) + ($gridGutterWidth1200 * ($gridColumns - 1));
-
-// 768px-979px
-$gridColumnWidth768 = 42px;
-$gridGutterWidth768 = 20px;
-$gridRowWidth768 = ($gridColumns * $gridColumnWidth768) + ($gridGutterWidth768 * ($gridColumns - 1));
-
-
-// Fluid grid
-// -------------------------
-$fluidGridColumnWidth = percentage($gridColumnWidth/$gridRowWidth);
-$fluidGridGutterWidth = percentage($gridGutterWidth/$gridRowWidth);
-
-// 1200px min
-$fluidGridColumnWidth1200 = percentage($gridColumnWidth1200/$gridRowWidth1200);
-$fluidGridGutterWidth1200 = percentage($gridGutterWidth1200/$gridRowWidth1200);
-
-// 768px-979px
-$fluidGridColumnWidth768 = percentage($gridColumnWidth768/$gridRowWidth768);
-$fluidGridGutterWidth768 = percentage($gridGutterWidth768/$gridRowWidth768);
