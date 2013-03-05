@@ -10,7 +10,7 @@
     padding-right: 20px;
     background-image: linear-gradient($navbarBackgroundHighlight, $navbarBackground);
     border: 1px solid $navbarBorder;
-    border-radius: 4px;
+    border-radius: $baseBorderRadius;
     box-shadow: 0 1px 4px rgba(0,0,0,.065);
 }
 
@@ -98,7 +98,7 @@
     background-color: $dropdownBackground;
     border: 1px solid #ccc; // Fallback for IE7-8
     border: 1px solid $dropdownBorder;
-    border-radius: 6px;
+    border-radius: $baseBorderRadius * 1.5;
     box-shadow: 0 5px 10px rgba(0,0,0,.2);
     border-collapse: separate;
 }
