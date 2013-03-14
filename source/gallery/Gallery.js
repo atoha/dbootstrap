@@ -112,7 +112,7 @@ function(declare, json, template, continentData, stateData,
 
             this.continentModel.mayHaveChildren = function(object){
                 var type = object.type;
-                return (type == "continent" || type == "country");
+                return (type == "planet" || type == "continent" || type == "country");
             };
 
         },
