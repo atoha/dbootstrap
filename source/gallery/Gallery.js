@@ -110,6 +110,11 @@ function(declare, json, template, continentData, stateData,
                 query: {id: 'world'}
             });
 
+            this.continentModel.mayHaveChildren = function(object){
+                var type = object.type;
+                return (type == "continent" || type == "country");
+            };
+
         },
 
         buildRendering: function() {
