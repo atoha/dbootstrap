@@ -99,12 +99,17 @@ ul.icons {
 }
 
 // Icon Borders
-// -------------------------
+// ------------
 
 .icon-border {
-  border: solid 3px #eee;
+  border: solid 3px $inputBorder;
   padding: .2em .25em .15em;
-  border-radius: 3px;
+  -webkit-border-radius: $inputBorderRadius; 
+  -moz-border-radius: $inputBorderRadius; 
+  border-radius: $inputBorderRadius;
+}
+
+// Icon Muted
 }
 
 // Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
