@@ -11,7 +11,7 @@ define(
     'dojo/text!./template/Gallery.html',
     'dojo/text!./data/continent.json',
     'dojo/text!./data/state.json',
-
+    
     'dojo/query',
     'dojo/_base/window',
     'dojo/_base/array',
@@ -72,7 +72,7 @@ define(
     'dijit/Dialog'
 ],
 
-function(declare, json, template, continentData, stateData,
+function(declare, json, template, continentData, stateData, 
          query, window, array, functional, domConstruct,
          TemplatedMixin, WidgetsInTemplateMixin,
          BorderContainer, Observable, Memory, ObjectStoreModel) {
@@ -109,6 +109,11 @@ function(declare, json, template, continentData, stateData,
                 store: this.continentStore,
                 query: {id: 'world'}
             });
+
+            this.continentModel.mayHaveChildren = function(object){
+                var type = object.type;
+                return (type == "planet" || type == "continent" || type == "country");
+            };
 
         },
 
