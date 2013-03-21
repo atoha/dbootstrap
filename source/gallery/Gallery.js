@@ -141,7 +141,11 @@ function(declare, json, template, continentData, stateData,
                     if (rule.type == rule.STYLE_RULE) {
                         var iconClass = rule.selectorText.match(/icon-[a-z\-]+/g);
                         if (iconClass &&
-                            iconClass.lastIndexOf('icon-large', 0) !== 0) {
+                            iconClass.lastIndexOf('icon-large', 0) !== 0 &&
+                            iconClass.lastIndexOf('icon-spin', 0) !== 0 &&
+                            iconClass.lastIndexOf('icon-border', 0) !== 0 &&
+                            iconClass.lastIndexOf('icon-muted', 0) !== 0)
+                        {
                             iconClasses[iconClass] = true;
                         }
                     }
@@ -155,8 +159,8 @@ function(declare, json, template, continentData, stateData,
                 domConstruct.create(
                     'span',
                     {
-                        'class': iconClass,
-                        'innerHTML': iconClass
+                        'innerHTML': '<i class="' + iconClass + '"></i>'
+                                     + iconClass
                     },
                     this.iconsContainer
                 );
