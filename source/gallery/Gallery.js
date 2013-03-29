@@ -9,7 +9,6 @@ define(
     'dojo/json',
 
     'dojo/text!./template/Gallery.html',
-    'dojo/text!./data/continent.json',
     'dojo/text!./data/state.json',
     'dojo/text!./data/countries.json',
     
@@ -25,8 +24,9 @@ define(
 
     'dojo/store/Observable',
     'dojo/store/Memory',
-    'dijit/tree/ObjectStoreModel',
-
+    'dojo/data/ItemFileReadStore',
+    'dijit/tree/ForestStoreModel',
+    
     // For template
     'dojo/dnd/Source',
     'dijit/MenuBar',
@@ -73,10 +73,10 @@ define(
     'dijit/Dialog'
 ],
 
-function(declare, json, template, continentData, stateData, countriesData,
+function(declare, json, template, stateData, countriesData,
          query, window, array, functional, domConstruct,
          TemplatedMixin, WidgetsInTemplateMixin,
-         BorderContainer, Observable, Memory, ObjectStoreModel) {
+         BorderContainer, Observable, Memory, ItemFileReadStore, ForestStoreModel) {
 
     return declare('dbootstrap.Gallery', [BorderContainer,
                                           TemplatedMixin,
@@ -94,51 +94,18 @@ function(declare, json, template, continentData, stateData, countriesData,
                 data: json.parse(stateData)
             });
 
-            this.continentStore = Memory({
-                data: json.parse(continentData)
-            });
-
-            // Since dojo.store.Memory doesn't have various store methods we need, we have to add them manually
-            this.continentStore.getChildren = function(object){
-                // Add a getChildren() method to store for the data model where
-                // children objects point to their parent (aka relational model)
-                return this.query({parent: this.getIdentity(object)});
-            };
-            
-            this.continentStore = new Observable(this.continentStore);
-            this.continentModel = new ObjectStoreModel({
-                store: this.continentStore,
-                query: {id: 'world'}
-            });
- 
-            this.continentModel.mayHaveChildren = function(object){
-                var type = object.type;
-                return (type == "planet" || type == "continent" || type == "country");
-            };
-            
             // Create a new store for the child countries data
-            this.countriesStore = Memory({
+            this.countriesStore = ItemFileReadStore({
                 data: json.parse(countriesData)
             });
             
-            // Add relevant functions for child data in countriesStore
-            this.countriesStore.getChildren = function(object){
-                // Add a getChildren() method to store for the data model where
-                // children objects point to their parent (aka relational model)
-                return object.children;
-            };
-            
-            
-            this.countriesStore = new Observable(this.countriesStore);
-            this.countriesModel = new ObjectStoreModel({
+            //this.countriesStore = new Observable(this.countriesStore);
+            this.countriesModel = new ForestStoreModel({
                 store: this.countriesStore,
-                query: {type: 'countries'}
-
+                query:{type: 'continent'},
+                rootId:'Geography', 
+                rootLabel:'Geography'
             });
-
-            this.countriesModel.mayHaveChildren = function(object){
-                return object.children || false;
-            };
             
         },
 
