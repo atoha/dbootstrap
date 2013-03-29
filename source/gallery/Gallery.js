@@ -94,12 +94,11 @@ function(declare, json, template, stateData, countriesData,
                 data: json.parse(stateData)
             });
 
-            // Create a new store for the child countries data
+            // Create a new store and model for countries data
             this.countriesStore = ItemFileReadStore({
                 data: json.parse(countriesData)
             });
             
-            //this.countriesStore = new Observable(this.countriesStore);
             this.countriesModel = new ForestStoreModel({
                 store: this.countriesStore,
                 query:{type: 'continent'},
