@@ -104,18 +104,42 @@ function(declare, json, template, continentData, stateData, countriesData,
                 // children objects point to their parent (aka relational model)
                 return this.query({parent: this.getIdentity(object)});
             };
-
+            
             this.continentStore = new Observable(this.continentStore);
             this.continentModel = new ObjectStoreModel({
                 store: this.continentStore,
                 query: {id: 'world'}
             });
-
+ 
             this.continentModel.mayHaveChildren = function(object){
                 var type = object.type;
                 return (type == "planet" || type == "continent" || type == "country");
             };
+            
+            // Create a new store for the child countries data
+            this.countriesStore = Memory({
+                data: json.parse(countriesData)
+            });
+            
+            // Add relevant functions for child data in countriesStore
+            this.countriesStore.getChildren = function(object){
+                // Add a getChildren() method to store for the data model where
+                // children objects point to their parent (aka relational model)
+                return object.children;
+            };
+            
+            
+            this.countriesStore = new Observable(this.countriesStore);
+            this.countriesModel = new ObjectStoreModel({
+                store: this.countriesStore,
+                query: {type: 'countries'}
 
+            });
+
+            this.countriesModel.mayHaveChildren = function(object){
+                return object.children || false;
+            };
+            
         },
 
         buildRendering: function() {
