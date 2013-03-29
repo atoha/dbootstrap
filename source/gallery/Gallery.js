@@ -9,8 +9,8 @@ define(
     'dojo/json',
 
     'dojo/text!./template/Gallery.html',
-    'dojo/text!./data/continent.json',
     'dojo/text!./data/state.json',
+    'dojo/text!./data/countries.json',
     
     'dojo/query',
     'dojo/_base/window',
@@ -24,8 +24,9 @@ define(
 
     'dojo/store/Observable',
     'dojo/store/Memory',
-    'dijit/tree/ObjectStoreModel',
-
+    'dojo/data/ItemFileReadStore',
+    'dijit/tree/ForestStoreModel',
+    
     // For template
     'dojo/dnd/Source',
     'dijit/MenuBar',
@@ -72,10 +73,10 @@ define(
     'dijit/Dialog'
 ],
 
-function(declare, json, template, continentData, stateData, 
+function(declare, json, template, stateData, countriesData,
          query, window, array, functional, domConstruct,
          TemplatedMixin, WidgetsInTemplateMixin,
-         BorderContainer, Observable, Memory, ObjectStoreModel) {
+         BorderContainer, Observable, Memory, ItemFileReadStore, ForestStoreModel) {
 
     return declare('dbootstrap.Gallery', [BorderContainer,
                                           TemplatedMixin,
@@ -93,28 +94,18 @@ function(declare, json, template, continentData, stateData,
                 data: json.parse(stateData)
             });
 
-            this.continentStore = Memory({
-                data: json.parse(continentData)
+            // Create a new store and model for countries data
+            this.countriesStore = ItemFileReadStore({
+                data: json.parse(countriesData)
             });
-
-            // Since dojo.store.Memory doesn't have various store methods we need, we have to add them manually
-            this.continentStore.getChildren = function(object){
-                // Add a getChildren() method to store for the data model where
-                // children objects point to their parent (aka relational model)
-                return this.query({parent: this.getIdentity(object)});
-            };
-
-            this.continentStore = new Observable(this.continentStore);
-            this.continentModel = new ObjectStoreModel({
-                store: this.continentStore,
-                query: {id: 'world'}
+            
+            this.countriesModel = new ForestStoreModel({
+                store: this.countriesStore,
+                query:{type: 'continent'},
+                rootId:'Geography', 
+                rootLabel:'Geography'
             });
-
-            this.continentModel.mayHaveChildren = function(object){
-                var type = object.type;
-                return (type == "planet" || type == "continent" || type == "country");
-            };
-
+            
         },
 
         buildRendering: function() {
