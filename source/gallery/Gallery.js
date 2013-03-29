@@ -11,6 +11,7 @@ define(
     'dojo/text!./template/Gallery.html',
     'dojo/text!./data/continent.json',
     'dojo/text!./data/state.json',
+    'dojo/text!./data/countries.json',
     
     'dojo/query',
     'dojo/_base/window',
@@ -72,7 +73,7 @@ define(
     'dijit/Dialog'
 ],
 
-function(declare, json, template, continentData, stateData, 
+function(declare, json, template, continentData, stateData, countriesData,
          query, window, array, functional, domConstruct,
          TemplatedMixin, WidgetsInTemplateMixin,
          BorderContainer, Observable, Memory, ObjectStoreModel) {
