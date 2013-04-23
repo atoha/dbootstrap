@@ -167,21 +167,18 @@
         </div>
 
         <div data-dojo-type="dijit/layout/ContentPane" data-dojo-props='title:"Tree"'>
-            <!-- tree widget -->
-            <div data-dojo-type="dijit/Tree"
-                data-dojo-props="model: this.continentModel, query:{ type:'continent'}, label:'Continents', openOnClick:true"
-            ></div>
+            <div id="rootlessChilrenTree" data-dojo-type="dijit/Tree" data-dojo-props="
+                model:this.countriesModel,
+                openOnClick:true"></div>
         </div>
-
+        
         <div data-dojo-type="dijit/layout/ContentPane" data-dojo-props="title:'Rootless Tree'">
             <div id="rootlessTree" data-dojo-type="dijit/Tree" data-dojo-props="
-                model:this.continentModel,
-                query:{ type:'continent' },
+                model:this.countriesModel,
                 showRoot: false,
-                openOnClick:true
-            "></div>
+                openOnClick:true"></div>
         </div>
-
+        
         <div data-dojo-type="dijit/layout/ContentPane" data-dojo-props='selected:true, title:"Calendar"'>
             <!-- calendar widget pane -->
             <input id="calendar1" data-dojo-type="dijit/Calendar">
@@ -282,6 +279,17 @@
             </div>
 
             <div data-dojo-attach-point="iconsContainer"></div>
+
+            <h3>Modifiers</h3>
+            A few modifier classes are also available for applying common
+            effects to the icons. Just add the appropriate class.
+
+            <div>
+                <span><i class='icon-spinner icon-spin'></i>icon-spin</span>
+                <span><i class='icon-spinner icon-large'></i>icon-large</span>
+                <span><i class='icon-spinner icon-border'></i>icon-border</span>
+                <span><i class='icon-spinner icon-muted'></i>icon-muted</span>
+            </div>
 
         </div><!-- end:icons upper tab -->
 

@@ -22,7 +22,7 @@ html, body {
 }
 
 #iconsTab {
-    [class^='icon-'] {
+    span {
         display: inline-block;
         width: 200px;
         line-height: 40px;
@@ -31,10 +31,13 @@ html, body {
 
         &:hover {
             background-color: #fbf4f4;
+
+            [class^='icon-']:before {
+                font-size: 21px;
+            }
         }
-        &:hover:before {
-            font-size: 21px;
-        }
+
+
     }
 
     [class^='icon-']:before {
