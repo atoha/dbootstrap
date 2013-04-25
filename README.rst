@@ -10,8 +10,7 @@ Bootstrap theme for Dojo.
 Get The Code
 ************
 
-    $ git clone --recursive git@github.com:thesociable/dbootstrap.git
-
+    $ git clone --recursive git://github.com/thesociable/dbootstrap.git
 
 ******************
 Build Requirements
