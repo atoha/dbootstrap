@@ -12,6 +12,20 @@ Get The Code
 
     $ git clone --recursive git@github.com:thesociable/dbootstrap.git
 
+
+******************
+Build Requirements
+******************
+
+To build the project locally you will need the following installed:
+
+* `Python <http://www.python.org>`_ >= 2.6, <3
+* `Nodejs <http://www.nodejs.org>`_ >= 10.5
+* `Stylus <http://learnboost.github.io/stylus/>`_ >= 0.31
+
+All other requirements are bundled as git submodules so make sure you have
+initialised them (the default when using `--recursive` with `git clone`)
+
 ****
 Demo
 ****
