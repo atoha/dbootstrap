@@ -22,7 +22,7 @@ function(declare, lang, array, domConstruct, domClass, TemplatedMixin) {
     //
     var _attachTemplateNodes = TemplatedMixin.prototype._attachTemplateNodes;
 
-    TemplatedMixin.prototype._attachTemplateNodes = function(rootNode) {
+    TemplatedMixin.prototype._attachTemplateNodes = function(rootNode, getAttrFunc) {
         // Replace nodes with appropriate ones, before calling original
         // method.
         //
@@ -71,7 +71,7 @@ function(declare, lang, array, domConstruct, domClass, TemplatedMixin) {
         }
 
         // Continue with normal parent method.
-        return _attachTemplateNodes.call(this, rootNode);
+        return _attachTemplateNodes.call(this, rootNode, getAttrFunc);
     }
 
     return TemplatedMixin;
