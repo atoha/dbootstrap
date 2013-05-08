@@ -220,6 +220,13 @@ def execute(command):
     '''Run the given *command* in a subprocess streaming output to a log.'''
     log = logging.getLogger('dbootstrap.build.execute')
     command = map(str, command)
+    
+    # Windows doesn't auto resolve .cmd extensions so add manually when
+    # required.
+    if os.name in ('nt',):
+        if command[0] == 'stylus':
+            command[0] += '.cmd'
+    
     log.debug('Running command: {0}'.format(' '.join(command)))
 
     try:
