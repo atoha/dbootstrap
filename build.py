@@ -69,6 +69,9 @@ def main(arguments=None):
         issues += 1
 
     dbootstrap_css_path = os.path.join(dbootstrap_theme_path, 'dbootstrap.css')
+    if os.path.exists(dbootstrap_css_path):
+        os.remove(dbootstrap_css_path)
+    
     os.rename(
         os.path.join(dbootstrap_theme_path, 'index.css'),
         dbootstrap_css_path
