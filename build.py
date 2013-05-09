@@ -97,9 +97,11 @@ def main(arguments=None):
 
         log.info('Building Javascript packages.')
         result = execute([
-            'node', os.path.join(source_path, 'dojo', 'dojo.js'), 'load=build',
-            '--require', loader_path, '--profile', profile_path,
-            '--releaseDir', build_path
+            'node', unix_style(os.path.join(source_path, 'dojo', 'dojo.js')),
+            'load=build',
+            '--require', unix_style(loader_path),
+            '--profile', unix_style(profile_path),
+            '--releaseDir', unix_style(build_path)
         ])
         if not result:
             issues += 1
@@ -131,9 +133,10 @@ def main(arguments=None):
         )
 
         result = execute([
-            'node', os.path.join(source_path, 'dojo', 'dojo.js'), 'load=build',
-            '--profile', profile_path,
-            '--releaseDir', build_path
+            'node', unix_style(os.path.join(source_path, 'dojo', 'dojo.js')),
+            'load=build',
+            '--profile', unix_style(profile_path),
+            '--releaseDir', unix_style(build_path)
         ])
         if not result:
             issues += 1
@@ -213,6 +216,10 @@ def main(arguments=None):
     else:
         log.info('Build completed successfully.')
 
+
+def unix_style(path):
+    '''Return path converted to unix format.'''
+    return path.replace('\\', '/')
 
 
 class CommandExecutionException(Exception):
