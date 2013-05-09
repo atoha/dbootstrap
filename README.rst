@@ -40,14 +40,14 @@ To build the demo locally:
 
 #. Build it::
 
-    $ ./build.py demo
+    $ python build.py demo
 
    .. note::
 
         If you like to see what is going on under the hood, run with a lower
         logging level::
 
-             $ ./build.py -v debug demo
+             $ python build.py -v debug demo
 
 #. Fire up a server::
 
@@ -56,7 +56,7 @@ To build the demo locally:
 
 #. Take a look::
 
-    Point your browser at http://0.0.0.0:8000/
+    Point your browser at http://localhost:8000/
 
 ***********
 Integration
@@ -77,14 +77,14 @@ better solution see the integrated build below.
 
 #. Build just the theme::
 
-    $ ./build.py theme
+    $ python build.py theme
 
    .. note::
 
         If you like to see what is going on under the hood, run with a lower
         logging level::
 
-            $ ./build.py -v debug theme
+            $ python build.py -v debug theme
 
 #. Copy (or link) the resulting package *dbootstrap/build/theme/dbootstrap*
    into the appropriate location in your project and ensure you notify Dojo
