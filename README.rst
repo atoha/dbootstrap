@@ -56,7 +56,7 @@ To build the demo locally:
 
 #. Take a look::
 
-    Point your browser at http://0.0.0.0:8000/
+    Point your browser at http://localhost:8000/
 
 ***********
 Integration
