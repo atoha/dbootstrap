@@ -22,8 +22,7 @@ function(declare, lang, array, domConstruct, domClass, TemplatedMixin) {
     //
     var _attachTemplateNodes = TemplatedMixin.prototype._attachTemplateNodes;
 
-    TemplatedMixin.prototype._attachTemplateNodes = function(rootNode,
-                                                             getAttrFunc) {
+    TemplatedMixin.prototype._attachTemplateNodes = function(rootNode, getAttrFunc) {
         // Replace nodes with appropriate ones, before calling original
         // method.
         //
@@ -57,7 +56,7 @@ function(declare, lang, array, domConstruct, domClass, TemplatedMixin) {
                 if (domClass.contains(node, reference_classes[i])) {
                     var attributes = {};
                     array.forEach(reference_attributes, function(name) {
-                        var attribute = getAttrFunc(node, name);
+                        var attribute = node.getAttribute(name);
                         if (attribute) {
                             attributes[name] = attribute;
                         }
