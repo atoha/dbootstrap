@@ -69,6 +69,9 @@ def main(arguments=None):
         issues += 1
 
     dbootstrap_css_path = os.path.join(dbootstrap_theme_path, 'dbootstrap.css')
+    if os.path.exists(dbootstrap_css_path):
+        os.remove(dbootstrap_css_path)
+    
     os.rename(
         os.path.join(dbootstrap_theme_path, 'index.css'),
         dbootstrap_css_path
@@ -94,9 +97,11 @@ def main(arguments=None):
 
         log.info('Building Javascript packages.')
         result = execute([
-            'node', os.path.join(source_path, 'dojo', 'dojo.js'), 'load=build',
-            '--require', loader_path, '--profile', profile_path,
-            '--releaseDir', build_path
+            'node', unix_style(os.path.join(source_path, 'dojo', 'dojo.js')),
+            'load=build',
+            '--require', unix_style(loader_path),
+            '--profile', unix_style(profile_path),
+            '--releaseDir', unix_style(build_path)
         ])
         if not result:
             issues += 1
@@ -128,9 +133,10 @@ def main(arguments=None):
         )
 
         result = execute([
-            'node', os.path.join(source_path, 'dojo', 'dojo.js'), 'load=build',
-            '--profile', profile_path,
-            '--releaseDir', build_path
+            'node', unix_style(os.path.join(source_path, 'dojo', 'dojo.js')),
+            'load=build',
+            '--profile', unix_style(profile_path),
+            '--releaseDir', unix_style(build_path)
         ])
         if not result:
             issues += 1
@@ -211,6 +217,10 @@ def main(arguments=None):
         log.info('Build completed successfully.')
 
 
+def unix_style(path):
+    '''Return path converted to unix format.'''
+    return path.replace('\\', '/')
+
 
 class CommandExecutionException(Exception):
     '''Raise when a command execution issue occurs.'''
@@ -220,6 +230,13 @@ def execute(command):
     '''Run the given *command* in a subprocess streaming output to a log.'''
     log = logging.getLogger('dbootstrap.build.execute')
     command = map(str, command)
+    
+    # Windows doesn't auto resolve .cmd extensions so add manually when
+    # required.
+    if os.name in ('nt',):
+        if command[0] == 'stylus':
+            command[0] += '.cmd'
+    
     log.debug('Running command: {0}'.format(' '.join(command)))
 
     try:
