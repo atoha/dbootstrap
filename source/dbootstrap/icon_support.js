@@ -31,7 +31,7 @@ function(declare, lang, array, domConstruct, domClass, TemplatedMixin) {
         var reference_classes = [
             'dijitIcon', 'dijitTabStripIcon', 'dijitMenuExpand',
             'dijitCalendarIncrementControl', 'dijitArrowButtonInner',
-            'dijitTreeExpando'
+            'dijitTreeExpando', 'dijitArrowNode'
         ];
         var reference_attributes = ['class', 'data-dojo-attach-point'];
 
