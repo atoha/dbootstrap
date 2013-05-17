@@ -1,2 +1,3 @@
 //>>built
-define("dojo/cldr/nls/ca/currency",{AUD_displayName:"d\u00f2lar australi\u00e0",CAD_displayName:"d\u00f2lar canadenc",CHF_displayName:"franc su\u00eds",CNY_displayName:"iuan renmimbi xin\u00e8s",EUR_displayName:"euro",GBP_displayName:"lliura esterlina brit\u00e0nica",HKD_displayName:"d\u00f2lar de Hong Kong",JPY_displayName:"ien japon\u00e8s",USD_displayName:"d\u00f2lar dels Estats Units"});
+define("dojo/cldr/nls/ca/currency",{HKD_displayName:"d\u00f2lar de Hong Kong",CHF_displayName:"franc su\u00eds",JPY_symbol:"JP\u00a5",CAD_displayName:"d\u00f2lar canadenc",HKD_symbol:"HK$",CNY_displayName:"iuan renmimbi xin\u00e8s",USD_symbol:"US$",AUD_displayName:"d\u00f2lar australi\u00e0",JPY_displayName:"ien japon\u00e8s",CAD_symbol:"CA$",USD_displayName:"d\u00f2lar dels Estats Units",EUR_symbol:"\u20ac",CNY_symbol:"\u00a5",GBP_displayName:"lliura esterlina brit\u00e0nica",GBP_symbol:"\u00a3",
+AUD_symbol:"AU$",EUR_displayName:"euro"});

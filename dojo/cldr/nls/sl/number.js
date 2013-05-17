@@ -1,2 +1,2 @@
 //>>built
-define("dojo/cldr/nls/sl/number",{decimal:",",group:".",list:";",percentSign:"%",plusSign:"+",minusSign:"-",exponential:"e",perMille:"\u2030",infinity:"\u221e",nan:"NaN",decimalFormat:"#,##0.###","decimalFormat-short":"000\u00a0bil'.'",scientificFormat:"#E0",percentFormat:"#,##0%",currencyFormat:"#,##0.00\u00a0\u00a4"});
+define("dojo/cldr/nls/sl/number",{group:".",percentSign:"%",exponential:"e",scientificFormat:"#E0",percentFormat:"#,##0%",list:";",infinity:"\u221e",minusSign:"-",decimal:",",nan:"NaN",perMille:"\u2030",decimalFormat:"#,##0.###",currencyFormat:"\u00a4#,##0.00;(\u00a4#,##0.00)",plusSign:"+","decimalFormat-long":"000 bilijona","decimalFormat-short":"000\u00a0bil'.'"});
