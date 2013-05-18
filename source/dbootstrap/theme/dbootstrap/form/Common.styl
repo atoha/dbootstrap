@@ -51,10 +51,17 @@
     padding: 4px 6px;
 }
 
-.dbootstrap .dijitTextBoxDisabled {
+.dbootstrap .dijitTextBoxDisabled, .dbootstrap .dijitTextBoxReadOnly {
     background-image: none;
     box-shadow: none;
     background-color: $inputDisabledBackground;
+}
+
+.dj_webkit .dbootstrap .dijitTextBoxDisabled input,
+.dj_webkit .dbootstrap textarea.dijitTextAreaDisabled,
+.dbootstrap .dijitTextBoxDisabled,
+.dbootstrap .dijitTextBoxReadOnly {
+    color: $inputDisabledColor;
 }
 
 // TextArea
