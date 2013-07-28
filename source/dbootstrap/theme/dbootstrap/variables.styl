@@ -65,7 +65,7 @@ $tableBackground = transparent; // overall background-color
 $tableBackgroundAccent = #f9f9f9; // for striping
 $tableBackgroundHover = #f5f5f5; // for hover
 $tableBorder = #ddd; // table and cell border
-
+$tableBorderRadius = 3px;
 
 // Buttons
 // -------------------------
@@ -252,9 +252,17 @@ $treeRowBackgroundHover = #f5f5f5;
 $treeRowBackgroundSelected = #0088CC;
 $treeRowColorSelected = #fff;
 
-// GRID
+// Grid
 // --------------------------------------------------
-
+$gridBackground = $tableBackground;
+$gridHeaderBackground = $grayLighter;
+$gridBorder = $tableBorder;
+$gridBorderRadius = 3px;
+$gridRowEvenBackground = $white;
+$gridRowOddBackground = $grayLighter;
+$gridSelectedBackground = $blue;
+$gridSelectedColor = $white;
+$gridBackgroundHover = lighten($gridSelectedBackground, 30%);
 
 // Default 940px grid
 // -------------------------
