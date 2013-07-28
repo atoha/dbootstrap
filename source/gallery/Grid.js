@@ -7,11 +7,14 @@ define(
 [
     'dojo/_base/declare',
     'dgrid/OnDemandGrid',
-    'dgrid/extensions/DijitRegistry'
+    'dgrid/extensions/DijitRegistry',
+    'dgrid/Selection',
+    'dgrid/Keyboard',
 ],
 
-function(declare, Grid, DijitRegistry) {
+function(declare, Grid, DijitRegistry, Selection, Keyboard) {
 
-    return declare('dbootstrap.Grid', [Grid, DijitRegistry], {
+    return declare('dbootstrap.Grid', [Grid, DijitRegistry, Selection,
+                                       Keyboard], {
     })
 });
