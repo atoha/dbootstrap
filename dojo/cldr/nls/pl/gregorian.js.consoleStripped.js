@@ -32,12 +32,13 @@ define(
 	],
 	"field-weekday": "Dzień tygodnia",
 	"dateFormatItem-yQQQ": "QQQ y",
-	"dateFormatItem-yMEd": "E, d.MM.yyyy",
+	"dateFormatItem-yMEd": "E, d.MM.y",
 	"dateFormatItem-MMMEd": "E, d MMM",
 	"eraNarrow": [
 		"p.n.e.",
 		"n.e."
 	],
+	"dateFormatItem-yMM": "MM.y",
 	"dayPeriods-format-wide-earlyMorning": "nad ranem",
 	"dayPeriods-format-wide-morning": "rano",
 	"days-format-short": [
@@ -70,9 +71,9 @@ define(
 	"dateFormat-full": "EEEE, d MMMM y",
 	"dateFormatItem-Md": "d.MM",
 	"dayPeriods-format-wide-noon": "w południe",
-	"dateFormatItem-yMd": "d.MM.yyyy",
+	"dateFormatItem-yMd": "d.MM.y",
 	"field-era": "Era",
-	"dateFormatItem-yM": "MM.yyyy",
+	"dateFormatItem-yM": "MM.y",
 	"months-standAlone-wide": [
 		"styczeń",
 		"luty",
@@ -94,11 +95,10 @@ define(
 		"III kwartał",
 		"IV kwartał"
 	],
+	"dateFormatItem-yQQQQ": "QQQQ y",
 	"timeFormat-long": "HH:mm:ss z",
 	"field-year": "Rok",
 	"dateFormatItem-yMMM": "LLL y",
-	"dateFormatItem-yQ": "QQQ y",
-	"dateFormatItem-yyyyMMMM": "LLLL y",
 	"field-hour": "Godzina",
 	"dateFormatItem-MMdd": "d.MM",
 	"months-format-abbr": [
@@ -115,7 +115,6 @@ define(
 		"lis",
 		"gru"
 	],
-	"dateFormatItem-yyQ": "QQQ yy",
 	"timeFormat-full": "HH:mm:ss zzzz",
 	"field-day-relative+0": "Dzisiaj",
 	"field-day-relative+1": "Jutro",
@@ -158,7 +157,6 @@ define(
 		"sobota"
 	],
 	"dateFormatItem-MMMMd": "d MMMM",
-	"dateFormatItem-yyMMM": "LLLL yy",
 	"timeFormat-medium": "HH:mm:ss",
 	"dateFormatItem-Hm": "HH:mm",
 	"quarters-standAlone-abbr": [
@@ -211,7 +209,6 @@ define(
 		"sobota"
 	],
 	"field-zone": "Strefa",
-	"dateFormatItem-yyyyMM": "MM.yyyy",
 	"dateFormatItem-y": "y",
 	"months-standAlone-narrow": [
 		"s",
@@ -265,7 +262,7 @@ define(
 	"dateFormatItem-MMM": "LLL",
 	"field-month": "Miesiąc",
 	"dayPeriods-format-wide-am": "AM",
-	"dateFormat-short": "dd.MM.yyyy",
+	"dateFormat-short": "dd.MM.y",
 	"dayPeriods-format-wide-afternoon": "po południu",
 	"field-second": "Sekunda",
 	"dateFormatItem-yMMMEd": "E, d MMM y",

@@ -1,13 +1,14 @@
 define(
 "dojo/cldr/nls/pl/islamic", //begin v1.x content
 {
-	"dateFormatItem-yM": "MM.yyyy",
+	"field-dayperiod": "Dayperiod",
 	"dateFormatItem-yyyyMMMEd": "E, d MMM y G",
-	"dateFormatItem-yQ": "yyyy Q",
+	"field-minute": "Minuta",
 	"dateFormatItem-MMMEd": "E, d MMM",
+	"field-day-relative+-1": "Wczoraj",
+	"field-weekday": "Dzień tygodnia",
 	"dateFormatItem-hms": "hh:mm:ss a",
-	"dateFormatItem-yQQQ": "y QQQ",
-	"dateFormatItem-MMdd": "d.MM",
+	"field-day-relative+-2": "Przedwczoraj",
 	"days-standAlone-wide": [
 		"niedziela",
 		"poniedziałek",
@@ -17,8 +18,10 @@ define(
 		"piątek",
 		"sobota"
 	],
-	"dateFormatItem-MMM": "LLL",
 	"dateTimeFormat-short": "{1}, {0}",
+	"field-era": "Era",
+	"dateFormatItem-Gy": "y G",
+	"field-hour": "Godzina",
 	"dateTimeFormat-medium": "{1}, {0}",
 	"quarters-standAlone-abbr": [
 		"1 kw.",
@@ -26,7 +29,7 @@ define(
 		"3 kw.",
 		"4 kw."
 	],
-	"dateFormatItem-y": "y",
+	"dateFormatItem-y": "y G",
 	"dateFormatItem-yyyy": "y G",
 	"months-standAlone-abbr": [
 		"Muh.",
@@ -43,7 +46,8 @@ define(
 		"Zu al-h."
 	],
 	"dateFormatItem-Ed": "E, d",
-	"dateFormatItem-yMMM": "LLL y",
+	"field-day-relative+0": "Dzisiaj",
+	"field-day-relative+1": "Jutro",
 	"days-standAlone-narrow": [
 		"N",
 		"P",
@@ -53,22 +57,23 @@ define(
 		"P",
 		"S"
 	],
-	"dateFormatItem-yyyyMM": "MM.yyyy G",
-	"dateFormatItem-yyyyMMMM": "LLLL y G",
-	"dateFormat-long": "d MMMM, y G",
-	"dateFormatItem-Hm": "HH:mm",
+	"field-day-relative+2": "Pojutrze",
+	"dateFormatItem-GyMMMd": "d MMM y G",
+	"dateFormat-long": "d MMMM y G",
+	"field-zone": "Strefa",
+	"field-week-relative+-1": "Zeszły tydzień",
 	"dateFormat-medium": "d MMM y G",
-	"dateFormatItem-Hms": "HH:mm:ss",
-	"dateFormatItem-yyMMM": "LLL yy G",
-	"dateFormatItem-yMd": "d.MM.yyyy",
+	"field-year-relative+0": "Bieżący rok",
+	"field-year-relative+1": "Przyszły rok",
 	"quarters-standAlone-wide": [
 		"I kwartał",
 		"II kwartał",
 		"III kwartał",
 		"IV kwartał"
 	],
-	"dateFormatItem-yMMMM": "LLLL y",
-	"dateFormatItem-ms": "mm:ss",
+	"field-year-relative+-1": "Zeszły rok",
+	"field-year": "Rok",
+	"dateFormatItem-yyyyQQQQ": "QQQQ y G",
 	"quarters-standAlone-narrow": [
 		"K1",
 		"K2",
@@ -89,11 +94,13 @@ define(
 		"Zu al-kada",
 		"Zu al-hidżdża"
 	],
-	"dateFormatItem-yyyyMd": "dd.MM.yyyy G",
+	"field-week": "Tydzień",
 	"dateFormatItem-yyyyMMMd": "d MMM y G",
-	"dateFormatItem-yyyyMEd": "E, dd.MM.yyyy G",
+	"dateFormatItem-yyyyMd": "d.MM.y G",
+	"dateFormatItem-yyyyMEd": "E, d.MM.y G",
+	"field-week-relative+0": "Bieżący tydzień",
 	"dateFormatItem-MMMd": "d MMM",
-	"dateFormatItem-yyQ": "Q y G",
+	"field-week-relative+1": "Przyszły tydzień",
 	"months-format-abbr": [
 		"Muh.",
 		"Saf.",
@@ -108,8 +115,9 @@ define(
 		"Zu al-k.",
 		"Zu al-h."
 	],
-	"dateFormatItem-H": "HH",
-	"dateFormatItem-MMMMd": "d MMMM",
+	"field-month-relative+0": "Bieżący miesiąc",
+	"field-month": "Miesiąc",
+	"field-month-relative+1": "Przyszły miesiąc",
 	"quarters-format-abbr": [
 		"K1",
 		"K2",
@@ -125,7 +133,6 @@ define(
 		"pt.",
 		"sob."
 	],
-	"dateFormatItem-M": "L",
 	"days-format-narrow": [
 		"N",
 		"P",
@@ -135,9 +142,12 @@ define(
 		"P",
 		"S"
 	],
-	"dateFormatItem-yMMMd": "d MMM y",
+	"field-second": "Sekunda",
+	"dateFormatItem-GyMMMEd": "E, d MMM y G",
+	"dateFormatItem-GyMMM": "LLL y G",
+	"field-day": "Dzień",
+	"dateFormatItem-yyyyQQQ": "QQQ y G",
 	"dateFormatItem-MEd": "E, d.MM",
-	"dateFormatItem-yyyyQQQ": "G y QQQ",
 	"months-format-narrow": [
 		"1",
 		"2",
@@ -171,12 +181,10 @@ define(
 		"pt.",
 		"sob."
 	],
-	"dateFormat-short": "dd.MM.yyyy G",
-	"dateFormatItem-yMMMEd": "E, d MMM y",
-	"dateFormat-full": "EEEE, d MMMM, y G",
+	"dateFormat-short": "dd.MM.y G",
+	"dateFormatItem-yyyyM": "MM.y G",
+	"dateFormat-full": "EEEE, d MMMM y G",
 	"dateFormatItem-Md": "d.MM",
-	"dateFormatItem-yMEd": "E, d.MM.yyyy",
-	"dateFormatItem-yyyyQ": "G y Q",
 	"months-format-wide": [
 		"Muharram",
 		"Safar",
@@ -200,7 +208,8 @@ define(
 		"pt.",
 		"sob."
 	],
-	"dateFormatItem-d": "d",
+	"dateFormatItem-yyyyMMM": "LLL y G",
+	"field-month-relative+-1": "Zeszły miesiąc",
 	"quarters-format-wide": [
 		"I kwartał",
 		"II kwartał",

@@ -1,13 +1,16 @@
 define(
 "dojo/cldr/nls/ro/buddhist", //begin v1.x content
 {
-	"dateFormatItem-yM": "MM.yyyy",
-	"dateFormatItem-yQ": "'trimestrul' Q y",
+	"field-dayperiod": "perioada zilei",
+	"field-minute": "minut",
 	"eraNames": [
 		"era budistă"
 	],
 	"dateFormatItem-MMMEd": "E d MMM",
-	"dateFormatItem-yQQQ": "QQQ y",
+	"dateTimeFormat-full": "{1}, {0}",
+	"field-day-relative+-1": "ieri",
+	"field-weekday": "zi a săptămânii",
+	"field-day-relative+-2": "alaltăieri",
 	"days-standAlone-wide": [
 		"duminică",
 		"luni",
@@ -31,6 +34,10 @@ define(
 		"N",
 		"D"
 	],
+	"dateTimeFormat-short": "{1}, {0}",
+	"field-era": "eră",
+	"field-hour": "oră",
+	"dateTimeFormat-medium": "{1}, {0}",
 	"quarters-standAlone-abbr": [
 		"T1",
 		"T2",
@@ -53,7 +60,8 @@ define(
 		"dec."
 	],
 	"dateFormatItem-Ed": "E d",
-	"dateFormatItem-yMMM": "MMM y",
+	"field-day-relative+0": "azi",
+	"field-day-relative+1": "mâine",
 	"days-standAlone-narrow": [
 		"D",
 		"L",
@@ -66,21 +74,29 @@ define(
 	"eraAbbr": [
 		"e.b."
 	],
+	"field-day-relative+2": "poimâine",
 	"dateFormat-long": "d MMMM y G",
+	"field-zone": "zonă",
+	"field-week-relative+-1": "Săptămâna trecută",
 	"dateFormat-medium": "d MMM y G",
-	"dateFormatItem-yMd": "dd.MM.yyyy",
+	"field-year-relative+0": "Anul acesta",
+	"field-year-relative+1": "Anul viitor",
 	"quarters-standAlone-wide": [
 		"trimestrul I",
 		"trimestrul al II-lea",
 		"trimestrul al III-lea",
 		"trimestrul al IV-lea"
 	],
+	"field-year-relative+-1": "Anul trecut",
+	"field-year": "an",
 	"quarters-standAlone-narrow": [
 		"T1",
 		"T2",
 		"T3",
 		"T4"
 	],
+	"dateTimeFormat-long": "{1}, {0}",
+	"field-week": "săptămână",
 	"months-standAlone-wide": [
 		"ianuarie",
 		"februarie",
@@ -96,12 +112,14 @@ define(
 		"decembrie"
 	],
 	"dateFormatItem-MMMd": "d MMM",
+	"field-week-relative+0": "Săptămâna aceasta",
 	"quarters-format-narrow": [
 		"1",
 		"2",
 		"3",
 		"T4"
 	],
+	"field-week-relative+1": "Săptămâna viitoare",
 	"months-format-abbr": [
 		"ian.",
 		"feb.",
@@ -116,6 +134,9 @@ define(
 		"nov.",
 		"dec."
 	],
+	"field-month-relative+0": "Luna aceasta",
+	"field-month": "lună",
+	"field-month-relative+1": "Luna viitoare",
 	"quarters-format-abbr": [
 		"trim. I",
 		"trim. II",
@@ -140,7 +161,8 @@ define(
 		"V",
 		"S"
 	],
-	"dateFormatItem-yMMMd": "d MMM y",
+	"field-second": "secundă",
+	"field-day": "zi",
 	"dateFormatItem-MEd": "E, dd.MM",
 	"months-format-narrow": [
 		"I",
@@ -174,11 +196,9 @@ define(
 		"Vi",
 		"Sâ"
 	],
-	"dateFormat-short": "d/M/yyyy",
-	"dateFormatItem-yMMMEd": "E, d MMM y",
+	"dateFormat-short": "d/M/y",
 	"dateFormat-full": "EEEE, d MMMM, y G",
 	"dateFormatItem-Md": "dd.MM",
-	"dateFormatItem-yMEd": "E, dd.MM.yyyy",
 	"months-format-wide": [
 		"ianuarie",
 		"februarie",
@@ -202,11 +222,15 @@ define(
 		"Vi",
 		"Sâ"
 	],
+	"field-month-relative+-1": "Luna trecută",
 	"quarters-format-wide": [
 		"trimestrul I",
 		"trimestrul al II-lea",
 		"trimestrul al III-lea",
 		"trimestrul al IV-lea"
+	],
+	"eraNarrow": [
+		"e.b."
 	],
 	"days-format-wide": [
 		"duminică",
@@ -216,9 +240,6 @@ define(
 		"joi",
 		"vineri",
 		"sâmbătă"
-	],
-	"eraNarrow": [
-		"e.b."
 	]
 }
 //end v1.x content

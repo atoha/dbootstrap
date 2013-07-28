@@ -32,12 +32,13 @@ define(
 	],
 	"field-weekday": "zi a săptămânii",
 	"dateFormatItem-yQQQ": "QQQ y",
-	"dateFormatItem-yMEd": "E, dd.MM.yyyy",
+	"dateFormatItem-yMEd": "E, dd.MM.y",
 	"dateFormatItem-MMMEd": "E, d MMM",
 	"eraNarrow": [
 		"î.Hr.",
 		"d.Hr."
 	],
+	"dateFormatItem-yMM": "MM.y",
 	"days-format-short": [
 		"Du",
 		"Lu",
@@ -66,9 +67,9 @@ define(
 	"dayPeriods-format-wide-pm": "PM",
 	"dateFormat-full": "EEEE, d MMMM y",
 	"dateFormatItem-Md": "dd.MM",
-	"dateFormatItem-yMd": "dd.MM.yyyy",
+	"dateFormatItem-yMd": "dd.MM.y",
 	"field-era": "eră",
-	"dateFormatItem-yM": "MM.yyyy",
+	"dateFormatItem-yM": "MM.y",
 	"months-standAlone-wide": [
 		"ianuarie",
 		"februarie",
@@ -90,11 +91,10 @@ define(
 		"trimestrul al III-lea",
 		"trimestrul al IV-lea"
 	],
+	"dateFormatItem-yQQQQ": "QQQQ y",
 	"timeFormat-long": "HH:mm:ss z",
 	"field-year": "an",
 	"dateFormatItem-yMMM": "MMM y",
-	"dateFormatItem-yQ": "'trimestrul' Q y",
-	"dateFormatItem-yyyyMMMM": "MMMM y",
 	"field-hour": "oră",
 	"dateFormatItem-MMdd": "dd.MM",
 	"months-format-abbr": [
@@ -111,7 +111,6 @@ define(
 		"nov.",
 		"dec."
 	],
-	"dateFormatItem-yyQ": "Q yy",
 	"timeFormat-full": "HH:mm:ss zzzz",
 	"field-day-relative+0": "azi",
 	"field-day-relative+1": "mâine",
@@ -154,7 +153,6 @@ define(
 		"sâmbătă"
 	],
 	"dateFormatItem-MMMMd": "d MMMM",
-	"dateFormatItem-yyMMM": "MMM yy",
 	"timeFormat-medium": "HH:mm:ss",
 	"dateFormatItem-Hm": "HH:mm",
 	"quarters-standAlone-abbr": [
@@ -204,7 +202,6 @@ define(
 		"sâmbătă"
 	],
 	"field-zone": "zonă",
-	"dateFormatItem-yyyyMM": "MM.yyyy",
 	"dateFormatItem-y": "y",
 	"months-standAlone-narrow": [
 		"I",
@@ -222,7 +219,6 @@ define(
 	],
 	"field-year-relative+-1": "Anul trecut",
 	"field-month-relative+-1": "Luna trecută",
-	"dateFormatItem-yyMM": "MM.yy",
 	"dateFormatItem-hm": "h:mm a",
 	"days-format-abbr": [
 		"Du",
@@ -247,6 +243,7 @@ define(
 		"V",
 		"S"
 	],
+	"field-month": "lună",
 	"days-standAlone-narrow": [
 		"D",
 		"L",
@@ -257,17 +254,16 @@ define(
 		"S"
 	],
 	"dateFormatItem-MMM": "LLL",
-	"field-month": "lună",
 	"dayPeriods-format-wide-am": "AM",
 	"dateFormatItem-MMMMEd": "E, d MMMM",
-	"dateFormat-short": "dd.MM.yyyy",
+	"dateFormat-short": "dd.MM.y",
 	"field-second": "secundă",
 	"dateFormatItem-yMMMEd": "E, d MMM y",
 	"field-month-relative+0": "Luna aceasta",
 	"field-month-relative+1": "Luna viitoare",
 	"dateFormatItem-Ed": "E d",
 	"field-week": "săptămână",
-	"dateFormat-medium": "dd.MM.yyyy",
+	"dateFormat-medium": "dd.MM.y",
 	"field-year-relative+0": "Anul acesta",
 	"field-week-relative+-1": "Săptămâna trecută",
 	"field-year-relative+1": "Anul viitor",

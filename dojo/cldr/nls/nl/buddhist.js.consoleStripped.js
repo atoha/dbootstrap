@@ -1,11 +1,13 @@
 define(
 "dojo/cldr/nls/nl/buddhist", //begin v1.x content
 {
-	"dateFormatItem-yM": "M-y G",
-	"dateFormatItem-yQ": "Q y G",
+	"field-dayperiod": "AM/PM",
+	"dateFormatItem-yyyyMMMEd": "E d MMM y G",
+	"field-minute": "Minuut",
 	"dateFormatItem-MMMEd": "E d MMM",
-	"dateFormatItem-yQQQ": "QQQ y G",
-	"dateFormatItem-MMdd": "dd-MM",
+	"field-day-relative+-1": "Gisteren",
+	"field-weekday": "Dag van de week",
+	"field-day-relative+-2": "Eergisteren",
 	"days-standAlone-wide": [
 		"zondag",
 		"maandag",
@@ -15,7 +17,6 @@ define(
 		"vrijdag",
 		"zaterdag"
 	],
-	"dateFormatItem-MMM": "LLL",
 	"months-standAlone-narrow": [
 		"J",
 		"F",
@@ -30,7 +31,9 @@ define(
 		"N",
 		"D"
 	],
+	"field-era": "Tijdperk",
 	"dateFormatItem-Gy": "y G",
+	"field-hour": "Uur",
 	"quarters-standAlone-abbr": [
 		"K1",
 		"K2",
@@ -38,6 +41,7 @@ define(
 		"K4"
 	],
 	"dateFormatItem-y": "y G",
+	"dateFormatItem-yyyy": "y G",
 	"months-standAlone-abbr": [
 		"jan",
 		"feb",
@@ -53,7 +57,8 @@ define(
 		"dec"
 	],
 	"dateFormatItem-Ed": "E d",
-	"dateFormatItem-yMMM": "MMM y G",
+	"field-day-relative+0": "Vandaag",
+	"field-day-relative+1": "Morgen",
 	"days-standAlone-narrow": [
 		"Z",
 		"M",
@@ -63,22 +68,26 @@ define(
 		"V",
 		"Z"
 	],
-	"dateFormatItem-yyyyMMMM": "MMMM y G",
+	"eraAbbr": [
+		"BE"
+	],
+	"field-day-relative+2": "Overmorgen",
+	"dateFormatItem-GyMMMd": "d MMM y G",
 	"dateFormat-long": "d MMMM y G",
-	"dateFormatItem-Hm": "HH:mm",
-	"dateFormatItem-MMd": "d-MM",
-	"dateFormatItem-yyMM": "MM-yy G",
+	"field-zone": "Zone",
+	"field-week-relative+-1": "Vorige week",
 	"dateFormat-medium": "d MMM y G",
-	"dateFormatItem-yyMMM": "MMM yy G",
-	"dateFormatItem-yyQQQQ": "QQQQ yy G",
-	"dateFormatItem-yMd": "d-M-y G",
+	"field-year-relative+0": "Dit jaar",
+	"field-year-relative+1": "Volgend jaar",
 	"quarters-standAlone-wide": [
 		"1e kwartaal",
 		"2e kwartaal",
 		"3e kwartaal",
 		"4e kwartaal"
 	],
-	"dateFormatItem-ms": "mm:ss",
+	"field-year-relative+-1": "Vorig jaar",
+	"field-year": "Jaar",
+	"dateFormatItem-yyyyQQQQ": "QQQQ y G",
 	"months-standAlone-wide": [
 		"januari",
 		"februari",
@@ -93,8 +102,13 @@ define(
 		"november",
 		"december"
 	],
+	"field-week": "week",
+	"dateFormatItem-yyyyMMMd": "d MMM y G",
+	"dateFormatItem-yyyyMd": "d-M-y GGGGG",
+	"dateFormatItem-yyyyMEd": "E d-M-y GGGGG",
+	"field-week-relative+0": "Deze week",
 	"dateFormatItem-MMMd": "d MMM",
-	"dateFormatItem-yyQ": "Q yy G",
+	"field-week-relative+1": "Volgende week",
 	"months-format-abbr": [
 		"jan.",
 		"feb.",
@@ -109,7 +123,9 @@ define(
 		"nov.",
 		"dec."
 	],
-	"dateFormatItem-MMMMd": "d MMMM",
+	"field-month-relative+0": "Deze maand",
+	"field-month": "Maand",
+	"field-month-relative+1": "Volgende maand",
 	"quarters-format-abbr": [
 		"K1",
 		"K2",
@@ -134,8 +150,11 @@ define(
 		"V",
 		"Z"
 	],
-	"dateFormatItem-M": "L",
-	"dateFormatItem-yMMMd": "d MMM y G",
+	"field-second": "Seconde",
+	"dateFormatItem-GyMMMEd": "E d MMM y G",
+	"dateFormatItem-GyMMM": "MMM y G",
+	"field-day": "Dag",
+	"dateFormatItem-yyyyQQQ": "QQQ y G",
 	"dateFormatItem-MEd": "E d-M",
 	"months-format-narrow": [
 		"J",
@@ -169,11 +188,10 @@ define(
 		"vr",
 		"za"
 	],
-	"dateFormat-short": "dd-MM-yy G",
-	"dateFormatItem-yMMMEd": "E d MMM y G",
+	"dateFormat-short": "dd-MM-yy GGGGG",
+	"dateFormatItem-yyyyM": "M-y GGGGG",
 	"dateFormat-full": "EEEE d MMMM y G",
 	"dateFormatItem-Md": "d-M",
-	"dateFormatItem-yMEd": "E d-M-y G",
 	"months-format-wide": [
 		"januari",
 		"februari",
@@ -197,7 +215,8 @@ define(
 		"vr",
 		"za"
 	],
-	"dateFormatItem-d": "d",
+	"dateFormatItem-yyyyMMM": "MMM y G",
+	"field-month-relative+-1": "Vorige maand",
 	"quarters-format-wide": [
 		"1e kwartaal",
 		"2e kwartaal",

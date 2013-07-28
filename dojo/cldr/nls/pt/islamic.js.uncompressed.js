@@ -1,13 +1,13 @@
 define(
 "dojo/cldr/nls/pt/islamic", //begin v1.x content
 {
-	"dateFormatItem-yM": "MM/yyyy",
+	"field-dayperiod": "Período do dia",
 	"dateFormatItem-yyyyMMMEd": "E, d 'de' MMM 'de' y G",
-	"dateFormatItem-yQ": "yyyy Q",
+	"field-minute": "Minuto",
 	"dateFormatItem-MMMEd": "E, d 'de' MMM",
-	"dateFormatItem-hms": "h:mm:ss a",
-	"dateFormatItem-yQQQ": "y QQQ",
-	"dateFormatItem-MMdd": "dd/MM",
+	"field-day-relative+-1": "Ontem",
+	"field-weekday": "Dia da semana",
+	"field-day-relative+-2": "Anteontem",
 	"days-standAlone-wide": [
 		"domingo",
 		"segunda-feira",
@@ -17,17 +17,20 @@ define(
 		"sexta-feira",
 		"sábado"
 	],
-	"dateFormatItem-MMM": "LLL",
+	"field-era": "Era",
+	"dateFormatItem-Gy": "y G",
+	"field-hour": "Hora",
 	"quarters-standAlone-abbr": [
 		"T1",
 		"T2",
 		"T3",
 		"T4"
 	],
-	"dateFormatItem-y": "y",
+	"dateFormatItem-y": "y G",
 	"dateFormatItem-yyyy": "y G",
 	"dateFormatItem-Ed": "E, d",
-	"dateFormatItem-yMMM": "MMM 'de' y",
+	"field-day-relative+0": "Hoje",
+	"field-day-relative+1": "Amanhã",
 	"days-standAlone-narrow": [
 		"D",
 		"S",
@@ -37,33 +40,37 @@ define(
 		"S",
 		"S"
 	],
-	"dateFormatItem-yyyyMM": "MM/y G",
+	"eraAbbr": [
+		"AH"
+	],
+	"field-day-relative+2": "Depois de amanhã",
+	"dateFormatItem-GyMMMd": "d 'de' MMM 'de' y G",
 	"dateFormat-long": "d 'de' MMMM 'de' y G",
-	"dateFormatItem-Hm": "HH'h'mm",
-	"dateFormatItem-yyMM": "MM/yy G",
-	"dateFormat-medium": "dd/MM/yyyy G",
-	"dateFormatItem-Hms": "HH:mm:ss",
+	"field-zone": "Fuso",
+	"field-week-relative+-1": "Semana passada",
+	"dateFormat-medium": "dd/MM/y G",
 	"dayPeriods-format-narrow-pm": "p",
-	"dateFormatItem-yyMMM": "MMM 'de' yy G",
-	"dateFormatItem-yMd": "dd/MM/yyyy",
+	"field-year-relative+0": "Este ano",
+	"field-year-relative+1": "Próximo ano",
 	"quarters-standAlone-wide": [
 		"1º trimestre",
 		"2º trimestre",
 		"3º trimestre",
 		"4º trimestre"
 	],
-	"dateFormatItem-ms": "mm'min'ss's'",
+	"field-year-relative+-1": "Ano passado",
+	"field-year": "Ano",
 	"dayPeriods-format-narrow-am": "a",
-	"dateFormatItem-HHmmss": "HH'h'mm'min'ss's'",
-	"dateFormatItem-yyMMMd": "d 'de' MMM 'de' yy G",
-	"dateFormatItem-yyyyMd": "dd/MM/yyyy G",
+	"field-week": "Semana",
+	"dateFormatItem-yyyyMd": "dd/MM/y GGGGG",
 	"dateFormatItem-yyyyMMMd": "d 'de' MMM 'de' y G",
-	"dateFormatItem-yyyyMEd": "E, dd/MM/yyyy G",
+	"dateFormatItem-yyyyMEd": "E, dd/MM/y GGGGG",
+	"field-week-relative+0": "Esta semana",
 	"dateFormatItem-MMMd": "d 'de' MMM",
-	"dateFormatItem-HHmm": "HH'h'mm",
-	"dateFormatItem-yyMMMEd": "E, d 'de' MMM 'de' yy G",
-	"dateFormatItem-yyQ": "Q yy G",
-	"dateFormatItem-H": "HH",
+	"field-week-relative+1": "Próxima semana",
+	"field-month-relative+0": "Este mês",
+	"field-month": "Mês",
+	"field-month-relative+1": "Próximo mês",
 	"quarters-format-abbr": [
 		"T1",
 		"T2",
@@ -79,7 +86,6 @@ define(
 		"sex",
 		"sáb"
 	],
-	"dateFormatItem-M": "L",
 	"days-format-narrow": [
 		"D",
 		"S",
@@ -89,9 +95,11 @@ define(
 		"S",
 		"S"
 	],
-	"dateFormatItem-yMMMd": "d 'de' MMM 'de' y",
+	"field-second": "Segundo",
+	"dateFormatItem-GyMMMEd": "E, d 'de' MMM 'de' y G",
+	"dateFormatItem-GyMMM": "MMM 'de' y G",
+	"field-day": "Dia",
 	"dateFormatItem-MEd": "E, dd/MM",
-	"dateFormatItem-yyyyQQQ": "G y QQQ",
 	"days-standAlone-short": [
 		"dom",
 		"seg",
@@ -101,7 +109,6 @@ define(
 		"sex",
 		"sáb"
 	],
-	"dateFormatItem-hm": "h:mm a",
 	"days-standAlone-abbr": [
 		"dom",
 		"seg",
@@ -111,13 +118,10 @@ define(
 		"sex",
 		"sáb"
 	],
-	"dateFormat-short": "d/M/yyyy",
-	"dateFormatItem-yyyyM": "MM/y G",
-	"dateFormatItem-yMMMEd": "E, d 'de' MMM 'de' y",
+	"dateFormat-short": "dd/MM/yy GGGGG",
+	"dateFormatItem-yyyyM": "MM/y GGGGG",
 	"dateFormat-full": "EEEE, d 'de' MMMM 'de' y G",
 	"dateFormatItem-Md": "d/M",
-	"dateFormatItem-yMEd": "E, dd/MM/yyyy",
-	"dateFormatItem-yyyyQ": "G y Q",
 	"days-format-short": [
 		"dom",
 		"seg",
@@ -128,7 +132,7 @@ define(
 		"sáb"
 	],
 	"dateFormatItem-yyyyMMM": "MMM 'de' y G",
-	"dateFormatItem-d": "d",
+	"field-month-relative+-1": "Mês passado",
 	"quarters-format-wide": [
 		"1º trimestre",
 		"2º trimestre",
@@ -143,8 +147,7 @@ define(
 		"quinta-feira",
 		"sexta-feira",
 		"sábado"
-	],
-	"dateFormatItem-h": "h a"
+	]
 }
 //end v1.x content
 );

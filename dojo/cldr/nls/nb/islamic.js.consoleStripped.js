@@ -1,14 +1,14 @@
 define(
 "dojo/cldr/nls/nb/islamic", //begin v1.x content
 {
-	"dateFormatItem-yM": "M y",
+	"field-dayperiod": "AM/PM",
 	"dateFormatItem-yyyyMMMEd": "E d. MMM y G",
-	"dateFormatItem-yQ": "Q yyyy",
+	"field-minute": "minutt",
 	"dateFormatItem-MMMEd": "E d. MMM",
 	"dateTimeFormat-full": "{0} {1}",
-	"dateFormatItem-hms": "h:mm:ss a",
-	"dateFormatItem-yQQQ": "QQQ y",
-	"dateFormatItem-MMdd": "dd.MM",
+	"field-day-relative+-1": "i går",
+	"field-weekday": "ukedag",
+	"field-day-relative+-2": "i forgårs",
 	"days-standAlone-wide": [
 		"søndag",
 		"mandag",
@@ -18,8 +18,10 @@ define(
 		"fredag",
 		"lørdag"
 	],
-	"dateFormatItem-MMM": "LLL",
 	"dateTimeFormat-short": "{0} {1}",
+	"field-era": "tidsalder",
+	"dateFormatItem-Gy": "y G",
+	"field-hour": "time",
 	"dateTimeFormat-medium": "{0} {1}",
 	"quarters-standAlone-abbr": [
 		"K1",
@@ -27,10 +29,12 @@ define(
 		"K3",
 		"K4"
 	],
+	"dateFormatItem-y": "y G",
 	"timeFormat-full": "'kl'. HH:mm:ss zzzz",
 	"dateFormatItem-yyyy": "y G",
 	"dateFormatItem-Ed": "E d.",
-	"dateFormatItem-yMMM": "MMM y",
+	"field-day-relative+0": "i dag",
+	"field-day-relative+1": "i morgen",
 	"days-standAlone-narrow": [
 		"S",
 		"M",
@@ -40,30 +44,39 @@ define(
 		"F",
 		"L"
 	],
-	"dateFormatItem-yyyyMMMM": "MMMM y G",
+	"eraAbbr": [
+		"AH"
+	],
+	"field-day-relative+2": "i overmorgen",
+	"dateFormatItem-GyMMMd": "d. MMM y G",
 	"dateFormat-long": "d. MMMM y G",
-	"dateFormatItem-Hm": "HH:mm",
-	"dateFormatItem-yyMM": "MM.y G",
+	"field-zone": "sone",
+	"field-week-relative+-1": "Sist uke",
 	"dateFormat-medium": "d. MMM y G",
-	"dateFormatItem-Hms": "HH:mm:ss",
 	"dayPeriods-format-narrow-pm": "p",
-	"dateFormatItem-yyMMM": "MMM y G",
-	"dateFormatItem-yyQQQQ": "QQQQ y G",
-	"dateFormatItem-yMd": "d.M.yyyy",
+	"field-year-relative+0": "Dette året",
+	"field-year-relative+1": "Neste år",
 	"quarters-standAlone-wide": [
 		"1. kvartal",
 		"2. kvartal",
 		"3. kvartal",
 		"4. kvartal"
 	],
-	"dateFormatItem-ms": "mm.ss",
+	"field-year-relative+-1": "I fjor",
+	"field-year": "år",
+	"dateFormatItem-yyyyQQQQ": "QQQQ y G",
 	"dayPeriods-format-narrow-am": "a",
 	"dateTimeFormat-long": "{0} {1}",
-	"dateFormatItem-yyyyMd": "d.M.y G",
+	"field-week": "uke",
 	"dateFormatItem-yyyyMMMd": "d. MMM y G",
-	"dateFormatItem-yyyyMEd": "E d.M.y G",
+	"dateFormatItem-yyyyMd": "d.M.y G",
+	"dateFormatItem-yyyyMEd": "E d.MM.y G",
+	"field-week-relative+0": "Denne uken",
 	"dateFormatItem-MMMd": "d. MMM",
-	"dateFormatItem-yyQ": "Q y G",
+	"field-week-relative+1": "Neste uke",
+	"field-month-relative+0": "Denne måneden",
+	"field-month": "måned",
+	"field-month-relative+1": "Neste måned",
 	"quarters-format-abbr": [
 		"K1",
 		"K2",
@@ -79,7 +92,6 @@ define(
 		"fre.",
 		"lør."
 	],
-	"dateFormatItem-M": "L",
 	"days-format-narrow": [
 		"S",
 		"M",
@@ -89,7 +101,10 @@ define(
 		"F",
 		"L"
 	],
-	"dateFormatItem-yMMMd": "d. MMM y",
+	"field-second": "sekund",
+	"dateFormatItem-GyMMMEd": "E d. MMM y G",
+	"dateFormatItem-GyMMM": "MMM y G",
+	"field-day": "dag",
 	"dateFormatItem-yyyyQQQ": "QQQ y G",
 	"dateFormatItem-MEd": "E d.M",
 	"days-standAlone-short": [
@@ -101,7 +116,6 @@ define(
 		"fr.",
 		"lø."
 	],
-	"dateFormatItem-hm": "h:mm a",
 	"days-standAlone-abbr": [
 		"sø.",
 		"ma.",
@@ -114,11 +128,8 @@ define(
 	"dayPeriods-format-abbr-pm": "p.m.",
 	"dateFormat-short": "d.M y G",
 	"dateFormatItem-yyyyM": "M y G",
-	"dateFormatItem-yMMMEd": "E d. MMM y",
 	"dateFormat-full": "EEEE d. MMMM y G",
 	"dateFormatItem-Md": "d.M.",
-	"dateFormatItem-yyyyQ": "Q y G",
-	"dateFormatItem-yMEd": "E d.MM.y",
 	"dayPeriods-format-abbr-am": "a.m.",
 	"days-format-short": [
 		"sø.",
@@ -131,6 +142,7 @@ define(
 	],
 	"dateFormatItem-yyyyMMM": "MMM y G",
 	"dateFormatItem-d": "d.",
+	"field-month-relative+-1": "Sist måned",
 	"quarters-format-wide": [
 		"1. kvartal",
 		"2. kvartal",

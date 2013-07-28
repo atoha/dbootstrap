@@ -1,15 +1,16 @@
 define(
 "dojo/cldr/nls/nl/islamic", //begin v1.x content
 {
-	"dateFormatItem-yM": "M-y",
+	"field-dayperiod": "AM/PM",
 	"dateFormatItem-yyyyMMMEd": "E d MMM y G",
-	"dateFormatItem-yQ": "Q yyyy",
+	"field-minute": "Minuut",
 	"eraNames": [
 		"Saʻna Hizjria"
 	],
 	"dateFormatItem-MMMEd": "E d MMM",
-	"dateFormatItem-yQQQ": "QQQ y",
-	"dateFormatItem-MMdd": "dd-MM",
+	"field-day-relative+-1": "Gisteren",
+	"field-weekday": "Dag van de week",
+	"field-day-relative+-2": "Eergisteren",
 	"days-standAlone-wide": [
 		"zondag",
 		"maandag",
@@ -19,7 +20,6 @@ define(
 		"vrijdag",
 		"zaterdag"
 	],
-	"dateFormatItem-MMM": "LLL",
 	"months-standAlone-narrow": [
 		"1",
 		"2",
@@ -34,12 +34,16 @@ define(
 		"11",
 		"12"
 	],
+	"field-era": "Tijdperk",
+	"dateFormatItem-Gy": "y G",
+	"field-hour": "Uur",
 	"quarters-standAlone-abbr": [
 		"K1",
 		"K2",
 		"K3",
 		"K4"
 	],
+	"dateFormatItem-y": "y G",
 	"dateFormatItem-yyyy": "y G",
 	"months-standAlone-abbr": [
 		"Moeh.",
@@ -56,7 +60,8 @@ define(
 		"Doe al h."
 	],
 	"dateFormatItem-Ed": "E d",
-	"dateFormatItem-yMMM": "MMM y",
+	"field-day-relative+0": "Vandaag",
+	"field-day-relative+1": "Morgen",
 	"days-standAlone-narrow": [
 		"Z",
 		"M",
@@ -69,22 +74,23 @@ define(
 	"eraAbbr": [
 		"Saʻna Hizjria"
 	],
-	"dateFormatItem-yyyyMMMM": "MMMM y G",
+	"field-day-relative+2": "Overmorgen",
+	"dateFormatItem-GyMMMd": "d MMM y G",
 	"dateFormat-long": "d MMMM y G",
-	"dateFormatItem-Hm": "HH:mm",
-	"dateFormatItem-MMd": "d-MM",
-	"dateFormatItem-yyMM": "MM-yy G",
+	"field-zone": "Zone",
+	"field-week-relative+-1": "Vorige week",
 	"dateFormat-medium": "d MMM y G",
-	"dateFormatItem-yyMMM": "MMM yy G",
-	"dateFormatItem-yyQQQQ": "QQQQ yy G",
-	"dateFormatItem-yMd": "d-M-y",
+	"field-year-relative+0": "Dit jaar",
+	"field-year-relative+1": "Volgend jaar",
 	"quarters-standAlone-wide": [
 		"1e kwartaal",
 		"2e kwartaal",
 		"3e kwartaal",
 		"4e kwartaal"
 	],
-	"dateFormatItem-ms": "mm:ss",
+	"field-year-relative+-1": "Vorig jaar",
+	"field-year": "Jaar",
+	"dateFormatItem-yyyyQQQQ": "QQQQ y G",
 	"months-standAlone-wide": [
 		"Moeharram",
 		"Safar",
@@ -99,11 +105,13 @@ define(
 		"Doe al kaʻaba",
 		"Doe al hizja"
 	],
-	"dateFormatItem-yyyyMd": "d-M-y G",
+	"field-week": "week",
 	"dateFormatItem-yyyyMMMd": "d MMM y G",
-	"dateFormatItem-yyyyMEd": "E d-M-y G",
+	"dateFormatItem-yyyyMd": "d-M-y GGGGG",
+	"dateFormatItem-yyyyMEd": "E d-M-y GGGGG",
+	"field-week-relative+0": "Deze week",
 	"dateFormatItem-MMMd": "d MMM",
-	"dateFormatItem-yyQ": "Q yy G",
+	"field-week-relative+1": "Volgende week",
 	"months-format-abbr": [
 		"Moeh.",
 		"Saf.",
@@ -118,7 +126,9 @@ define(
 		"Doe al k.",
 		"Doe al h."
 	],
-	"dateFormatItem-MMMMd": "d MMMM",
+	"field-month-relative+0": "Deze maand",
+	"field-month": "Maand",
+	"field-month-relative+1": "Volgende maand",
 	"quarters-format-abbr": [
 		"K1",
 		"K2",
@@ -134,7 +144,6 @@ define(
 		"vr",
 		"za"
 	],
-	"dateFormatItem-M": "L",
 	"days-format-narrow": [
 		"Z",
 		"M",
@@ -144,7 +153,10 @@ define(
 		"V",
 		"Z"
 	],
-	"dateFormatItem-yMMMd": "d MMM y",
+	"field-second": "Seconde",
+	"dateFormatItem-GyMMMEd": "E d MMM y G",
+	"dateFormatItem-GyMMM": "MMM y G",
+	"field-day": "Dag",
 	"dateFormatItem-yyyyQQQ": "QQQ y G",
 	"dateFormatItem-MEd": "E d-M",
 	"days-standAlone-short": [
@@ -165,13 +177,10 @@ define(
 		"vr",
 		"za"
 	],
-	"dateFormat-short": "dd-MM-yy G",
-	"dateFormatItem-yyyyM": "M-y G",
-	"dateFormatItem-yMMMEd": "E d MMM y",
+	"dateFormat-short": "dd-MM-yy GGGGG",
+	"dateFormatItem-yyyyM": "M-y GGGGG",
 	"dateFormat-full": "EEEE d MMMM y G",
 	"dateFormatItem-Md": "d-M",
-	"dateFormatItem-yyyyQ": "Q y G",
-	"dateFormatItem-yMEd": "E d-M-y",
 	"months-format-wide": [
 		"Moeharram",
 		"Safar",
@@ -196,7 +205,7 @@ define(
 		"za"
 	],
 	"dateFormatItem-yyyyMMM": "MMM y G",
-	"dateFormatItem-d": "d",
+	"field-month-relative+-1": "Vorige maand",
 	"quarters-format-wide": [
 		"1e kwartaal",
 		"2e kwartaal",

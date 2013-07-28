@@ -31,14 +31,15 @@ define(
 		"4."
 	],
 	"field-weekday": "Haftanın Günü",
-	"dateFormatItem-yyQQQQ": "QQQQ yy",
 	"dateFormatItem-yQQQ": "y/QQQ",
-	"dateFormatItem-yMEd": "dd.MM.yyyy E",
+	"dateFormatItem-yMEd": "dd.MM.y E",
+	"dateFormatItem-GyMMMEd": "d MMM y G E",
 	"dateFormatItem-MMMEd": "d MMMM E",
 	"eraNarrow": [
 		"MÖ",
 		"MS"
 	],
+	"dateFormatItem-yMM": "MM.y",
 	"days-format-short": [
 		"Pa",
 		"Pt",
@@ -67,7 +68,7 @@ define(
 	"dayPeriods-format-wide-pm": "ÖS",
 	"dateFormat-full": "d MMMM y EEEE",
 	"dateFormatItem-Md": "dd/MM",
-	"dateFormatItem-yMd": "dd.MM.yyyy",
+	"dateFormatItem-yMd": "dd.MM.y",
 	"field-era": "Miladi Dönem",
 	"dateFormatItem-yM": "MM/y",
 	"months-standAlone-wide": [
@@ -91,10 +92,10 @@ define(
 		"3. çeyrek",
 		"4. çeyrek"
 	],
+	"dateFormatItem-yQQQQ": "y/QQQQ",
 	"timeFormat-long": "HH:mm:ss z",
 	"field-year": "Yıl",
 	"dateFormatItem-yMMM": "MMM y",
-	"dateFormatItem-yQ": "y/Q",
 	"field-hour": "Saat",
 	"months-format-abbr": [
 		"Oca",
@@ -110,10 +111,10 @@ define(
 		"Kas",
 		"Ara"
 	],
-	"dateFormatItem-yyQ": "Q yy",
 	"timeFormat-full": "HH:mm:ss zzzz",
 	"field-day-relative+0": "Bugün",
 	"field-day-relative+1": "Yarın",
+	"dateFormatItem-GyMMMd": "dd MMM y G",
 	"field-day-relative+2": "Öbür gün",
 	"dateFormatItem-H": "HH",
 	"months-standAlone-abbr": [
@@ -142,6 +143,7 @@ define(
 		"3. çeyrek",
 		"4. çeyrek"
 	],
+	"dateFormatItem-Gy": "y G",
 	"dateFormatItem-M": "L",
 	"days-standAlone-wide": [
 		"Pazar",
@@ -153,7 +155,6 @@ define(
 		"Cumartesi"
 	],
 	"dateFormatItem-MMMMd": "dd MMMM",
-	"dateFormatItem-yyMMM": "MMM yy",
 	"timeFormat-medium": "HH:mm:ss",
 	"dateFormatItem-Hm": "HH:mm",
 	"quarters-standAlone-abbr": [
@@ -221,7 +222,6 @@ define(
 	],
 	"field-year-relative+-1": "Geçen yıl",
 	"field-month-relative+-1": "Geçen ay",
-	"dateFormatItem-yyMM": "MM.yy",
 	"dateFormatItem-hm": "h:mm a",
 	"days-format-abbr": [
 		"Paz",
@@ -259,7 +259,7 @@ define(
 	"field-month": "Ay",
 	"dayPeriods-format-wide-am": "ÖÖ",
 	"dateFormatItem-MMMMEd": "dd MMMM E",
-	"dateFormat-short": "dd.MM.yyyy",
+	"dateFormat-short": "d.MM.y",
 	"field-second": "Saniye",
 	"dateFormatItem-yMMMEd": "d MMM y E",
 	"field-month-relative+0": "Bu ay",
@@ -274,7 +274,7 @@ define(
 	"dateTimeFormat-short": "{1} {0}",
 	"dateFormatItem-Hms": "HH:mm:ss",
 	"dateFormatItem-hms": "h:mm:ss a",
-	"dateFormatItem-yyyy": "y",
+	"dateFormatItem-GyMMM": "MMM y G",
 	"field-week-relative+0": "Bu hafta",
 	"field-week-relative+1": "Gelecek hafta"
 }

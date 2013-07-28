@@ -26,6 +26,7 @@ define("dojo/cldr/nls/currency", { root:
 	"es": true,
 	"fi": true,
 	"fr": true,
+	"fr-ch": true,
 	"he": true,
 	"hu": true,
 	"it": true,

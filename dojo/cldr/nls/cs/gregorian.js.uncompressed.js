@@ -33,6 +33,7 @@ define(
 	"field-weekday": "Den v týdnu",
 	"dateFormatItem-yQQQ": "QQQ y",
 	"dateFormatItem-yMEd": "E, d. M. y",
+	"dateFormatItem-GyMMMEd": "E, d. M. y G",
 	"dateFormatItem-MMMEd": "E, d. M.",
 	"eraNarrow": [
 		"př.n.l.",
@@ -63,7 +64,7 @@ define(
 		"prosince"
 	],
 	"dateTimeFormat-medium": "{1} {0}",
-	"dayPeriods-format-wide-pm": "PM",
+	"dayPeriods-format-wide-pm": "odp.",
 	"dateFormat-full": "EEEE, d. MMMM y",
 	"dateFormatItem-Md": "d. M.",
 	"dateFormatItem-yMd": "d. M. y",
@@ -90,11 +91,10 @@ define(
 		"3. čtvrtletí",
 		"4. čtvrtletí"
 	],
+	"dateFormatItem-yQQQQ": "QQQQ y",
 	"timeFormat-long": "H:mm:ss z",
 	"field-year": "Rok",
 	"dateFormatItem-yMMM": "LLLL y",
-	"dateFormatItem-yQ": "Q yyyy",
-	"dateFormatItem-yyyyMMMM": "LLLL y",
 	"field-hour": "Hodina",
 	"months-format-abbr": [
 		"led",
@@ -110,10 +110,10 @@ define(
 		"lis",
 		"pro"
 	],
-	"dateFormatItem-yyQ": "Q yy",
 	"timeFormat-full": "H:mm:ss zzzz",
 	"field-day-relative+0": "Dnes",
 	"field-day-relative+1": "Zítra",
+	"dateFormatItem-GyMMMd": "d. M. y G",
 	"field-day-relative+2": "Pozítří",
 	"dateFormatItem-H": "H",
 	"months-standAlone-abbr": [
@@ -142,6 +142,7 @@ define(
 		"3. čtvrtletí",
 		"4. čtvrtletí"
 	],
+	"dateFormatItem-Gy": "y G",
 	"dateFormatItem-M": "L",
 	"days-standAlone-wide": [
 		"neděle",
@@ -186,11 +187,12 @@ define(
 	"field-day-relative+-1": "Včera",
 	"dateFormatItem-h": "h a",
 	"dateTimeFormat-long": "{1} {0}",
-	"dayPeriods-format-narrow-am": "AM",
+	"dayPeriods-format-narrow-am": "dop.",
 	"field-day-relative+-2": "Předevčírem",
 	"dateFormatItem-MMMd": "d. M.",
 	"dateFormatItem-MEd": "E, d. M.",
 	"dateTimeFormat-full": "{1} {0}",
+	"dateFormatItem-yMMMM": "LLLL y",
 	"field-day": "Den",
 	"days-format-wide": [
 		"neděle",
@@ -254,7 +256,7 @@ define(
 	],
 	"dateFormatItem-MMM": "LLL",
 	"field-month": "Měsíc",
-	"dayPeriods-format-wide-am": "AM",
+	"dayPeriods-format-wide-am": "dop.",
 	"dateFormat-short": "dd.MM.yy",
 	"field-second": "Sekunda",
 	"dateFormatItem-yMMMEd": "E, d. M. y",
@@ -262,16 +264,15 @@ define(
 	"field-month-relative+1": "Příští měsíc",
 	"dateFormatItem-Ed": "E, d.",
 	"field-week": "Týden",
-	"dateFormat-medium": "d. M. yyyy",
+	"dateFormat-medium": "d. M. y",
 	"field-year-relative+0": "Tento rok",
 	"field-week-relative+-1": "Minulý týden",
-	"dateFormatItem-yyyyM": "M/yyyy",
 	"field-year-relative+1": "Příští rok",
-	"dayPeriods-format-narrow-pm": "PM",
+	"dayPeriods-format-narrow-pm": "odp.",
 	"dateTimeFormat-short": "{1} {0}",
 	"dateFormatItem-Hms": "H:mm:ss",
 	"dateFormatItem-hms": "h:mm:ss a",
-	"dateFormatItem-yyyy": "y",
+	"dateFormatItem-GyMMM": "LLLL y G",
 	"field-week-relative+0": "Tento týden",
 	"field-week-relative+1": "Příští týden"
 }

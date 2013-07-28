@@ -31,14 +31,15 @@ define(
 		"4T"
 	],
 	"field-weekday": "día de la semana",
-	"dateFormatItem-yyQQQQ": "QQQQ 'de' yy",
 	"dateFormatItem-yQQQ": "QQQ y",
 	"dateFormatItem-yMEd": "EEE, d/M/y",
+	"dateFormatItem-GyMMMEd": "E, d 'de' MMMM 'de' y G",
 	"dateFormatItem-MMMEd": "E d MMM",
 	"eraNarrow": [
 		"a.C.",
 		"d.C."
 	],
+	"dateFormatItem-yMM": "MM/y",
 	"dateFormatItem-MMMdd": "dd-MMM",
 	"days-format-short": [
 		"D",
@@ -92,10 +93,10 @@ define(
 		"3er trimestre",
 		"4º trimestre"
 	],
+	"dateFormatItem-yQQQQ": "QQQQ 'de' y",
 	"timeFormat-long": "HH:mm:ss z",
 	"field-year": "año",
 	"dateFormatItem-yMMM": "MMM y",
-	"dateFormatItem-yQ": "Q y",
 	"field-hour": "hora",
 	"dateFormatItem-MMdd": "dd/MM",
 	"months-format-abbr": [
@@ -112,10 +113,10 @@ define(
 		"nov",
 		"dic"
 	],
-	"dateFormatItem-yyQ": "Q yy",
 	"timeFormat-full": "HH:mm:ss zzzz",
 	"field-day-relative+0": "hoy",
 	"field-day-relative+1": "mañana",
+	"dateFormatItem-GyMMMd": "d MMM y G",
 	"field-day-relative+2": "pasado mañana",
 	"dateFormatItem-H": "HH",
 	"months-standAlone-abbr": [
@@ -144,6 +145,7 @@ define(
 		"3.er trimestre",
 		"4.º trimestre"
 	],
+	"dateFormatItem-Gy": "y G",
 	"dateFormatItem-M": "L",
 	"days-standAlone-wide": [
 		"domingo",
@@ -155,7 +157,6 @@ define(
 		"sábado"
 	],
 	"dateFormatItem-MMMMd": "d 'de' MMMM",
-	"dateFormatItem-yyMMM": "MMM-yy",
 	"timeFormat-medium": "HH:mm:ss",
 	"dateFormatItem-Hm": "HH:mm",
 	"quarters-standAlone-abbr": [
@@ -206,7 +207,6 @@ define(
 		"sábado"
 	],
 	"field-zone": "zona",
-	"dateFormatItem-yyyyMM": "MM/yyyy",
 	"dateFormatItem-y": "y",
 	"months-standAlone-narrow": [
 		"E",
@@ -224,7 +224,6 @@ define(
 	],
 	"field-year-relative+-1": "el año pasado",
 	"field-month-relative+-1": "el mes pasado",
-	"dateFormatItem-yyMM": "MM/yy",
 	"dateFormatItem-hm": "hh:mm a",
 	"days-format-abbr": [
 		"dom",
@@ -269,13 +268,14 @@ define(
 	"field-month-relative+1": "el próximo mes",
 	"dateFormatItem-Ed": "E d",
 	"field-week": "semana",
-	"dateFormat-medium": "dd/MM/yyyy",
+	"dateFormat-medium": "dd/MM/y",
 	"field-year-relative+0": "este año",
 	"field-week-relative+-1": "la semana pasada",
 	"field-year-relative+1": "el próximo año",
 	"dateTimeFormat-short": "{1} {0}",
 	"dateFormatItem-Hms": "HH:mm:ss",
 	"dateFormatItem-hms": "hh:mm:ss a",
+	"dateFormatItem-GyMMM": "MMM y G",
 	"field-week-relative+0": "esta semana",
 	"field-week-relative+1": "la próxima semana"
 }

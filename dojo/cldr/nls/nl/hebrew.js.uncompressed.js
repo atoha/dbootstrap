@@ -1,65 +1,33 @@
 define(
 "dojo/cldr/nls/nl/hebrew", //begin v1.x content
 {
-	"quarters-standAlone-wide": [
-		"1e kwartaal",
-		"2e kwartaal",
-		"3e kwartaal",
-		"4e kwartaal"
-	],
-	"quarters-format-abbr": [
-		"K1",
-		"K2",
-		"K3",
-		"K4"
-	],
-	"dateFormatItem-yMd": "d-M-y",
-	"dateFormat-medium": "d MMM y",
+	"field-dayperiod": "AM/PM",
+	"dateFormatItem-yyyyMMMEd": "E d MMM y G",
+	"field-minute": "Minuut",
 	"dateFormatItem-MMMEd": "E d MMM",
+	"field-day-relative+-1": "Gisteren",
+	"field-weekday": "Dag van de week",
+	"field-day-relative+-2": "Eergisteren",
+	"days-standAlone-wide": [
+		"zondag",
+		"maandag",
+		"dinsdag",
+		"woensdag",
+		"donderdag",
+		"vrijdag",
+		"zaterdag"
+	],
+	"field-era": "Tijdperk",
+	"dateFormatItem-Gy": "y G",
+	"field-hour": "Uur",
 	"quarters-standAlone-abbr": [
 		"K1",
 		"K2",
 		"K3",
 		"K4"
 	],
-	"dateFormatItem-MEd": "E d-M",
-	"dateFormatItem-yMEd": "E d-M-y",
-	"dateFormatItem-yMMMd": "d MMM y",
-	"days-format-short": [
-		"zo",
-		"ma",
-		"di",
-		"wo",
-		"do",
-		"vr",
-		"za"
-	],
-	"dateFormatItem-Md": "d-M",
-	"months-standAlone-wide": [
-		"Tisjrie",
-		"Chesjwan",
-		"Kislev",
-		"Tevet",
-		"Sjevat",
-		"Adar A",
-		"Adar",
-		"Nisan",
-		"Ijar",
-		"Sivan",
-		"Tammoez",
-		"Av",
-		"Elloel"
-	],
-	"months-format-wide-leap": "Adar B",
-	"days-standAlone-narrow": [
-		"Z",
-		"M",
-		"D",
-		"W",
-		"D",
-		"V",
-		"Z"
-	],
+	"dateFormatItem-y": "y G",
+	"dateFormatItem-yyyy": "y G",
 	"months-standAlone-abbr": [
 		"Tisjrie",
 		"Chesjwan",
@@ -75,20 +43,36 @@ define(
 		"Av",
 		"Elloel"
 	],
-	"dateFormatItem-yQQQ": "QQQ y",
-	"days-standAlone-short": [
-		"zo",
-		"ma",
-		"di",
-		"wo",
-		"do",
-		"vr",
-		"za"
+	"dateFormatItem-Ed": "E d",
+	"field-day-relative+0": "Vandaag",
+	"field-day-relative+1": "Morgen",
+	"days-standAlone-narrow": [
+		"Z",
+		"M",
+		"D",
+		"W",
+		"D",
+		"V",
+		"Z"
 	],
-	"dateFormat-long": "d MMMM y",
-	"dateFormat-short": "dd-MM-yy",
-	"dateFormatItem-yMMMEd": "E d MMM y",
-	"months-format-wide": [
+	"field-day-relative+2": "Overmorgen",
+	"dateFormatItem-GyMMMd": "d MMM y G",
+	"dateFormat-long": "d MMMM y G",
+	"field-zone": "Zone",
+	"field-week-relative+-1": "Vorige week",
+	"dateFormat-medium": "d MMM y G",
+	"field-year-relative+0": "Dit jaar",
+	"field-year-relative+1": "Volgend jaar",
+	"quarters-standAlone-wide": [
+		"1e kwartaal",
+		"2e kwartaal",
+		"3e kwartaal",
+		"4e kwartaal"
+	],
+	"field-year-relative+-1": "Vorig jaar",
+	"field-year": "Jaar",
+	"dateFormatItem-yyyyQQQQ": "QQQQ y G",
+	"months-standAlone-wide": [
 		"Tisjrie",
 		"Chesjwan",
 		"Kislev",
@@ -103,25 +87,13 @@ define(
 		"Av",
 		"Elloel"
 	],
-	"days-standAlone-wide": [
-		"zondag",
-		"maandag",
-		"dinsdag",
-		"woensdag",
-		"donderdag",
-		"vrijdag",
-		"zaterdag"
-	],
-	"days-format-narrow": [
-		"Z",
-		"M",
-		"D",
-		"W",
-		"D",
-		"V",
-		"Z"
-	],
-	"dateFormatItem-yM": "M-y",
+	"field-week": "week",
+	"dateFormatItem-yyyyMd": "d-M-y GGGGG",
+	"dateFormatItem-yyyyMMMd": "d MMM y G",
+	"dateFormatItem-yyyyMEd": "E d-M-y GGGGG",
+	"dateFormatItem-MMMd": "d MMM",
+	"field-week-relative+0": "Deze week",
+	"field-week-relative+1": "Volgende week",
 	"months-format-abbr": [
 		"Tisjrie",
 		"Chesjwan",
@@ -137,34 +109,15 @@ define(
 		"Av",
 		"Elloel"
 	],
-	"days-standAlone-abbr": [
-		"zo",
-		"ma",
-		"di",
-		"wo",
-		"do",
-		"vr",
-		"za"
+	"field-month-relative+0": "Deze maand",
+	"field-month": "Maand",
+	"field-month-relative+1": "Volgende maand",
+	"quarters-format-abbr": [
+		"K1",
+		"K2",
+		"K3",
+		"K4"
 	],
-	"days-format-wide": [
-		"zondag",
-		"maandag",
-		"dinsdag",
-		"woensdag",
-		"donderdag",
-		"vrijdag",
-		"zaterdag"
-	],
-	"dateFormatItem-yQ": "Q yyyy",
-	"dateFormatItem-yMMM": "MMM y",
-	"quarters-format-wide": [
-		"1e kwartaal",
-		"2e kwartaal",
-		"3e kwartaal",
-		"4e kwartaal"
-	],
-	"dateFormat-full": "EEEE d MMMM y",
-	"dateFormatItem-MMMd": "d-MMM",
 	"days-format-abbr": [
 		"zo",
 		"ma",
@@ -174,7 +127,85 @@ define(
 		"vr",
 		"za"
 	],
-	"dateFormatItem-Ed": "E d"
+	"days-format-narrow": [
+		"Z",
+		"M",
+		"D",
+		"W",
+		"D",
+		"V",
+		"Z"
+	],
+	"field-second": "Seconde",
+	"dateFormatItem-GyMMMEd": "E d MMM y G",
+	"dateFormatItem-GyMMM": "MMM y G",
+	"field-day": "Dag",
+	"dateFormatItem-yyyyQQQ": "QQQ y G",
+	"dateFormatItem-MEd": "E d-M",
+	"days-standAlone-short": [
+		"zo",
+		"ma",
+		"di",
+		"wo",
+		"do",
+		"vr",
+		"za"
+	],
+	"days-standAlone-abbr": [
+		"zo",
+		"ma",
+		"di",
+		"wo",
+		"do",
+		"vr",
+		"za"
+	],
+	"dateFormat-short": "dd-MM-yy GGGGG",
+	"dateFormatItem-yyyyM": "M-y GGGGG",
+	"dateFormatItem-Md": "d-M",
+	"dateFormat-full": "EEEE d MMMM y G",
+	"months-format-wide": [
+		"Tisjrie",
+		"Chesjwan",
+		"Kislev",
+		"Tevet",
+		"Sjevat",
+		"Adar A",
+		"Adar",
+		"Nisan",
+		"Ijar",
+		"Sivan",
+		"Tammoez",
+		"Av",
+		"Elloel"
+	],
+	"days-format-short": [
+		"zo",
+		"ma",
+		"di",
+		"wo",
+		"do",
+		"vr",
+		"za"
+	],
+	"dateFormatItem-yyyyMMM": "MMM y G",
+	"months-format-wide-leap": "Adar B",
+	"field-month-relative+-1": "Vorige maand",
+	"quarters-format-wide": [
+		"1e kwartaal",
+		"2e kwartaal",
+		"3e kwartaal",
+		"4e kwartaal"
+	],
+	"days-format-wide": [
+		"zondag",
+		"maandag",
+		"dinsdag",
+		"woensdag",
+		"donderdag",
+		"vrijdag",
+		"zaterdag"
+	]
 }
 //end v1.x content
 );

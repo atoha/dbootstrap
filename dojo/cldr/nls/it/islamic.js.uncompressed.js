@@ -1,13 +1,14 @@
 define(
 "dojo/cldr/nls/it/islamic", //begin v1.x content
 {
-	"dateFormatItem-yM": "M/y",
+	"field-dayperiod": "periodo del giorno",
 	"dateFormatItem-yyyyMMMEd": "E d MMM y G",
-	"dateFormatItem-yQ": "Q-y G",
+	"field-minute": "minuto",
 	"dateFormatItem-MMMEd": "E d MMM",
+	"field-day-relative+-1": "ieri",
+	"field-weekday": "giorno della settimana",
 	"dateFormatItem-hms": "hh:mm:ss a",
-	"dateFormatItem-yQQQ": "QQQ y G",
-	"dateFormatItem-MMdd": "dd/MM",
+	"field-day-relative+-2": "l'altro ieri",
 	"days-standAlone-wide": [
 		"Domenica",
 		"Lunedì",
@@ -17,16 +18,20 @@ define(
 		"Venerdì",
 		"Sabato"
 	],
-	"dateFormatItem-MMM": "LLL",
+	"field-era": "era",
+	"dateFormatItem-Gy": "y G",
+	"field-hour": "ora",
 	"quarters-standAlone-abbr": [
 		"T1",
 		"T2",
 		"T3",
 		"T4"
 	],
+	"dateFormatItem-y": "y G",
 	"dateFormatItem-yyyy": "y G",
 	"dateFormatItem-Ed": "E d",
-	"dateFormatItem-yMMM": "MMM y",
+	"field-day-relative+0": "oggi",
+	"field-day-relative+1": "domani",
 	"days-standAlone-narrow": [
 		"D",
 		"L",
@@ -36,28 +41,38 @@ define(
 		"V",
 		"S"
 	],
-	"dateFormatItem-yyyyMMMM": "MMMM y G",
+	"eraAbbr": [
+		"AH"
+	],
+	"field-day-relative+2": "dopodomani",
+	"dateFormatItem-GyMMMd": "d MMM y G",
 	"dateFormat-long": "dd MMMM y G",
-	"dateFormatItem-Hm": "HH:mm",
-	"dateFormatItem-yyMM": "MM/y G",
+	"field-zone": "zona",
+	"field-week-relative+-1": "Settimana scorsa",
 	"dateFormat-medium": "dd/MMM/y G",
-	"dateFormatItem-Hms": "HH:mm:ss",
 	"dayPeriods-format-narrow-pm": "p.",
-	"dateFormatItem-yyQQQQ": "QQQQ y G",
-	"dateFormatItem-yMd": "d/M/y",
+	"field-year-relative+0": "Questo anno",
+	"field-year-relative+1": "Anno prossimo",
 	"quarters-standAlone-wide": [
 		"Primo trimestre",
 		"Secondo trimestre",
 		"Terzo trimestre",
 		"Quarto trimestre"
 	],
-	"dateFormatItem-ms": "mm:ss",
+	"field-year-relative+-1": "Anno scorso",
+	"field-year": "anno",
+	"dateFormatItem-yyyyQQQQ": "QQQQ y G",
 	"dayPeriods-format-narrow-am": "m.",
-	"dateFormatItem-yyyyMd": "d/M/y G",
+	"field-week": "settimana",
 	"dateFormatItem-yyyyMMMd": "d MMM y G",
-	"dateFormatItem-yyyyMEd": "E, d/M/y G",
+	"dateFormatItem-yyyyMd": "d/M/y GGGGG",
+	"dateFormatItem-yyyyMEd": "E d/M/y GGGGG",
+	"field-week-relative+0": "Questa settimana",
 	"dateFormatItem-MMMd": "d MMM",
-	"dateFormatItem-yyQ": "Q y G",
+	"field-week-relative+1": "Settimana prossima",
+	"field-month-relative+0": "Questo mese",
+	"field-month": "mese",
+	"field-month-relative+1": "Mese prossimo",
 	"quarters-format-abbr": [
 		"T1",
 		"T2",
@@ -73,9 +88,11 @@ define(
 		"ven",
 		"sab"
 	],
-	"dateFormatItem-MMMMdd": "dd MMMM",
-	"dateFormatItem-M": "L",
-	"dateFormatItem-yMMMd": "d MMM y",
+	"field-second": "secondo",
+	"dateFormatItem-GyMMMEd": "E d MMM y G",
+	"dateFormatItem-GyMMM": "MMM y G",
+	"field-day": "giorno",
+	"dateFormatItem-yyyyQQQ": "QQQ y G",
 	"dateFormatItem-MEd": "E d/M",
 	"days-standAlone-short": [
 		"dom",
@@ -87,12 +104,10 @@ define(
 		"sab"
 	],
 	"dateFormatItem-hm": "hh:mm a",
-	"dateFormat-short": "dd/MM/y G",
-	"dateFormatItem-yyyyM": "M/y G",
-	"dateFormatItem-yMMMEd": "E d MMM y",
+	"dateFormat-short": "dd/MM/yy GGGGG",
+	"dateFormatItem-yyyyM": "M/y GGGGG",
 	"dateFormat-full": "EEEE d MMMM y G",
 	"dateFormatItem-Md": "d/M",
-	"dateFormatItem-yMEd": "E d/M/y",
 	"days-format-short": [
 		"dom",
 		"lun",
@@ -103,7 +118,7 @@ define(
 		"sab"
 	],
 	"dateFormatItem-yyyyMMM": "MMM y G",
-	"dateFormatItem-d": "d",
+	"field-month-relative+-1": "Mese scorso",
 	"quarters-format-wide": [
 		"1o trimestre",
 		"2o trimestre",

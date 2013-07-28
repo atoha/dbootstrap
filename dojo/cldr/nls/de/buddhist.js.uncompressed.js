@@ -1,13 +1,14 @@
 define(
 "dojo/cldr/nls/de/buddhist", //begin v1.x content
 {
-	"dateFormatItem-yM": "M.y G",
-	"dateFormatItem-yyMMdd": "dd.MM.y G",
-	"dateFormatItem-yQ": "Q y G",
+	"field-dayperiod": "Tageshälfte",
+	"dateFormatItem-yyyyMMMEd": "E, d. MMM y G",
 	"dayPeriods-format-wide-pm": "nachm.",
+	"field-minute": "Minute",
 	"dateFormatItem-MMMEd": "E, d. MMM",
-	"dateFormatItem-yQQQ": "QQQ y G",
-	"dateFormatItem-MMdd": "dd.MM.",
+	"field-day-relative+-1": "Gestern",
+	"field-weekday": "Wochentag",
+	"field-day-relative+-2": "Vorgestern",
 	"days-standAlone-wide": [
 		"Sonntag",
 		"Montag",
@@ -17,7 +18,6 @@ define(
 		"Freitag",
 		"Samstag"
 	],
-	"dateFormatItem-MMM": "LLL",
 	"months-standAlone-narrow": [
 		"J",
 		"F",
@@ -32,7 +32,9 @@ define(
 		"N",
 		"D"
 	],
+	"field-era": "Epoche",
 	"dateFormatItem-Gy": "y G",
+	"field-hour": "Stunde",
 	"dayPeriods-format-wide-am": "vorm.",
 	"dateFormatItem-y": "y G",
 	"dateFormatItem-yyyy": "y G",
@@ -50,8 +52,9 @@ define(
 		"Nov",
 		"Dez"
 	],
-	"dateFormatItem-Ed": "E d.",
-	"dateFormatItem-yMMM": "MMM y G",
+	"dateFormatItem-Ed": "E, d.",
+	"field-day-relative+0": "Heute",
+	"field-day-relative+1": "Morgen",
 	"days-standAlone-narrow": [
 		"S",
 		"M",
@@ -61,23 +64,27 @@ define(
 		"F",
 		"S"
 	],
-	"dateFormatItem-yyyyMMMM": "MMMM y G",
+	"eraAbbr": [
+		"BE"
+	],
+	"field-day-relative+2": "Übermorgen",
+	"dateFormatItem-GyMMMd": "d. MMM y G",
 	"dateFormat-long": "d. MMMM y G",
-	"dateFormatItem-Hm": "HH:mm",
-	"dateFormatItem-MMd": "d.MM.",
-	"dateFormatItem-yyMM": "MM.y G",
-	"dateFormat-medium": "d. MMM y G",
-	"dateFormatItem-Hms": "HH:mm:ss",
-	"dateFormatItem-yyMMM": "MMM y G",
-	"dateFormatItem-yyQQQQ": "QQQQ y G",
-	"dateFormatItem-yMd": "d.M.y G",
+	"field-zone": "Zone",
+	"field-week-relative+-1": "Letzte Woche",
+	"dateFormat-medium": "dd.MM.y G",
+	"field-year-relative+0": "Dieses Jahr",
+	"field-year-relative+1": "Nächstes Jahr",
 	"quarters-standAlone-wide": [
 		"1. Quartal",
 		"2. Quartal",
 		"3. Quartal",
 		"4. Quartal"
 	],
-	"dateFormatItem-ms": "mm:ss",
+	"field-year-relative+-1": "Letztes Jahr",
+	"field-year": "Jahr",
+	"dateFormatItem-yyyyQQQQ": "QQQQ y G",
+	"field-week": "Woche",
 	"months-standAlone-wide": [
 		"Januar",
 		"Februar",
@@ -92,8 +99,12 @@ define(
 		"November",
 		"Dezember"
 	],
+	"dateFormatItem-yyyyMMMd": "d. MMM y G",
+	"dateFormatItem-yyyyMd": "d.M.y GGGGG",
+	"dateFormatItem-yyyyMEd": "E, d.M.y GGGGG",
+	"field-week-relative+0": "Diese Woche",
 	"dateFormatItem-MMMd": "d. MMM",
-	"dateFormatItem-yyQ": "Q y G",
+	"field-week-relative+1": "Nächste Woche",
 	"months-format-abbr": [
 		"Jan.",
 		"Feb.",
@@ -108,8 +119,10 @@ define(
 		"Nov.",
 		"Dez."
 	],
+	"field-month-relative+0": "Dieser Monat",
+	"field-month": "Monat",
+	"field-month-relative+1": "Nächster Monat",
 	"dateFormatItem-H": "HH 'Uhr'",
-	"dateFormatItem-MMMMdd": "dd. MMMM",
 	"days-format-abbr": [
 		"So.",
 		"Mo.",
@@ -119,7 +132,6 @@ define(
 		"Fr.",
 		"Sa."
 	],
-	"dateFormatItem-M": "L",
 	"days-format-narrow": [
 		"S",
 		"M",
@@ -129,7 +141,11 @@ define(
 		"F",
 		"S"
 	],
-	"dateFormatItem-yMMMd": "d. MMM y G",
+	"field-second": "Sekunde",
+	"dateFormatItem-GyMMMEd": "E, d. MMM y G",
+	"dateFormatItem-GyMMM": "MMM y G",
+	"field-day": "Tag",
+	"dateFormatItem-yyyyQQQ": "QQQ y G",
 	"dateFormatItem-MEd": "E, d.M.",
 	"months-format-narrow": [
 		"J",
@@ -163,11 +179,10 @@ define(
 		"Fr",
 		"Sa"
 	],
-	"dateFormat-short": "d.M.yyyy",
-	"dateFormatItem-yMMMEd": "E, d. MMM y G",
-	"dateFormat-full": "EEEE d. MMMM y G",
+	"dateFormat-short": "dd.MM.yy GGGGG",
+	"dateFormatItem-yyyyM": "M.y GGGGG",
+	"dateFormat-full": "EEEE, d. MMMM y G",
 	"dateFormatItem-Md": "d.M.",
-	"dateFormatItem-yMEd": "E, d.M.y G",
 	"months-format-wide": [
 		"Januar",
 		"Februar",
@@ -191,7 +206,8 @@ define(
 		"Fr.",
 		"Sa."
 	],
-	"dateFormatItem-d": "d",
+	"dateFormatItem-yyyyMMM": "MMM y G",
+	"field-month-relative+-1": "Letzter Monat",
 	"quarters-format-wide": [
 		"1. Quartal",
 		"2. Quartal",

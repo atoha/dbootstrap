@@ -31,9 +31,9 @@ define(
 		"4"
 	],
 	"field-weekday": "Dag van de week",
-	"dateFormatItem-yyQQQQ": "QQQQ yy",
 	"dateFormatItem-yQQQ": "QQQ y",
 	"dateFormatItem-yMEd": "E d-M-y",
+	"dateFormatItem-GyMMMEd": "E d MMM y G",
 	"dateFormatItem-MMMEd": "E d MMM",
 	"eraNarrow": [
 		"v.Chr.",
@@ -92,13 +92,11 @@ define(
 		"3e kwartaal",
 		"4e kwartaal"
 	],
+	"dateFormatItem-yQQQQ": "QQQQ y",
 	"timeFormat-long": "HH:mm:ss z",
 	"field-year": "Jaar",
 	"dateFormatItem-yMMM": "MMM y",
-	"dateFormatItem-yQ": "Q yyyy",
-	"dateFormatItem-yyyyMMMM": "MMMM y",
 	"field-hour": "Uur",
-	"dateFormatItem-MMdd": "dd-MM",
 	"months-format-abbr": [
 		"jan.",
 		"feb.",
@@ -113,10 +111,10 @@ define(
 		"nov.",
 		"dec."
 	],
-	"dateFormatItem-yyQ": "Q yy",
 	"timeFormat-full": "HH:mm:ss zzzz",
 	"field-day-relative+0": "Vandaag",
 	"field-day-relative+1": "Morgen",
+	"dateFormatItem-GyMMMd": "d MMM y G",
 	"field-day-relative+2": "Overmorgen",
 	"dateFormatItem-H": "HH",
 	"months-standAlone-abbr": [
@@ -145,6 +143,7 @@ define(
 		"3e kwartaal",
 		"4e kwartaal"
 	],
+	"dateFormatItem-Gy": "y G",
 	"dateFormatItem-M": "L",
 	"days-standAlone-wide": [
 		"zondag",
@@ -157,7 +156,6 @@ define(
 	],
 	"dateFormatItem-MMMMd": "d MMMM",
 	"dayPeriods-format-abbr-noon": "12 uur 's middags",
-	"dateFormatItem-yyMMM": "MMM yy",
 	"timeFormat-medium": "HH:mm:ss",
 	"dateFormatItem-Hm": "HH:mm",
 	"quarters-standAlone-abbr": [
@@ -193,9 +191,10 @@ define(
 	"dateFormatItem-h": "h a",
 	"dateTimeFormat-long": "{1} {0}",
 	"field-day-relative+-2": "Eergisteren",
-	"dateFormatItem-MMMd": "d-MMM",
+	"dateFormatItem-MMMd": "d MMM",
 	"dateFormatItem-MEd": "E d-M",
 	"dateTimeFormat-full": "{1} {0}",
+	"dateFormatItem-yMMMM": "MMMM y",
 	"field-day": "Dag",
 	"days-format-wide": [
 		"zondag",
@@ -224,7 +223,6 @@ define(
 	],
 	"field-year-relative+-1": "Vorig jaar",
 	"field-month-relative+-1": "Vorige maand",
-	"dateFormatItem-yyMM": "MM-yy",
 	"dateFormatItem-hm": "h:mm a",
 	"days-format-abbr": [
 		"zo",
@@ -262,7 +260,6 @@ define(
 	"field-month": "Maand",
 	"dayPeriods-format-wide-am": "AM",
 	"dateFormat-short": "dd-MM-yy",
-	"dateFormatItem-MMd": "d-MM",
 	"dayPeriods-format-narrow-noon": "n",
 	"field-second": "Seconde",
 	"dateFormatItem-yMMMEd": "E d MMM y",
@@ -277,6 +274,7 @@ define(
 	"dateTimeFormat-short": "{1} {0}",
 	"dateFormatItem-Hms": "HH:mm:ss",
 	"dateFormatItem-hms": "h:mm:ss a",
+	"dateFormatItem-GyMMM": "MMM y G",
 	"field-week-relative+0": "Deze week",
 	"field-week-relative+1": "Volgende week"
 }

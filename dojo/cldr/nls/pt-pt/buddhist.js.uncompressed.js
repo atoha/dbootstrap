@@ -1,10 +1,9 @@
 define(
 "dojo/cldr/nls/pt-pt/buddhist", //begin v1.x content
 {
-	"dateFormatItem-yM": "MM/yyyy",
-	"dateFormatItem-yQ": "QQQ 'de' y G",
+	"dateFormatItem-yyyyMMMEd": "E, d/MM/y G",
 	"dateFormatItem-MMMEd": "E, d/MM",
-	"dateFormatItem-yQQQ": "QQQ 'de' y G",
+	"dateTimeFormat-full": "{1} 'às' {0}",
 	"days-standAlone-wide": [
 		"Domingo",
 		"Segunda-feira",
@@ -28,13 +27,17 @@ define(
 		"N",
 		"D"
 	],
+	"dateTimeFormat-short": "{1}, {0}",
+	"dateFormatItem-Gy": "y G",
+	"dateTimeFormat-medium": "{1}, {0}",
 	"quarters-standAlone-abbr": [
 		"T1",
 		"T2",
 		"T3",
 		"T4"
 	],
-	"dateFormatItem-y": "y",
+	"dateFormatItem-y": "y G",
+	"dateFormatItem-yyyy": "y G",
 	"months-standAlone-abbr": [
 		"Jan",
 		"Fev",
@@ -49,7 +52,7 @@ define(
 		"Nov",
 		"Dez"
 	],
-	"dateFormatItem-yMMM": "MM/y",
+	"dateFormatItem-Ed": "E, d",
 	"days-standAlone-narrow": [
 		"D",
 		"S",
@@ -59,24 +62,20 @@ define(
 		"S",
 		"S"
 	],
-	"dateFormatItem-yyyyMM": "MM/yyyy",
-	"dateFormat-long": "d 'de' MMMM 'de' y",
-	"dateFormatItem-Hm": "HH:mm",
-	"dateFormatItem-yyMM": "MM/yy",
-	"dateFormat-medium": "dd/MM/yyyy",
+	"dateFormatItem-GyMMMd": "d 'de' MMM 'de' y G",
+	"dateFormat-long": "d 'de' MMMM 'de' y G",
+	"field-zone": "Fuso horário",
+	"dateFormat-medium": "dd/MM/y G",
 	"dayPeriods-format-narrow-pm": "p.m.",
-	"dateFormatItem-yyMMM": "MM/yy",
-	"dateFormatItem-yMd": "dd/MM/yyyy",
 	"quarters-standAlone-wide": [
 		"1º trimestre",
 		"2º trimestre",
 		"3º trimestre",
 		"4º trimestre"
 	],
-	"dateFormatItem-ms": "mm:ss",
+	"dateFormatItem-yyyyQQQQ": "QQQQ 'de' y G",
 	"dayPeriods-format-narrow-am": "a.m.",
-	"dateFormatItem-HHmmss": "HH:mm:ss",
-	"dateFormatItem-yyMMMd": "d/MM/yy",
+	"dateTimeFormat-long": "{1} 'às' {0}",
 	"months-standAlone-wide": [
 		"Janeiro",
 		"Fevereiro",
@@ -91,10 +90,10 @@ define(
 		"Novembro",
 		"Dezembro"
 	],
+	"dateFormatItem-yyyyMd": "dd/MM/y GGGGG",
+	"dateFormatItem-yyyyMMMd": "d/MM/y G",
+	"dateFormatItem-yyyyMEd": "E, dd/MM/y GGGGG",
 	"dateFormatItem-MMMd": "d/MM",
-	"dateFormatItem-HHmm": "HH:mm",
-	"dateFormatItem-yyMMMEd": "E, d/MM/yy",
-	"dateFormatItem-yyQ": "QQQ 'de' yy G",
 	"months-format-abbr": [
 		"Jan",
 		"Fev",
@@ -133,7 +132,10 @@ define(
 		"S",
 		"S"
 	],
-	"dateFormatItem-yMMMd": "d/MM/y",
+	"dateFormatItem-GyMMMEd": "E, d 'de' MMM 'de' y G",
+	"dateFormatItem-GyMMM": "MMM 'de' y G",
+	"dateFormatItem-yyyyQQQ": "QQQQ 'de' y G",
+	"dateFormatItem-MEd": "E, dd/MM",
 	"months-format-narrow": [
 		"J",
 		"F",
@@ -168,9 +170,9 @@ define(
 	],
 	"dayPeriods-format-abbr-pm": "p.m.",
 	"dateFormat-short": "d/M/y G",
-	"dateFormatItem-yMMMEd": "E, d/MM/y",
-	"dateFormat-full": "EEEE, d 'de' MMMM 'de' y",
-	"dateFormatItem-yMEd": "E, dd/MM/yyyy",
+	"dateFormatItem-yyyyM": "MM/y GGGGG",
+	"dateFormat-full": "EEEE, d 'de' MMMM 'de' y G",
+	"dateFormatItem-Md": "d/M",
 	"months-format-wide": [
 		"Janeiro",
 		"Fevereiro",
@@ -195,7 +197,7 @@ define(
 		"Sx",
 		"Sb"
 	],
-	"dateFormatItem-yyyyMMM": "MMM 'de' y",
+	"dateFormatItem-yyyyMMM": "MM/y G",
 	"quarters-format-wide": [
 		"1.º trimestre",
 		"2.º trimestre",

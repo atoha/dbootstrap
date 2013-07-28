@@ -3,13 +3,13 @@ define("dojo/cldr/nls/islamic", { root:
 //begin v1.x content
 {
 	"days-standAlone-short": [
-		"1",
-		"2",
-		"3",
-		"4",
-		"5",
-		"6",
-		"7"
+		"Sun",
+		"Mon",
+		"Tue",
+		"Wed",
+		"Thu",
+		"Fri",
+		"Sat"
 	],
 	"months-format-narrow": [
 		"1",
@@ -31,23 +31,23 @@ define("dojo/cldr/nls/islamic", { root:
 		"3",
 		"4"
 	],
-	"dateFormatItem-yQQQ": "y QQQ",
-	"dateFormatItem-yMEd": "E, y-M-d",
-	"dateFormatItem-MMMEd": "E MMM d",
+	"field-weekday": "Day of the Week",
+	"dateFormatItem-GyMMMEd": "G y MMM d, E",
+	"dateFormatItem-MMMEd": "MMM d, E",
 	"eraNarrow": [
 		"AH"
 	],
 	"days-format-short": [
-		"1",
-		"2",
-		"3",
-		"4",
-		"5",
-		"6",
-		"7"
+		"Sun",
+		"Mon",
+		"Tue",
+		"Wed",
+		"Thu",
+		"Fri",
+		"Sat"
 	],
 	"dateTimeFormats-appendItem-Day-Of-Week": "{0} {1}",
-	"dateFormat-long": "y MMMM d",
+	"dateFormat-long": "G y MMMM d",
 	"months-format-wide": [
 		"Muharram",
 		"Safar",
@@ -62,14 +62,15 @@ define("dojo/cldr/nls/islamic", { root:
 		"Dhuʻl-Qiʻdah",
 		"Dhuʻl-Hijjah"
 	],
+	"dateFormatItem-yyyyQQQ": "G y QQQ",
 	"dateTimeFormat-medium": "{1} {0}",
 	"dayPeriods-format-wide-pm": "PM",
-	"dateFormat-full": "EEEE, y MMMM dd",
-	"dateFormatItem-Md": "M-d",
+	"dateFormat-full": "G y MMMM d, EEEE",
+	"dateFormatItem-yyyyMEd": "GGGGG y-MM-dd, E",
+	"dateFormatItem-Md": "MM-dd",
 	"dayPeriods-format-abbr-am": "AM",
 	"dateTimeFormats-appendItem-Second": "{0} ({2}: {1})",
-	"dateFormatItem-yMd": "y-M-d",
-	"dateFormatItem-yM": "y-M",
+	"field-era": "Era",
 	"months-standAlone-wide": [
 		"Muharram",
 		"Safar",
@@ -92,9 +93,9 @@ define("dojo/cldr/nls/islamic", { root:
 		"Q4"
 	],
 	"timeFormat-long": "HH:mm:ss z",
-	"dateFormatItem-yMMM": "y MMM",
-	"dateFormatItem-yQ": "y Q",
-	"dateTimeFormats-appendItem-Era": "{0} {1}",
+	"field-year": "Year",
+	"dateTimeFormats-appendItem-Era": "{1} {0}",
+	"field-hour": "Hour",
 	"months-format-abbr": [
 		"Muh.",
 		"Saf.",
@@ -111,6 +112,9 @@ define("dojo/cldr/nls/islamic", { root:
 	],
 	"timeFormat-full": "HH:mm:ss zzzz",
 	"dateTimeFormats-appendItem-Week": "{0} ({2}: {1})",
+	"field-day-relative+0": "Today",
+	"field-day-relative+1": "Tomorrow",
+	"dateFormatItem-GyMMMd": "G y MMM d",
 	"dateFormatItem-H": "HH",
 	"months-standAlone-abbr": [
 		"Muh.",
@@ -138,16 +142,20 @@ define("dojo/cldr/nls/islamic", { root:
 		"Q3",
 		"Q4"
 	],
+	"dateFormatItem-Gy": "G y",
+	"dateFormatItem-yyyyMMMEd": "G y MMM d, E",
 	"dateFormatItem-M": "L",
 	"days-standAlone-wide": [
-		"1",
-		"2",
-		"3",
-		"4",
-		"5",
-		"6",
-		"7"
+		"Sun",
+		"Mon",
+		"Tue",
+		"Wed",
+		"Thu",
+		"Fri",
+		"Sat"
 	],
+	"dateFormatItem-yyyyMMM": "G y MMM",
+	"dateFormatItem-yyyyMMMd": "G y MMM d",
 	"timeFormat-medium": "HH:mm:ss",
 	"dateFormatItem-Hm": "HH:mm",
 	"quarters-standAlone-abbr": [
@@ -159,14 +167,16 @@ define("dojo/cldr/nls/islamic", { root:
 	"eraAbbr": [
 		"AH"
 	],
+	"field-minute": "Minute",
+	"field-dayperiod": "Dayperiod",
 	"days-standAlone-abbr": [
-		"1",
-		"2",
-		"3",
-		"4",
-		"5",
-		"6",
-		"7"
+		"Sun",
+		"Mon",
+		"Tue",
+		"Wed",
+		"Thu",
+		"Fri",
+		"Sat"
 	],
 	"dateFormatItem-d": "d",
 	"dateFormatItem-ms": "mm:ss",
@@ -176,23 +186,26 @@ define("dojo/cldr/nls/islamic", { root:
 		"3",
 		"4"
 	],
+	"field-day-relative+-1": "Yesterday",
 	"dateFormatItem-h": "h a",
 	"dateTimeFormat-long": "{1} {0}",
 	"dayPeriods-format-narrow-am": "AM",
 	"dateFormatItem-MMMd": "MMM d",
-	"dateFormatItem-MEd": "E, M-d",
+	"dateFormatItem-MEd": "MM-dd, E",
 	"dateTimeFormat-full": "{1} {0}",
+	"field-day": "Day",
 	"days-format-wide": [
-		"1",
-		"2",
-		"3",
-		"4",
-		"5",
-		"6",
-		"7"
+		"Sun",
+		"Mon",
+		"Tue",
+		"Wed",
+		"Thu",
+		"Fri",
+		"Sat"
 	],
+	"field-zone": "Zone",
 	"dateTimeFormats-appendItem-Day": "{0} ({2}: {1})",
-	"dateFormatItem-y": "y",
+	"dateFormatItem-y": "G y",
 	"months-standAlone-narrow": [
 		"1",
 		"2",
@@ -208,54 +221,60 @@ define("dojo/cldr/nls/islamic", { root:
 		"12"
 	],
 	"dateFormatItem-hm": "h:mm a",
-	"dateTimeFormats-appendItem-Year": "{0} {1}",
+	"dateTimeFormats-appendItem-Year": "{1} {0}",
 	"dateTimeFormats-appendItem-Hour": "{0} ({2}: {1})",
 	"dayPeriods-format-abbr-pm": "PM",
 	"days-format-abbr": [
-		"1",
-		"2",
-		"3",
-		"4",
-		"5",
-		"6",
-		"7"
+		"Sun",
+		"Mon",
+		"Tue",
+		"Wed",
+		"Thu",
+		"Fri",
+		"Sat"
 	],
-	"dateFormatItem-yMMMd": "y MMM d",
 	"eraNames": [
 		"AH"
 	],
 	"days-format-narrow": [
-		"1",
-		"2",
-		"3",
-		"4",
-		"5",
-		"6",
-		"7"
+		"S",
+		"M",
+		"T",
+		"W",
+		"T",
+		"F",
+		"S"
 	],
+	"dateFormatItem-yyyyMd": "GGGGG y-MM-dd",
 	"days-standAlone-narrow": [
-		"1",
-		"2",
-		"3",
-		"4",
-		"5",
-		"6",
-		"7"
+		"S",
+		"M",
+		"T",
+		"W",
+		"T",
+		"F",
+		"S"
 	],
 	"dateFormatItem-MMM": "LLL",
+	"field-month": "Month",
 	"dateTimeFormats-appendItem-Quarter": "{0} ({2}: {1})",
 	"dayPeriods-format-wide-am": "AM",
 	"dateTimeFormats-appendItem-Month": "{0} ({2}: {1})",
 	"dateTimeFormats-appendItem-Minute": "{0} ({2}: {1})",
-	"dateFormat-short": "yyyy-MM-dd",
-	"dateFormatItem-yMMMEd": "E, y MMM d",
-	"dateFormatItem-Ed": "d E",
+	"dateFormat-short": "GGGGG y-MM-dd",
+	"field-second": "Second",
+	"dateFormatItem-Ed": "d, E",
 	"dateTimeFormats-appendItem-Timezone": "{0} {1}",
-	"dateFormat-medium": "y MMM d",
+	"field-week": "Week",
+	"dateFormat-medium": "G y MMM d",
+	"dateFormatItem-yyyyM": "GGGGG y-MM",
 	"dayPeriods-format-narrow-pm": "PM",
+	"dateFormatItem-yyyyQQQQ": "G y QQQQ",
 	"dateTimeFormat-short": "{1} {0}",
 	"dateFormatItem-Hms": "HH:mm:ss",
-	"dateFormatItem-hms": "h:mm:ss a"
+	"dateFormatItem-hms": "h:mm:ss a",
+	"dateFormatItem-GyMMM": "G y MMM",
+	"dateFormatItem-yyyy": "G y"
 }
 //end v1.x content
 ,
@@ -264,7 +283,6 @@ define("dojo/cldr/nls/islamic", { root:
 	"da": true,
 	"de": true,
 	"en": true,
-	"en-gb": true,
 	"es": true,
 	"fi": true,
 	"fr": true,
@@ -272,6 +290,7 @@ define("dojo/cldr/nls/islamic", { root:
 	"hu": true,
 	"it": true,
 	"ja": true,
+	"ko": true,
 	"nb": true,
 	"nl": true,
 	"pl": true,

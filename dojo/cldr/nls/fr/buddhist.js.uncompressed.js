@@ -1,14 +1,16 @@
 define(
 "dojo/cldr/nls/fr/buddhist", //begin v1.x content
 {
-	"dateFormatItem-yM": "M/y G",
-	"dateFormatItem-yQ": "'T'Q y G",
+	"field-dayperiod": "cadran",
+	"dateFormatItem-yyyyMMMEd": "E d MMM y G",
+	"field-minute": "minute",
 	"eraNames": [
 		"ère bouddhiste"
 	],
 	"dateFormatItem-MMMEd": "E d MMM",
-	"dateFormatItem-yQQQ": "QQQ y G",
-	"dateFormatItem-MMdd": "dd/MM",
+	"field-day-relative+-1": "hier",
+	"field-weekday": "jour de la semaine",
+	"field-day-relative+-2": "avant-hier",
 	"days-standAlone-wide": [
 		"dimanche",
 		"lundi",
@@ -18,7 +20,6 @@ define(
 		"vendredi",
 		"samedi"
 	],
-	"dateFormatItem-MMM": "LLL",
 	"months-standAlone-narrow": [
 		"J",
 		"F",
@@ -33,7 +34,9 @@ define(
 		"N",
 		"D"
 	],
+	"field-era": "ère",
 	"dateFormatItem-Gy": "y G",
+	"field-hour": "heure",
 	"quarters-standAlone-abbr": [
 		"T1",
 		"T2",
@@ -41,7 +44,7 @@ define(
 		"T4"
 	],
 	"dateFormatItem-y": "y G",
-	"dateFormatItem-MMMdd": "dd MMM",
+	"dateFormatItem-yyyy": "y G",
 	"months-standAlone-abbr": [
 		"janv.",
 		"févr.",
@@ -57,7 +60,8 @@ define(
 		"déc."
 	],
 	"dateFormatItem-Ed": "E d",
-	"dateFormatItem-yMMM": "MMM y G",
+	"field-day-relative+0": "aujourd’hui",
+	"field-day-relative+1": "demain",
 	"days-standAlone-narrow": [
 		"D",
 		"L",
@@ -70,25 +74,25 @@ define(
 	"eraAbbr": [
 		"ère b."
 	],
-	"dateFormatItem-yyyyMMMM": "MMMM y G",
+	"field-day-relative+2": "après-demain",
+	"dateFormatItem-GyMMMd": "d MMM y G",
 	"dateFormat-long": "d MMMM y G",
-	"dateFormatItem-Hm": "HH:mm",
-	"dateFormatItem-MMd": "d/MM",
-	"dateFormatItem-yyMM": "MM/y G",
-	"dateFormat-medium": "d MMM, y G",
-	"dateFormatItem-Hms": "HH:mm:ss",
+	"field-zone": "fuseau horaire",
+	"field-week-relative+-1": "la semaine dernière",
+	"dateFormat-medium": "d MMM y G",
 	"dayPeriods-format-narrow-pm": "p",
-	"dateFormatItem-yyMMM": "MMM y G",
-	"dateFormatItem-yyQQQQ": "QQQQ y G",
-	"dateFormatItem-yMd": "d/M/y G",
+	"field-year-relative+0": "cette année",
+	"field-year-relative+1": "l’année prochaine",
 	"quarters-standAlone-wide": [
 		"1er trimestre",
 		"2e trimestre",
 		"3e trimestre",
 		"4e trimestre"
 	],
-	"dateFormatItem-ms": "mm:ss",
-	"dateFormatItem-yyMMMd": "d MMM y G",
+	"field-year-relative+-1": "l’année dernière",
+	"field-year": "année",
+	"dateFormatItem-yyyyQQQQ": "QQQQ y G",
+	"field-week": "semaine",
 	"months-standAlone-wide": [
 		"janvier",
 		"février",
@@ -103,10 +107,12 @@ define(
 		"novembre",
 		"décembre"
 	],
-	"dateFormatItem-MMMMEd": "E d MMMM",
+	"dateFormatItem-yyyyMMMd": "d MMM y G",
+	"dateFormatItem-yyyyMd": "d/M/y GGGGG",
+	"dateFormatItem-yyyyMEd": "E d/M/y GGGGG",
+	"field-week-relative+0": "cette semaine",
 	"dateFormatItem-MMMd": "d MMM",
-	"dateFormatItem-yyMMMEd": "E d MMM y G",
-	"dateFormatItem-yyQ": "'T'Q y G",
+	"field-week-relative+1": "la semaine prochaine",
 	"months-format-abbr": [
 		"janv.",
 		"févr.",
@@ -121,6 +127,9 @@ define(
 		"nov.",
 		"déc."
 	],
+	"field-month-relative+0": "ce mois-ci",
+	"field-month": "mois",
+	"field-month-relative+1": "le mois prochain",
 	"quarters-format-abbr": [
 		"T1",
 		"T2",
@@ -136,7 +145,6 @@ define(
 		"ven.",
 		"sam."
 	],
-	"dateFormatItem-M": "L",
 	"days-format-narrow": [
 		"D",
 		"L",
@@ -146,7 +154,11 @@ define(
 		"V",
 		"S"
 	],
-	"dateFormatItem-yMMMd": "d MMM y",
+	"field-second": "seconde",
+	"dateFormatItem-GyMMMEd": "E d MMM y G",
+	"dateFormatItem-GyMMM": "MMM y G",
+	"field-day": "jour",
+	"dateFormatItem-yyyyQQQ": "QQQ y G",
 	"dateFormatItem-MEd": "E d/M",
 	"months-format-narrow": [
 		"J",
@@ -180,11 +192,10 @@ define(
 		"ven.",
 		"sam."
 	],
-	"dateFormat-short": "d/M/yyyy",
-	"dateFormatItem-yMMMEd": "E d MMM y G",
+	"dateFormat-short": "dd/MM/y GGGGG",
+	"dateFormatItem-yyyyM": "M/y GGGGG",
 	"dateFormat-full": "EEEE d MMMM y G",
 	"dateFormatItem-Md": "d/M",
-	"dateFormatItem-yMEd": "E d/M/y G",
 	"months-format-wide": [
 		"janvier",
 		"février",
@@ -208,7 +219,8 @@ define(
 		"ve",
 		"sa"
 	],
-	"dateFormatItem-d": "d",
+	"dateFormatItem-yyyyMMM": "MMM y G",
+	"field-month-relative+-1": "le mois dernier",
 	"quarters-format-wide": [
 		"1er trimestre",
 		"2e trimestre",

@@ -2,13 +2,13 @@ define(
 "dojo/cldr/nls/sv/gregorian", //begin v1.x content
 {
 	"days-standAlone-short": [
-		"sö",
-		"må",
-		"ti",
-		"on",
-		"to",
-		"fr",
-		"lö"
+		"Sö",
+		"Må",
+		"Ti",
+		"On",
+		"To",
+		"Fr",
+		"Lö"
 	],
 	"months-format-narrow": [
 		"J",
@@ -32,12 +32,14 @@ define(
 	],
 	"field-weekday": "veckodag",
 	"dateFormatItem-yQQQ": "y QQQ",
-	"dateFormatItem-yMEd": "E, yyyy-MM-dd",
+	"dateFormatItem-yMEd": "E, y-MM-dd",
+	"dateFormatItem-GyMMMEd": "E d MMM y G",
 	"dateFormatItem-MMMEd": "E d MMM",
 	"eraNarrow": [
 		"f.Kr.",
 		"e.Kr."
 	],
+	"dateFormatItem-yMM": "y-MM",
 	"days-format-short": [
 		"sö",
 		"må",
@@ -67,22 +69,22 @@ define(
 	"dateFormat-full": "EEEE'en' 'den' d:'e' MMMM y",
 	"dateFormatItem-Md": "d/M",
 	"dayPeriods-format-abbr-am": "FM",
-	"dateFormatItem-yMd": "yyyy-MM-dd",
-	"dateFormatItem-yM": "yyyy-MM",
+	"dateFormatItem-yMd": "y-MM-dd",
+	"dateFormatItem-yM": "y-MM",
 	"field-era": "era",
 	"months-standAlone-wide": [
-		"januari",
-		"februari",
-		"mars",
-		"april",
-		"maj",
-		"juni",
-		"juli",
-		"augusti",
-		"september",
-		"oktober",
-		"november",
-		"december"
+		"Januari",
+		"Februari",
+		"Mars",
+		"April",
+		"Maj",
+		"Juni",
+		"Juli",
+		"Augusti",
+		"September",
+		"Oktober",
+		"November",
+		"December"
 	],
 	"timeFormat-short": "HH:mm",
 	"quarters-format-wide": [
@@ -93,7 +95,7 @@ define(
 	],
 	"timeFormat-long": "HH:mm:ss z",
 	"dateFormatItem-yMMM": "MMM y",
-	"dateFormatItem-yQ": "yyyy Q",
+	"dateFormatItem-yQQQQ": "y QQQQ",
 	"field-year": "år",
 	"dateFormatItem-MMdd": "dd/MM",
 	"field-hour": "timme",
@@ -111,25 +113,25 @@ define(
 		"nov",
 		"dec"
 	],
-	"dateFormatItem-yyQ": "Q yy",
 	"timeFormat-full": "'kl'. HH:mm:ss zzzz",
 	"field-day-relative+0": "i dag",
 	"field-day-relative+1": "i morgon",
+	"dateFormatItem-GyMMMd": "d MMM y G",
 	"field-day-relative+2": "i övermorgon",
 	"dateFormatItem-H": "HH",
 	"months-standAlone-abbr": [
-		"jan",
-		"feb",
-		"mar",
-		"apr",
-		"maj",
-		"jun",
-		"jul",
-		"aug",
-		"sep",
-		"okt",
-		"nov",
-		"dec"
+		"Jan",
+		"Feb",
+		"Mar",
+		"Apr",
+		"Maj",
+		"Jun",
+		"Jul",
+		"Aug",
+		"Sep",
+		"Okt",
+		"Nov",
+		"Dec"
 	],
 	"quarters-format-abbr": [
 		"K1",
@@ -143,19 +145,18 @@ define(
 		"3:e kvartalet",
 		"4:e kvartalet"
 	],
+	"dateFormatItem-Gy": "y G",
 	"dateFormatItem-M": "L",
 	"days-standAlone-wide": [
-		"söndag",
-		"måndag",
-		"tisdag",
-		"onsdag",
-		"torsdag",
-		"fredag",
-		"lördag"
+		"Söndag",
+		"Måndag",
+		"Tisdag",
+		"Onsdag",
+		"Torsdag",
+		"Fredag",
+		"Lördag"
 	],
-	"dateFormatItem-yyyyMMM": "MMM y",
 	"dateFormatItem-MMMMd": "d:'e' MMMM",
-	"dateFormatItem-yyMMM": "MMM -yy",
 	"timeFormat-medium": "HH:mm:ss",
 	"dateFormatItem-Hm": "HH:mm",
 	"quarters-standAlone-abbr": [
@@ -171,13 +172,13 @@ define(
 	"field-minute": "minut",
 	"field-dayperiod": "fm/em",
 	"days-standAlone-abbr": [
-		"sön",
-		"mån",
-		"tis",
-		"ons",
-		"tor",
-		"fre",
-		"lör"
+		"Sön",
+		"Mån",
+		"Tis",
+		"Ons",
+		"Tor",
+		"Fre",
+		"Lör"
 	],
 	"dateFormatItem-d": "d",
 	"dateFormatItem-ms": "mm:ss",
@@ -206,7 +207,6 @@ define(
 		"lördag"
 	],
 	"field-zone": "tidszon",
-	"dateFormatItem-yyyyMM": "yyyy-MM",
 	"dateFormatItem-y": "y",
 	"months-standAlone-narrow": [
 		"J",
@@ -224,7 +224,6 @@ define(
 	],
 	"field-year-relative+-1": "i fjol",
 	"field-month-relative+-1": "förra månaden",
-	"dateFormatItem-yyMM": "yy-MM",
 	"dateFormatItem-hm": "h:mm a",
 	"dayPeriods-format-abbr-pm": "EM",
 	"days-format-abbr": [
@@ -263,7 +262,7 @@ define(
 	"field-month": "månad",
 	"dayPeriods-format-wide-am": "fm",
 	"dateFormatItem-MMMMEd": "E d:'e' MMMM",
-	"dateFormat-short": "yyyy-MM-dd",
+	"dateFormat-short": "y-MM-dd",
 	"dateFormatItem-MMd": "d/M",
 	"field-second": "sekund",
 	"dateFormatItem-yMMMEd": "E d MMM y",
@@ -276,10 +275,10 @@ define(
 	"field-week-relative+-1": "förra veckan",
 	"field-year-relative+1": "nästa år",
 	"dayPeriods-format-narrow-pm": "e",
-	"dateFormatItem-yyyyQQQQ": "QQQQ y",
 	"dateTimeFormat-short": "{1} {0}",
 	"dateFormatItem-Hms": "HH:mm:ss",
 	"dateFormatItem-hms": "h:mm:ss a",
+	"dateFormatItem-GyMMM": "MMM y G",
 	"field-week-relative+0": "denna vecka",
 	"field-week-relative+1": "nästa vecka"
 }

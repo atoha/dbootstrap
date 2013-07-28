@@ -32,12 +32,14 @@ define(
 	],
 	"field-weekday": "viikonpäivä",
 	"dateFormatItem-yQQQ": "QQQ y",
-	"dateFormatItem-yMEd": "E d.M.yyyy",
+	"dateFormatItem-yMEd": "E d.M.y",
+	"dateFormatItem-GyMMMEd": "E d. MMM y G",
 	"dateFormatItem-MMMEd": "ccc d. MMM",
 	"eraNarrow": [
 		"eK",
 		"jK"
 	],
+	"dateFormatItem-yMM": "M.y",
 	"days-format-short": [
 		"su",
 		"ma",
@@ -65,12 +67,11 @@ define(
 	"dateTimeFormat-medium": "{1} {0}",
 	"dayPeriods-format-wide-pm": "ip.",
 	"dateFormat-full": "cccc d. MMMM y",
-	"dateFormatItem-yyyyMEd": "E d.M.yyyy",
 	"dateFormatItem-Md": "d.M.",
 	"dayPeriods-standAlone-wide-pm": "ip.",
 	"dayPeriods-format-abbr-am": "ap.",
-	"dateFormatItem-yMd": "d.M.yyyy",
-	"dateFormatItem-yM": "L.yyyy",
+	"dateFormatItem-yMd": "d.M.y",
+	"dateFormatItem-yM": "L.y",
 	"field-era": "aikakausi",
 	"months-standAlone-wide": [
 		"tammikuu",
@@ -95,9 +96,8 @@ define(
 	],
 	"timeFormat-long": "H.mm.ss z",
 	"dateFormatItem-yMMM": "LLL y",
-	"dateFormatItem-yQ": "Q/yyyy",
+	"dateFormatItem-yQQQQ": "QQQQ y",
 	"field-year": "vuosi",
-	"dateFormatItem-yyyyMMMM": "LLLL y",
 	"field-hour": "tunti",
 	"months-format-abbr": [
 		"tammikuuta",
@@ -113,10 +113,10 @@ define(
 		"marraskuuta",
 		"joulukuuta"
 	],
-	"dateFormatItem-yyQ": "Q/yy",
 	"timeFormat-full": "H.mm.ss zzzz",
 	"field-day-relative+0": "tänään",
 	"field-day-relative+1": "huomenna",
+	"dateFormatItem-GyMMMd": "d. MMM y G",
 	"field-day-relative+2": "ylihuomenna",
 	"dateFormatItem-H": "H",
 	"months-standAlone-abbr": [
@@ -145,6 +145,7 @@ define(
 		"3. neljännes",
 		"4. neljännes"
 	],
+	"dateFormatItem-Gy": "y G",
 	"dateFormatItem-M": "L",
 	"days-standAlone-wide": [
 		"sunnuntai",
@@ -155,7 +156,6 @@ define(
 		"perjantai",
 		"lauantai"
 	],
-	"dateFormatItem-yyMMM": "LLLL yy",
 	"timeFormat-medium": "H.mm.ss",
 	"dateFormatItem-Hm": "H.mm",
 	"quarters-standAlone-abbr": [
@@ -195,6 +195,7 @@ define(
 	"dateFormatItem-MMMd": "d. MMM",
 	"dateFormatItem-MEd": "E d.M.",
 	"dateTimeFormat-full": "{1} {0}",
+	"dateFormatItem-yMMMM": "LLLL y",
 	"dateFormatItem-yMMMMccccd": "cccc d. MMMM y",
 	"field-day": "päivä",
 	"days-format-wide": [
@@ -224,7 +225,6 @@ define(
 	],
 	"field-year-relative+-1": "viime vuonna",
 	"field-month-relative+-1": "viime kuussa",
-	"dateFormatItem-yyMM": "M.yy",
 	"dateFormatItem-hm": "h.mm a",
 	"dayPeriods-format-abbr-pm": "ip.",
 	"days-format-abbr": [
@@ -263,23 +263,22 @@ define(
 	"field-month": "kuukausi",
 	"dayPeriods-format-wide-am": "ap.",
 	"dayPeriods-standAlone-wide-am": "ap.",
-	"dateFormat-short": "d.M.yyyy",
+	"dateFormat-short": "d.M.y",
 	"field-second": "sekunti",
 	"dateFormatItem-yMMMEd": "E d. MMM y",
 	"field-month-relative+0": "tässä kuussa",
 	"field-month-relative+1": "ensi kuussa",
 	"dateFormatItem-Ed": "E d.",
 	"field-week": "viikko",
-	"dateFormat-medium": "d.M.yyyy",
+	"dateFormat-medium": "d.M.y",
 	"field-year-relative+0": "tänä vuonna",
 	"field-week-relative+-1": "viime viikolla",
-	"dateFormatItem-yyyyM": "M.yyyy",
 	"field-year-relative+1": "ensi vuonna",
 	"dayPeriods-format-narrow-pm": "ip.",
-	"dateFormatItem-yyyyQQQQ": "QQQQ y",
 	"dateTimeFormat-short": "{1} {0}",
 	"dateFormatItem-Hms": "H.mm.ss",
 	"dateFormatItem-hms": "h.mm.ss a",
+	"dateFormatItem-GyMMM": "LLL y G",
 	"field-week-relative+0": "tällä viikolla",
 	"field-week-relative+1": "ensi viikolla"
 }

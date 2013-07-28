@@ -33,11 +33,13 @@ define(
 	"field-weekday": "ugedag",
 	"dateFormatItem-yQQQ": "QQQ y",
 	"dateFormatItem-yMEd": "E d/M/y",
+	"dateFormatItem-GyMMMEd": "E d. MMM y G",
 	"dateFormatItem-MMMEd": "E d. MMM",
 	"eraNarrow": [
 		"f.Kr.",
 		"e.Kr."
 	],
+	"dateFormatItem-yMM": "MM/y",
 	"days-format-short": [
 		"sø",
 		"ma",
@@ -91,10 +93,10 @@ define(
 		"3. kvartal",
 		"4. kvartal"
 	],
+	"dateFormatItem-yQQQQ": "QQQQ y",
 	"timeFormat-long": "HH.mm.ss z",
 	"field-year": "år",
 	"dateFormatItem-yMMM": "MMM y",
-	"dateFormatItem-yQ": "Q yyyy",
 	"field-hour": "time",
 	"dateFormatItem-MMdd": "dd/MM",
 	"months-format-abbr": [
@@ -111,10 +113,10 @@ define(
 		"nov.",
 		"dec."
 	],
-	"dateFormatItem-yyQ": "Q. 'kvartal' yy",
 	"timeFormat-full": "HH.mm.ss zzzz",
 	"field-day-relative+0": "i dag",
 	"field-day-relative+1": "i morgen",
+	"dateFormatItem-GyMMMd": "d. MMM y G",
 	"field-day-relative+2": "i overmorgen",
 	"dateFormatItem-H": "HH",
 	"months-standAlone-abbr": [
@@ -143,6 +145,7 @@ define(
 		"3. kvartal",
 		"4. kvartal"
 	],
+	"dateFormatItem-Gy": "y G",
 	"dateFormatItem-M": "M",
 	"days-standAlone-wide": [
 		"søndag",
@@ -153,9 +156,7 @@ define(
 		"fredag",
 		"lørdag"
 	],
-	"dateFormatItem-yyyyMMM": "MMM y",
 	"dayPeriods-format-abbr-noon": "middag",
-	"dateFormatItem-yyMMM": "MMM yy",
 	"timeFormat-medium": "HH.mm.ss",
 	"dateFormatItem-Hm": "HH.mm",
 	"quarters-standAlone-abbr": [
@@ -205,7 +206,6 @@ define(
 		"lørdag"
 	],
 	"field-zone": "tidszone",
-	"dateFormatItem-yyyyMM": "MM/yyyy",
 	"dateFormatItem-y": "y",
 	"months-standAlone-narrow": [
 		"J",
@@ -223,7 +223,6 @@ define(
 	],
 	"field-year-relative+-1": "sidste år",
 	"field-month-relative+-1": "sidste måned",
-	"dateFormatItem-yyMM": "MM/yy",
 	"dateFormatItem-hm": "h.mm a",
 	"days-format-abbr": [
 		"søn.",
@@ -269,14 +268,14 @@ define(
 	"field-month-relative+1": "næste måned",
 	"dateFormatItem-Ed": "E 'd'. d.",
 	"field-week": "uge",
-	"dateFormat-medium": "dd/MM/yyyy",
+	"dateFormat-medium": "dd/MM/y",
 	"field-year-relative+0": "i år",
 	"field-week-relative+-1": "sidste uge",
 	"field-year-relative+1": "næste år",
 	"dateTimeFormat-short": "{1} {0}",
 	"dateFormatItem-Hms": "HH.mm.ss",
 	"dateFormatItem-hms": "h.mm.ss a",
-	"dateFormatItem-yyyy": "y",
+	"dateFormatItem-GyMMM": "MMM y G",
 	"field-week-relative+0": "denne uge",
 	"field-week-relative+1": "næste uge"
 }

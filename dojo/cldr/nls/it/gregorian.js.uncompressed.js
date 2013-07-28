@@ -31,9 +31,9 @@ define(
 		"4"
 	],
 	"field-weekday": "giorno della settimana",
-	"dateFormatItem-yyQQQQ": "QQQQ yy",
 	"dateFormatItem-yQQQ": "QQQ y",
 	"dateFormatItem-yMEd": "E d/M/y",
+	"dateFormatItem-GyMMMEd": "E d MMM y G",
 	"dateFormatItem-MMMEd": "E d MMM",
 	"eraNarrow": [
 		"aC",
@@ -91,13 +91,11 @@ define(
 		"3o trimestre",
 		"4o trimestre"
 	],
+	"dateFormatItem-yQQQQ": "QQQQ y",
 	"timeFormat-long": "HH:mm:ss z",
 	"field-year": "anno",
 	"dateFormatItem-yMMM": "MMM y",
-	"dateFormatItem-yQ": "Q-yyyy",
-	"dateFormatItem-yyyyMMMM": "MMMM y",
 	"field-hour": "ora",
-	"dateFormatItem-MMdd": "dd/MM",
 	"months-format-abbr": [
 		"gen",
 		"feb",
@@ -112,10 +110,10 @@ define(
 		"nov",
 		"dic"
 	],
-	"dateFormatItem-yyQ": "Q yy",
 	"timeFormat-full": "HH:mm:ss zzzz",
 	"field-day-relative+0": "oggi",
 	"field-day-relative+1": "domani",
+	"dateFormatItem-GyMMMd": "d MMM y G",
 	"field-day-relative+2": "dopodomani",
 	"dateFormatItem-H": "HH",
 	"months-standAlone-abbr": [
@@ -144,6 +142,7 @@ define(
 		"Terzo trimestre",
 		"Quarto trimestre"
 	],
+	"dateFormatItem-Gy": "y G",
 	"dateFormatItem-M": "L",
 	"days-standAlone-wide": [
 		"Domenica",
@@ -193,6 +192,7 @@ define(
 	"dateFormatItem-MMMd": "d MMM",
 	"dateFormatItem-MEd": "E d/M",
 	"dateTimeFormat-full": "{1} {0}",
+	"dateFormatItem-yMMMM": "MMMM y",
 	"field-day": "giorno",
 	"days-format-wide": [
 		"domenica",
@@ -221,7 +221,6 @@ define(
 	],
 	"field-year-relative+-1": "Anno scorso",
 	"field-month-relative+-1": "Mese scorso",
-	"dateFormatItem-yyMM": "MM/yy",
 	"dateFormatItem-hm": "hh:mm a",
 	"days-format-abbr": [
 		"dom",
@@ -246,6 +245,7 @@ define(
 		"V",
 		"S"
 	],
+	"field-month": "mese",
 	"days-standAlone-narrow": [
 		"D",
 		"L",
@@ -256,9 +256,7 @@ define(
 		"S"
 	],
 	"dateFormatItem-MMM": "LLL",
-	"field-month": "mese",
 	"dayPeriods-format-wide-am": "AM",
-	"dateFormatItem-MMMMdd": "dd MMMM",
 	"dateFormat-short": "dd/MM/yy",
 	"field-second": "secondo",
 	"dateFormatItem-yMMMEd": "E d MMM y",
@@ -274,6 +272,7 @@ define(
 	"dateTimeFormat-short": "{1} {0}",
 	"dateFormatItem-Hms": "HH:mm:ss",
 	"dateFormatItem-hms": "hh:mm:ss a",
+	"dateFormatItem-GyMMM": "MMM y G",
 	"field-week-relative+0": "Questa settimana",
 	"field-week-relative+1": "Settimana prossima"
 }

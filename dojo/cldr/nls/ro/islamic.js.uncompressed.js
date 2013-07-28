@@ -1,76 +1,13 @@
 define(
 "dojo/cldr/nls/ro/islamic", //begin v1.x content
 {
-	"quarters-standAlone-wide": [
-		"trimestrul I",
-		"trimestrul al II-lea",
-		"trimestrul al III-lea",
-		"trimestrul al IV-lea"
-	],
-	"quarters-format-abbr": [
-		"trim. I",
-		"trim. II",
-		"trim. III",
-		"trim. IV"
-	],
-	"dateFormatItem-yMd": "dd.MM.yyyy",
-	"dateFormat-medium": "dd.MM.yyyy",
+	"field-dayperiod": "perioada zilei",
+	"field-minute": "minut",
 	"dateFormatItem-MMMEd": "E, d MMM",
-	"quarters-standAlone-abbr": [
-		"T1",
-		"T2",
-		"T3",
-		"T4"
-	],
-	"dateFormatItem-MEd": "E, dd.MM",
-	"dateFormatItem-yMEd": "E, dd.MM.yyyy",
-	"dateTimeFormat-medium": "{1}, {0}",
-	"dateFormatItem-yMMMd": "d MMM y",
-	"quarters-format-narrow": [
-		"1",
-		"2",
-		"3",
-		"T4"
-	],
-	"days-format-short": [
-		"Du",
-		"Lu",
-		"Ma",
-		"Mi",
-		"Jo",
-		"Vi",
-		"Sâ"
-	],
-	"dateFormatItem-Md": "dd.MM",
-	"days-standAlone-narrow": [
-		"D",
-		"L",
-		"M",
-		"M",
-		"J",
-		"V",
-		"S"
-	],
-	"dateTimeFormat-long": "{1}, {0}",
-	"dateFormatItem-yQQQ": "QQQ y",
-	"days-standAlone-short": [
-		"Du",
-		"Lu",
-		"Ma",
-		"Mi",
-		"Jo",
-		"Vi",
-		"Sâ"
-	],
-	"quarters-standAlone-narrow": [
-		"T1",
-		"T2",
-		"T3",
-		"T4"
-	],
-	"dateFormat-long": "d MMMM y",
-	"dateFormat-short": "dd.MM.yyyy",
-	"dateFormatItem-yMMMEd": "E, d MMM y",
+	"dateTimeFormat-full": "{1}, {0}",
+	"field-day-relative+-1": "ieri",
+	"field-weekday": "zi a săptămânii",
+	"field-day-relative+-2": "alaltăieri",
 	"days-standAlone-wide": [
 		"duminică",
 		"luni",
@@ -81,8 +18,20 @@ define(
 		"sâmbătă"
 	],
 	"dateTimeFormat-short": "{1}, {0}",
-	"dateTimeFormat-full": "{1}, {0}",
-	"days-format-narrow": [
+	"field-era": "eră",
+	"field-hour": "oră",
+	"dateTimeFormat-medium": "{1}, {0}",
+	"quarters-standAlone-abbr": [
+		"T1",
+		"T2",
+		"T3",
+		"T4"
+	],
+	"dateFormatItem-y": "y",
+	"dateFormatItem-Ed": "E d",
+	"field-day-relative+0": "azi",
+	"field-day-relative+1": "mâine",
+	"days-standAlone-narrow": [
 		"D",
 		"L",
 		"M",
@@ -91,35 +40,47 @@ define(
 		"V",
 		"S"
 	],
-	"dateFormatItem-yM": "MM.yyyy",
-	"days-standAlone-abbr": [
-		"Du",
-		"Lu",
-		"Ma",
-		"Mi",
-		"Jo",
-		"Vi",
-		"Sâ"
-	],
-	"days-format-wide": [
-		"duminică",
-		"luni",
-		"marți",
-		"miercuri",
-		"joi",
-		"vineri",
-		"sâmbătă"
-	],
-	"dateFormatItem-yQ": "'trimestrul' Q y",
-	"dateFormatItem-yMMM": "MMM y",
-	"quarters-format-wide": [
+	"field-day-relative+2": "poimâine",
+	"dateFormat-long": "d MMMM y G",
+	"field-zone": "zonă",
+	"field-week-relative+-1": "Săptămâna trecută",
+	"dateFormat-medium": "dd.MM.y G",
+	"field-year-relative+0": "Anul acesta",
+	"field-year-relative+1": "Anul viitor",
+	"quarters-standAlone-wide": [
 		"trimestrul I",
 		"trimestrul al II-lea",
 		"trimestrul al III-lea",
 		"trimestrul al IV-lea"
 	],
-	"dateFormat-full": "EEEE, d MMMM y",
+	"field-year-relative+-1": "Anul trecut",
+	"field-year": "an",
+	"quarters-standAlone-narrow": [
+		"T1",
+		"T2",
+		"T3",
+		"T4"
+	],
+	"dateTimeFormat-long": "{1}, {0}",
+	"field-week": "săptămână",
 	"dateFormatItem-MMMd": "d MMM",
+	"field-week-relative+0": "Săptămâna aceasta",
+	"quarters-format-narrow": [
+		"1",
+		"2",
+		"3",
+		"T4"
+	],
+	"field-week-relative+1": "Săptămâna viitoare",
+	"field-month-relative+0": "Luna aceasta",
+	"field-month": "lună",
+	"field-month-relative+1": "Luna viitoare",
+	"quarters-format-abbr": [
+		"trim. I",
+		"trim. II",
+		"trim. III",
+		"trim. IV"
+	],
 	"days-format-abbr": [
 		"Du",
 		"Lu",
@@ -129,7 +90,65 @@ define(
 		"Vi",
 		"Sâ"
 	],
-	"dateFormatItem-Ed": "E d"
+	"days-format-narrow": [
+		"D",
+		"L",
+		"M",
+		"M",
+		"J",
+		"V",
+		"S"
+	],
+	"field-second": "secundă",
+	"field-day": "zi",
+	"dateFormatItem-MEd": "E, dd.MM",
+	"days-standAlone-short": [
+		"Du",
+		"Lu",
+		"Ma",
+		"Mi",
+		"Jo",
+		"Vi",
+		"Sâ"
+	],
+	"days-standAlone-abbr": [
+		"Du",
+		"Lu",
+		"Ma",
+		"Mi",
+		"Jo",
+		"Vi",
+		"Sâ"
+	],
+	"dateFormat-short": "dd.MM.y GGGGG",
+	"dateFormat-full": "EEEE, d MMMM y G",
+	"dateFormatItem-Md": "dd.MM",
+	"dateFormatItem-yMEd": "E, dd.MM.y",
+	"days-format-short": [
+		"Du",
+		"Lu",
+		"Ma",
+		"Mi",
+		"Jo",
+		"Vi",
+		"Sâ"
+	],
+	"field-month-relative+-1": "Luna trecută",
+	"quarters-format-wide": [
+		"trimestrul I",
+		"trimestrul al II-lea",
+		"trimestrul al III-lea",
+		"trimestrul al IV-lea"
+	],
+	"days-format-wide": [
+		"duminică",
+		"luni",
+		"marți",
+		"miercuri",
+		"joi",
+		"vineri",
+		"sâmbătă"
+	]
 }
 //end v1.x content
 );

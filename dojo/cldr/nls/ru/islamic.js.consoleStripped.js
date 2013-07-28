@@ -24,9 +24,8 @@ define(
 		"11",
 		"12"
 	],
-	"dateFormatItem-yyMMMEd": "E, d MMM yy G",
-	"dateFormatItem-yMEd": "ccc, d.MM.y 'г'.",
-	"dateFormatItem-yyyyLLLL": "LLLL y G",
+	"field-weekday": "День недели",
+	"dateFormatItem-GyMMMEd": "E, d MMM y G",
 	"dateFormatItem-MMMEd": "ccc, d MMM",
 	"days-format-short": [
 		"вс",
@@ -37,7 +36,7 @@ define(
 		"пт",
 		"сб"
 	],
-	"dateFormat-long": "d MMMM y 'г'. G",
+	"dateFormat-long": "d MMMM y 'г'. G",
 	"months-format-wide": [
 		"Мухаррам",
 		"Сафар",
@@ -55,12 +54,11 @@ define(
 	"dateFormatItem-yyyyQQQ": "QQQ y G",
 	"dateTimeFormat-medium": "{1}, {0}",
 	"dayPeriods-format-wide-pm": "после полудня",
-	"dateFormat-full": "EEEE, d MMMM y 'г'. G",
+	"dateFormat-full": "EEEE, d MMMM y 'г'. G",
 	"dateFormatItem-yyyyMEd": "E, dd.MM.y G",
 	"dateFormatItem-Md": "dd.MM",
 	"dayPeriods-format-abbr-am": "до полудня",
-	"dateFormatItem-yMd": "dd.MM.y",
-	"dateFormatItem-yM": "MM.y",
+	"field-era": "Эра",
 	"months-standAlone-wide": [
 		"Мухаррам",
 		"Сафар",
@@ -83,10 +81,8 @@ define(
 		"4-й квартал"
 	],
 	"timeFormat-long": "H:mm:ss z",
-	"dateFormatItem-yMMM": "LLL y",
-	"dateFormatItem-yQ": "QQQ y 'г'.",
-	"dateFormatItem-yyyyMMMM": "LLLL y G",
-	"dateFormatItem-MMdd": "dd.MM",
+	"field-year": "Год",
+	"field-hour": "Час",
 	"months-format-abbr": [
 		"Мухаррам",
 		"Сафар",
@@ -101,9 +97,11 @@ define(
 		"Зуль-Каада",
 		"Зуль-Хиджжа"
 	],
-	"dateFormatItem-yyQ": "Q yy G",
 	"timeFormat-full": "H:mm:ss zzzz",
-	"dateFormatItem-E": "ccc",
+	"field-day-relative+0": "Сегодня",
+	"field-day-relative+1": "Завтра",
+	"dateFormatItem-GyMMMd": "d MMM y G",
+	"field-day-relative+2": "Послезавтра",
 	"dateFormatItem-H": "H",
 	"months-standAlone-abbr": [
 		"Мухаррам",
@@ -131,8 +129,8 @@ define(
 		"3-й квартал",
 		"4-й квартал"
 	],
+	"dateFormatItem-Gy": "y G",
 	"dateFormatItem-yyyyMMMEd": "E, d MMM y G",
-	"dateFormatItem-M": "L",
 	"days-standAlone-wide": [
 		"Воскресенье",
 		"Понедельник",
@@ -144,7 +142,6 @@ define(
 	],
 	"dateFormatItem-yyyyMMM": "LLL y G",
 	"dateFormatItem-yyyyMMMd": "d MMM y G",
-	"dateFormatItem-yyMMM": "LLL yy G",
 	"timeFormat-medium": "H:mm:ss",
 	"dateFormatItem-Hm": "H:mm",
 	"quarters-standAlone-abbr": [
@@ -153,6 +150,8 @@ define(
 		"3-й кв.",
 		"4-й кв."
 	],
+	"field-minute": "Минута",
+	"field-dayperiod": "ДП/ПП",
 	"days-standAlone-abbr": [
 		"Вс",
 		"Пн",
@@ -162,13 +161,14 @@ define(
 		"Пт",
 		"Сб"
 	],
-	"dateFormatItem-d": "d",
-	"dateFormatItem-ms": "mm:ss",
+	"field-day-relative+-1": "Вчера",
 	"dateTimeFormat-long": "{1}, {0}",
 	"dayPeriods-format-narrow-am": "дп",
+	"field-day-relative+-2": "Позавчера",
 	"dateFormatItem-MMMd": "d MMM",
 	"dateFormatItem-MEd": "E, dd.MM",
 	"dateTimeFormat-full": "{1}, {0}",
+	"field-day": "День",
 	"days-format-wide": [
 		"воскресенье",
 		"понедельник",
@@ -178,8 +178,10 @@ define(
 		"пятница",
 		"суббота"
 	],
-	"dateFormatItem-yyyyMM": "MM.yyyy G",
-	"dateFormatItem-yyMM": "MM.yy G",
+	"field-zone": "Часовой пояс",
+	"dateFormatItem-y": "y G",
+	"field-year-relative+-1": "В прошлом году",
+	"field-month-relative+-1": "В прошлом месяце",
 	"dayPeriods-format-abbr-pm": "после полудня",
 	"days-format-abbr": [
 		"вс",
@@ -190,7 +192,6 @@ define(
 		"пт",
 		"сб"
 	],
-	"dateFormatItem-yMMMd": "d MMM y 'г'.",
 	"days-format-narrow": [
 		"вс",
 		"пн",
@@ -201,6 +202,7 @@ define(
 		"сб"
 	],
 	"dateFormatItem-yyyyMd": "dd.MM.y G",
+	"field-month": "Месяц",
 	"days-standAlone-narrow": [
 		"В",
 		"П",
@@ -210,18 +212,26 @@ define(
 		"П",
 		"С"
 	],
-	"dateFormatItem-MMM": "LLL",
 	"dayPeriods-format-wide-am": "до полудня",
-	"dateFormat-short": "dd.MM.yy G",
-	"dateFormatItem-yMMMEd": "E, d MMM y",
+	"dateFormat-short": "dd.MM.y G",
+	"field-second": "Секунда",
+	"field-month-relative+0": "В этом месяце",
+	"field-month-relative+1": "В следующем месяце",
 	"dateFormatItem-Ed": "E, d",
-	"dateFormat-medium": "dd.MM.yyyy G",
+	"field-week": "Неделя",
+	"dateFormat-medium": "dd.MM.y G",
+	"field-year-relative+0": "В этом году",
+	"field-week-relative+-1": "На прошлой неделе",
 	"dateFormatItem-yyyyM": "MM.y G",
+	"field-year-relative+1": "В следующем году",
 	"dayPeriods-format-narrow-pm": "пп",
-	"dateFormatItem-yyyyQQQQ": "QQQQ y 'г'. G",
+	"dateFormatItem-yyyyQQQQ": "QQQQ y 'г'. G",
 	"dateTimeFormat-short": "{1}, {0}",
 	"dateFormatItem-Hms": "H:mm:ss",
-	"dateFormatItem-yyyy": "y G"
+	"dateFormatItem-GyMMM": "LLL y G",
+	"dateFormatItem-yyyy": "y G",
+	"field-week-relative+0": "На этой неделе",
+	"field-week-relative+1": "На следующей неделе"
 }
 //end v1.x content
 );

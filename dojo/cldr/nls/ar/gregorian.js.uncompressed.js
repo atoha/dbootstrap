@@ -32,12 +32,14 @@ define(
 	],
 	"field-weekday": "اليوم",
 	"dateFormatItem-yQQQ": "QQQ y",
-	"dateFormatItem-yMEd": "E، d/‏M/‏yyyy",
+	"dateFormatItem-yMEd": "E، d/‏M/‏y",
+	"dateFormatItem-GyMMMEd": "E، d MMM، y G",
 	"dateFormatItem-MMMEd": "E، d MMM",
 	"eraNarrow": [
 		"ق.م",
 		"م"
 	],
+	"dateFormatItem-yMM": "MM‏/y",
 	"days-format-short": [
 		"الأحد",
 		"الاثنين",
@@ -66,9 +68,9 @@ define(
 	"dayPeriods-format-wide-pm": "م",
 	"dateFormat-full": "EEEE، d MMMM، y",
 	"dateFormatItem-Md": "d/‏M",
-	"dateFormatItem-yMd": "d‏/M‏/yyyy",
+	"dateFormatItem-yMd": "d‏/M‏/y",
 	"field-era": "العصر",
-	"dateFormatItem-yM": "M‏/yyyy",
+	"dateFormatItem-yM": "M‏/y",
 	"months-standAlone-wide": [
 		"يناير",
 		"فبراير",
@@ -90,11 +92,10 @@ define(
 		"الربع الثالث",
 		"الربع الرابع"
 	],
+	"dateFormatItem-yQQQQ": "QQQQ y",
 	"timeFormat-long": "h:mm:ss a z",
 	"field-year": "السنة",
 	"dateFormatItem-yMMM": "MMM y",
-	"dateFormatItem-yQ": "Q yyyy",
-	"dateFormatItem-yyyyMMMM": "MMMM، y",
 	"field-hour": "الساعات",
 	"dateFormatItem-MMdd": "dd‏/MM",
 	"months-format-abbr": [
@@ -111,10 +112,10 @@ define(
 		"نوفمبر",
 		"ديسمبر"
 	],
-	"dateFormatItem-yyQ": "Q yy",
 	"timeFormat-full": "h:mm:ss a zzzz",
 	"field-day-relative+0": "اليوم",
 	"field-day-relative+1": "غدًا",
+	"dateFormatItem-GyMMMd": "d MMM، y G",
 	"field-day-relative+2": "بعد الغد",
 	"dateFormatItem-H": "HH",
 	"months-standAlone-abbr": [
@@ -143,6 +144,7 @@ define(
 		"الربع الثالث",
 		"الربع الرابع"
 	],
+	"dateFormatItem-Gy": "y G",
 	"dateFormatItem-M": "L",
 	"days-standAlone-wide": [
 		"الأحد",
@@ -204,7 +206,6 @@ define(
 		"السبت"
 	],
 	"field-zone": "التوقيت",
-	"dateFormatItem-yyyyMM": "MM‏/yyyy",
 	"dateFormatItem-y": "y",
 	"months-standAlone-narrow": [
 		"ي",
@@ -259,20 +260,21 @@ define(
 	"dateFormatItem-MMM": "LLL",
 	"dayPeriods-format-wide-am": "ص",
 	"dateFormatItem-MMMMEd": "E، d MMMM",
-	"dateFormat-short": "d‏/M‏/yyyy",
+	"dateFormat-short": "d‏/M‏/y",
 	"field-second": "الثواني",
 	"dateFormatItem-yMMMEd": "E، d MMM، y",
 	"field-month-relative+0": "هذا الشهر",
 	"field-month-relative+1": "الشهر التالي",
 	"dateFormatItem-Ed": "E، d",
 	"field-week": "الأسبوع",
-	"dateFormat-medium": "dd‏/MM‏/yyyy",
+	"dateFormat-medium": "dd‏/MM‏/y",
 	"field-year-relative+0": "هذه السنة",
 	"field-week-relative+-1": "الأسبوع الماضي",
 	"field-year-relative+1": "السنة التالية",
 	"dateTimeFormat-short": "{1} {0}",
 	"dateFormatItem-Hms": "HH:mm:ss",
 	"dateFormatItem-hms": "h:mm:ss a",
+	"dateFormatItem-GyMMM": "MMM y G",
 	"field-week-relative+0": "هذا الأسبوع",
 	"field-week-relative+1": "الأسبوع التالي"
 }

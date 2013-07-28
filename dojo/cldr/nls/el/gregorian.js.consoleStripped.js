@@ -31,14 +31,14 @@ define(
 		"4"
 	],
 	"field-weekday": "Ημέρα εβδομάδας",
-	"dateFormatItem-yyQQQQ": "QQQQ yy",
 	"dateFormatItem-yQQQ": "y QQQ",
-	"dateFormatItem-yMEd": "E, d/M/yyyy",
+	"dateFormatItem-yMEd": "E, d/M/y",
 	"dateFormatItem-MMMEd": "E, d MMM",
 	"eraNarrow": [
 		"π.Χ.",
 		"μ.Χ."
 	],
+	"dateFormatItem-yMM": "MM/y",
 	"days-format-short": [
 		"Κυ",
 		"Δε",
@@ -67,9 +67,9 @@ define(
 	"dayPeriods-format-wide-pm": "μ.μ.",
 	"dateFormat-full": "EEEE, d MMMM y",
 	"dateFormatItem-Md": "d/M",
-	"dateFormatItem-yMd": "d/M/yyyy",
+	"dateFormatItem-yMd": "d/M/y",
 	"field-era": "Περίοδος",
-	"dateFormatItem-yM": "M/yyyy",
+	"dateFormatItem-yM": "M/y",
 	"months-standAlone-wide": [
 		"Ιανουάριος",
 		"Φεβρουάριος",
@@ -91,11 +91,10 @@ define(
 		"3ο τρίμηνο",
 		"4ο τρίμηνο"
 	],
+	"dateFormatItem-yQQQQ": "y QQQQ",
 	"timeFormat-long": "h:mm:ss a z",
 	"field-year": "Έτος",
 	"dateFormatItem-yMMM": "LLL y",
-	"dateFormatItem-yQ": "y Q",
-	"dateFormatItem-yyyyMMMM": "LLLL y",
 	"field-hour": "Ώρα",
 	"dateFormatItem-MMdd": "dd/MM",
 	"months-format-abbr": [
@@ -112,7 +111,6 @@ define(
 		"Νοε",
 		"Δεκ"
 	],
-	"dateFormatItem-yyQ": "Q yy",
 	"timeFormat-full": "h:mm:ss a zzzz",
 	"field-day-relative+0": "Σήμερα",
 	"field-day-relative+1": "Αύριο",
@@ -156,7 +154,6 @@ define(
 		"Σάββατο"
 	],
 	"dateFormatItem-MMMMd": "d MMMM",
-	"dateFormatItem-yyMMM": "LLL yy",
 	"timeFormat-medium": "h:mm:ss a",
 	"dateFormatItem-Hm": "HH:mm",
 	"quarters-standAlone-abbr": [
@@ -195,6 +192,7 @@ define(
 	"dateFormatItem-MMMd": "d MMM",
 	"dateFormatItem-MEd": "E, d/M",
 	"dateTimeFormat-full": "{1} - {0}",
+	"dateFormatItem-yMMMM": "LLLL y",
 	"field-day": "Ημέρα",
 	"days-format-wide": [
 		"Κυριακή",
@@ -206,7 +204,6 @@ define(
 		"Σάββατο"
 	],
 	"field-zone": "Ζώνη",
-	"dateFormatItem-yyyyMM": "MM/yyyy",
 	"dateFormatItem-y": "y",
 	"months-standAlone-narrow": [
 		"Ι",
@@ -224,7 +221,6 @@ define(
 	],
 	"field-year-relative+-1": "Προηγούμενο έτος",
 	"field-month-relative+-1": "Προηγούμενος μήνας",
-	"dateFormatItem-yyMM": "MM/yy",
 	"dateFormatItem-hm": "h:mm a",
 	"days-format-abbr": [
 		"Κυρ",
@@ -279,7 +275,6 @@ define(
 	"dateTimeFormat-short": "{1} - {0}",
 	"dateFormatItem-Hms": "HH:mm:ss",
 	"dateFormatItem-hms": "h:mm:ss a",
-	"dateFormatItem-yyyy": "y",
 	"field-week-relative+0": "Αυτήν την εβδομάδα",
 	"field-week-relative+1": "Επόμενη εβδομάδα"
 }

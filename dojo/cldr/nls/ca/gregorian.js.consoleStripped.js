@@ -38,6 +38,7 @@ define(
 		"aC",
 		"dC"
 	],
+	"dateFormatItem-yMM": "MM/y",
 	"days-format-short": [
 		"dg.",
 		"dl.",
@@ -66,9 +67,9 @@ define(
 	"dayPeriods-format-wide-pm": "p.m.",
 	"dateFormat-full": "EEEE d MMMM 'de' y",
 	"dateFormatItem-Md": "d/M",
-	"dateFormatItem-yMd": "d/M/yyyy",
+	"dateFormatItem-yMd": "d/M/y",
 	"field-era": "era",
-	"dateFormatItem-yM": "M/yyyy",
+	"dateFormatItem-yM": "M/y",
 	"months-standAlone-wide": [
 		"gener",
 		"febrer",
@@ -90,10 +91,10 @@ define(
 		"3r trimestre",
 		"4t trimestre"
 	],
+	"dateFormatItem-yQQQQ": "QQQQ y",
 	"timeFormat-long": "H.mm.ss z",
 	"field-year": "any",
 	"dateFormatItem-yMMM": "LLL y",
-	"dateFormatItem-yQ": "Q yyyy",
 	"field-hour": "hora",
 	"months-format-abbr": [
 		"de gen.",
@@ -109,7 +110,6 @@ define(
 		"de nov.",
 		"de des."
 	],
-	"dateFormatItem-yyQ": "Q yy",
 	"timeFormat-full": "H.mm.ss zzzz",
 	"field-day-relative+0": "avui",
 	"field-day-relative+1": "demà",
@@ -203,7 +203,6 @@ define(
 		"dissabte"
 	],
 	"field-zone": "zona",
-	"dateFormatItem-yyyyMM": "MM/yyyy",
 	"dateFormatItem-y": "y",
 	"months-standAlone-narrow": [
 		"g",
@@ -265,7 +264,7 @@ define(
 	"field-month-relative+1": "Mes següent",
 	"dateFormatItem-Ed": "E d",
 	"field-week": "setmana",
-	"dateFormat-medium": "dd/MM/yyyy",
+	"dateFormat-medium": "dd/MM/y",
 	"field-year-relative+0": "Aquest any",
 	"field-week-relative+-1": "Última setmana",
 	"field-year-relative+1": "Any següent",
