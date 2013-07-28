@@ -18,7 +18,8 @@ var profile = {
             include: [
                 'dojo/dojo',
                 'dojo/i18n',
-                'dojo/domReady'
+                'dojo/domReady',
+                'dojo/selector/lite'
             ],
             boot: true,
             customBase: true
