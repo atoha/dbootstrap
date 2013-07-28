@@ -69,3 +69,25 @@
     color: $gridSelectedColor;
     text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
 }
+
+// Icons
+.dbootstrap .dgrid-sort-arrow {
+    background: none;
+    width: auto;
+    height: auto;
+    margin: 0px;
+}
+
+.dbootstrap .dgrid-sort-arrow:before {
+    @extend .dijitIcon:before;
+    @extend .icon-caret-down:before;
+}
+
+.dbootstrap .dgrid-sort-down .dgrid-sort-arrow:before {
+    @extend .icon-caret-down:before;
+}
+
+.dbootstrap .dgrid-sort-up .dgrid-sort-arrow:before {
+    @extend .icon-caret-up:before;
+}
+
