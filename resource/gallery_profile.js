@@ -34,7 +34,8 @@ var profile = {
             include: [
                 'gallery/main',
                 'gallery/entry_point',
-                'gallery/Gallery'
+                'gallery/Gallery',
+                'xstyle/load-css'
             ]
         }
     },
