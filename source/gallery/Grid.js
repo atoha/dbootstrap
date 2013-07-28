@@ -9,7 +9,7 @@ define(
     'dgrid/OnDemandGrid',
     'dgrid/extensions/DijitRegistry',
     'dgrid/Selection',
-    'dgrid/Keyboard',
+    'dgrid/Keyboard'
 ],
 
 function(declare, Grid, DijitRegistry, Selection, Keyboard) {

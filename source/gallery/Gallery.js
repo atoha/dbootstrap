@@ -72,7 +72,7 @@ define(
     'dijit/ProgressBar',
     'dijit/InlineEditBox',
     'dijit/layout/LinkPane',
-    'dijit/Dialog',
+    'dijit/Dialog'
 ],
 
 function(declare, json, template, stateData, countriesData, query, window,
@@ -132,7 +132,7 @@ function(declare, json, template, stateData, countriesData, query, window,
                 store: this.stateStore,
                 columns: {
                     name: "Name",
-                    abbreviation: "Code",
+                    abbreviation: "Code"
                 }
             }, this.simpleGridWidget);
         },
