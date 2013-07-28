@@ -27,7 +27,7 @@ define(
     'dojo/data/ItemFileReadStore',
     'dijit/tree/ForestStoreModel',
     
-    'dgrid/OnDemandGrid',
+    './Grid',
     
     // For template
     'dojo/dnd/Source',
