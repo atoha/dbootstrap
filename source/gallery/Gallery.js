@@ -27,6 +27,8 @@ define(
     'dojo/data/ItemFileReadStore',
     'dijit/tree/ForestStoreModel',
     
+    'dgrid/OnDemandGrid',
+    
     // For template
     'dojo/dnd/Source',
     'dijit/MenuBar',
@@ -70,13 +72,13 @@ define(
     'dijit/ProgressBar',
     'dijit/InlineEditBox',
     'dijit/layout/LinkPane',
-    'dijit/Dialog'
+    'dijit/Dialog',
 ],
 
-function(declare, json, template, stateData, countriesData,
-         query, window, array, functional, domConstruct,
-         TemplatedMixin, WidgetsInTemplateMixin,
-         BorderContainer, Observable, Memory, ItemFileReadStore, ForestStoreModel) {
+function(declare, json, template, stateData, countriesData, query, window,
+         array, functional, domConstruct, TemplatedMixin,
+         WidgetsInTemplateMixin, BorderContainer, Observable, Memory,
+         ItemFileReadStore, ForestStoreModel, Grid) {
 
     return declare('dbootstrap.Gallery', [BorderContainer,
                                           TemplatedMixin,
@@ -91,6 +93,7 @@ function(declare, json, template, stateData, countriesData,
             declare.safeMixin(this, options);
 
             this.stateStore = Memory({
+                idProperty: 'abbreviation',
                 data: json.parse(stateData)
             });
 
@@ -105,11 +108,12 @@ function(declare, json, template, stateData, countriesData,
                 rootId:'Geography', 
                 rootLabel:'Geography'
             });
-            
+        
         },
 
         buildRendering: function() {
             this.inherited(arguments);
+            this.buildGrid();
             this.buildIcons();
         },
 
@@ -119,8 +123,20 @@ function(declare, json, template, stateData, countriesData,
 
         startup: function() {
             this.inherited(arguments);
+            this.simpleGrid.startup();
         },
 
+        buildGrid: function() {
+            // Build demo dgrid
+            this.simpleGrid = new Grid({
+                store: this.stateStore,
+                columns: {
+                    name: "Name",
+                    abbreviation: "Code",
+                }
+            }, this.simpleGridWidget);
+        },
+        
         buildIcons: function() {
             // Build icons from available icon classes and add to
             // iconsContainer
