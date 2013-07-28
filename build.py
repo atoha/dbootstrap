@@ -150,8 +150,7 @@ def main(arguments=None):
             os.remove(filepath)
 
         if target == 'demo':
-            for package in ('dojox', 'dgrid', 'put-selector',
-                            'xstyle'):
+            for package in ('dojox', 'put-selector', 'xstyle'):
                 package_path = os.path.join(build_path, package)
                 log.debug('Removing {0}'.format(package_path))
                 shutil.rmtree(package_path)
@@ -181,7 +180,10 @@ def main(arguments=None):
                 '*package.json',
                 '*dbootstrap.css',
                 '*dbootstrap/dijit.css',
-                '*font/fontawesome-webfont*'
+                '*font/fontawesome-webfont*',
+                
+                # Dgrid css
+                '*dgrid/css/dgrid.css'
             ]
 
         elif target == 'theme':
