@@ -1,0 +1,92 @@
+// :copyright: Copyright 2013 Martin Pengelly-Phillips
+// :license: See LICENSE.txt.
+
+.dbootstrap .dgrid {
+    background-color: $gridBackground;
+    border-color: $gridBorder;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: $gridBorderRadius;
+    padding: 0px;
+}
+
+.dbootstrap .dgrid-header,
+.dbootstrap .dgrid-header-scroll,
+.dbootstrap .dgrid-footer {
+    background-image: linear-gradient(
+        center top, $gridHeaderBackground, darken($gridHeaderBackground, 5%)
+    );
+}
+
+.dbootstrap .dgrid-header,
+.dbootstrap .dgrid-header-scroll {
+    font-weight: bold;
+    box-shadow: 0 -1px 0px rgba(0, 0, 0, 0.06) inset;
+}
+
+.dbootstrap .dgrid .dgrid-cell {
+    border-color: $tableBorder;
+    border-style: solid;
+    border-width: 0 1px 0 0;
+    overflow: hidden;
+    text-shadow: 0 1px 0 $white;
+}
+
+.dbootstrap .dgrid .dgrid-cell.dgrid-column-first {
+    border-width: 0px;
+}
+
+.dbootstrap .dgrid .dgrid-cell-padding {
+    padding: 8px;
+}
+
+.dbootstrap .dgrid .dgrid-row {
+    border-color: $gridBorder;
+    border-style: solid;
+    border-width: 0 0 1px;
+}
+
+.dbootstrap .dgrid .dgrid-row-even {
+    background-color: $gridRowEvenBackground;
+}
+
+.dbootstrap .dgrid .dgrid-row-odd {
+    background-color: $gridRowOddBackground;
+}
+
+.dbootstrap .dgrid .dgrid-row:hover,
+.dbootstrap .dgrid .dgrid-row:hover .dgrid-cell {
+    background-color: $gridBackgroundHover;
+    color: $gridSelectedColor;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
+}
+
+// Selection
+.dbootstrap .dgrid-selected,
+.dbootstrap .dgrid-selected .dgrid-cell {
+    background-color: $gridSelectedBackground;
+    color: $gridSelectedColor;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
+}
+
+// Icons
+.dbootstrap .dgrid-sort-arrow {
+    background: none;
+    width: auto;
+    height: auto;
+    margin: 0px;
+}
+
+.dbootstrap .dgrid-sort-arrow:before {
+    @extend .dijitIcon:before;
+    @extend .icon-caret-down:before;
+}
+
+.dbootstrap .dgrid-sort-down .dgrid-sort-arrow:before {
+    @extend .icon-caret-down:before;
+}
+
+.dbootstrap .dgrid-sort-up .dgrid-sort-arrow:before {
+    @extend .icon-caret-up:before;
+}
+

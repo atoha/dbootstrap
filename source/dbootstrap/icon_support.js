@@ -5,6 +5,7 @@
 
 define(
 [
+    'require',
     'dojo/_base/declare',
     'dojo/_base/lang',
     'dojo/_base/array',
@@ -13,25 +14,21 @@ define(
     'dijit/_TemplatedMixin'
 ],
 
-function(declare, lang, array, domConstruct, domClass, TemplatedMixin) {
+function(require, declare, lang, array, domConstruct, domClass, TemplatedMixin) {
     // Patch templated widgets to replace icon nodes that do no support pseudo
     // states with nodes that do. This enables Font-Awesome to be used
     // everywhere for the icons.
     //
     // To use, require this module *before* Dijit.
     //
-    var _attachTemplateNodes = TemplatedMixin.prototype._attachTemplateNodes;
-
-    TemplatedMixin.prototype._attachTemplateNodes = function(rootNode,
-                                                             getAttrFunc) {
-        // Replace nodes with appropriate ones, before calling original
-        // method.
+    var _replaceNodesForIconSupport = function(rootNode) {
+        // Replace nodes that don't support :before with nodes that do.
         //
         var reference_tag_names = ['IMG', 'INPUT'];
         var reference_classes = [
             'dijitIcon', 'dijitTabStripIcon', 'dijitMenuExpand',
             'dijitCalendarIncrementControl', 'dijitArrowButtonInner',
-            'dijitTreeExpando'
+            'dijitTreeExpando', 'dijitArrowNode'
         ];
         var reference_attributes = ['class', 'data-dojo-attach-point'];
 
@@ -57,7 +54,7 @@ function(declare, lang, array, domConstruct, domClass, TemplatedMixin) {
                 if (domClass.contains(node, reference_classes[i])) {
                     var attributes = {};
                     array.forEach(reference_attributes, function(name) {
-                        var attribute = getAttrFunc(node, name);
+                        var attribute = node.getAttribute(name);
                         if (attribute) {
                             attributes[name] = attribute;
                         }
@@ -70,10 +67,37 @@ function(declare, lang, array, domConstruct, domClass, TemplatedMixin) {
                 }
             }
         }
+    }
 
-        // Continue with normal parent method.
-        return _attachTemplateNodes.call(this, rootNode, getAttrFunc);
+    if (TemplatedMixin.prototype._attachTemplateNodes === undefined) {
+        // Dojo 1.9+ introduced new _AttachMixin module that contains code
+        // to patch.
+        require(['dijit/_AttachMixin'], function(AttachMixin) {
+            var _original = AttachMixin.prototype._attachTemplateNodes;
+
+            AttachMixin.prototype._attachTemplateNodes = function(rootNode) {
+                // Replace nodes.
+                _replaceNodesForIconSupport(rootNode);
+
+                // Continue with normal parent method.
+                return _original.call(this, rootNode);
+
+
+            };
+        });
+    } else {
+        var _original = TemplatedMixin.prototype._attachTemplateNodes;
+
+        TemplatedMixin.prototype._attachTemplateNodes = function(rootNode,
+                                                                 getAttrFunc) {
+            // Replace nodes.
+            _replaceNodesForIconSupport(rootNode);
+
+            // Continue with normal parent method.
+            return _original.call(this, rootNode, getAttrFunc);
+        }
     }
 
     return TemplatedMixin;
 });
+

@@ -7,7 +7,8 @@ $grayDarker = #222;
 $grayDark = #333;
 $gray = #555;
 $grayLight = #999;
-$grayLighter = #eee;
+$grayLighter = #ddd;
+$grayLightest = #eee;
 $white = #fff;
 
 $blue = #049cdb;
@@ -24,10 +25,32 @@ $baseBorderRadius = 4px;
 // Scaffolding
 $bodyBackground = $white;
 $textColor = $grayDark;
+$borderColor = $grayLighter;
+$outlineColor = $gray;
+$defaultAccentColor = $blue;
+$defaultAccentColorHighlight = darken($blue, 15%);
 
 // Links
 $linkColor = #08c;
 $linkColorHover = darken($linkColor, 15%);
+
+// Backgrounds
+// -------------------------
+$backgroundColor = #f5f5f5;
+$backgroundHighlightColor = #f9f9f9;
+$backgroundHover = $backgroundColor;
+$backgroundActive = $backgroundHover;
+
+$infoBackground = #5bc0de;
+$infoBackgroundHighlight = #2f96b4;
+$successBackground = #62c462;
+$successBackgroundHighlight = #51a351;
+$warningBackgroundHighlight = $orange;
+$warningBackground = lighten($warningBackgroundHighlight, 15%);
+$dangerBackground = #ee5f5b;
+$dangerBackgroundHighlight = #bd362f;
+
+
 
 // Typography
 $sansFontFamily = "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -50,17 +73,17 @@ $btnBackgroundHighlight = darken($white, 10%);
 $btnPrimaryBackground = $linkColor;
 $btnPrimaryBackgroundHighlight = spin($btnPrimaryBackground, 20%);
 
-$btnInfoBackground = #5bc0de;
-$btnInfoBackgroundHighlight = #2f96b4;
+$btnInfoBackground = $infoBackground;
+$btnInfoBackgroundHighlight = $infoBackgroundHighlight;
 
-$btnSuccessBackground = #62c462;
-$btnSuccessBackgroundHighlight = #51a351;
+$btnSuccessBackground = $successBackground;
+$btnSuccessBackgroundHighlight = $successBackgroundHighlight;
 
-$btnWarningBackground = lighten($orange, 15%);
-$btnWarningBackgroundHighlight = $orange;
+$btnWarningBackground = $warningBackground;
+$btnWarningBackgroundHighlight = $warningBackgroundHighlight;
 
-$btnDangerBackground = #ee5f5b;
-$btnDangerBackgroundHighlight = #bd362f;
+$btnDangerBackground = $dangerBackground;
+$btnDangerBackgroundHighlight = $dangerBackgroundHighlight;
 
 $btnInverseBackground = #444;
 $btnInverseBackgroundHighlight = $grayDarker;
@@ -69,8 +92,9 @@ $btnInverseBackgroundHighlight = $grayDarker;
 $inputBackground = $white;
 $inputBorder = #ccc;
 $inputBorderRadius = $baseBorderRadius;
+$inputDisabledColor = $gray;
 $inputDisabledBackground = $grayLighter;
-$formActionsBackground = #f5f5f5;
+$formActionsBackground = $backgroundColor;
 
 // Dropdowns
 $dropdownBackground = $white;
@@ -87,14 +111,17 @@ $dropdownLinkBackgroundActive = $linkColor;
 // Accordions
 $accordionBorderColor = #e5e5e5;
 
+// TitlePane
+$titlePaneBorderColor = $borderColor;
+
 // Icons path
 $fontPath = "./font";
 
 // Hr border color
-$hrBorder = $grayLighter;
+$hrBorder = $borderColor;
 
 // Wells
-$wellBackground = #f5f5f5;
+$wellBackground = $backgroundColor;
 
 // Navbar
 $navbarCollapseWidth = 979px;
@@ -129,20 +156,20 @@ $navbarInverseBrandColor = $white;
 
 // Form states and alerts
 $warningText = #c09853;
-$warningBackground = #fcf8e3;
-$warningBorder = darken(spin($warningBackground, -10), 3%);
+$warningBackgroundContainer = #fcf8e3;
+$warningBorder = darken(spin($warningBackgroundContainer, -10), 3%);
 
 $errorText = #b94a48;
-$errorBackground = #f2dede;
-$errorBorder = darken(spin($errorBackground, -10), 3%);
+$errorBackgroundContainer = #f2dede;
+$errorBorder = darken(spin($errorBackgroundContainer, -10), 3%);
 
 $successText = #468847;
-$successBackground = #dff0d8;
-$successBorder = darken(spin($successBackground, -10), 5%);
+$successBackgroundContainer = #dff0d8;
+$successBorder = darken(spin($successBackgroundContainer, -10), 5%);
 
 $infoText = #3a87ad;
-$infoBackground = #d9edf7;
-$infoBorder = darken(spin($infoBackground, -10), 7%);
+$infoBackgroundContainer = #d9edf7;
+$infoBorder = darken(spin($infoBackgroundContainer, -10), 7%);
 
 // Tooltips and popovers
 $tooltipBackground = $white;
@@ -152,7 +179,19 @@ $tooltipArrowOuterWidth = $tooltipArrowWidth + 1;
 $tooltipArrowOuterColor = rgba(0,0,0,.25);
 
 // Tree
-$treeRowBackgroundHover = #f5f5f5;
+$treeRowBackgroundHover = $backgroundHover;
 $treeRowBackgroundSelected = #0088CC;
 $treeRowColorSelected = #fff;
+
+// Grid
+// --------------------------------------------------
+$gridBackground = $tableBackground;
+$gridHeaderBackground = $grayLightest;
+$gridBorder = $tableBorder;
+$gridBorderRadius = 3px;
+$gridRowEvenBackground = $white;
+$gridRowOddBackground = $grayLightest;
+$gridSelectedBackground = $blue;
+$gridSelectedColor = $white;
+$gridBackgroundHover = lighten($gridSelectedBackground, 20%);
 

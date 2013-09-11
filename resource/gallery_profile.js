@@ -18,7 +18,8 @@ var profile = {
             include: [
                 'dojo/dojo',
                 'dojo/i18n',
-                'dojo/domReady'
+                'dojo/domReady',
+                'dojo/selector/lite'
             ],
             boot: true,
             customBase: true
@@ -33,7 +34,8 @@ var profile = {
             include: [
                 'gallery/main',
                 'gallery/entry_point',
-                'gallery/Gallery'
+                'gallery/Gallery',
+                'xstyle/load-css'
             ]
         }
     },

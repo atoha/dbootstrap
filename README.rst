@@ -10,7 +10,21 @@ Bootstrap theme for Dojo.
 Get The Code
 ************
 
-    $ git clone --recursive git@github.com:thesociable/dbootstrap.git
+    $ git clone --recursive git://github.com/thesociable/dbootstrap.git
+
+******************
+Build Requirements
+******************
+
+To build the project locally you will need the following installed:
+
+* `Python <http://www.python.org>`_ >= 2.6, <3
+* `Nodejs <http://www.nodejs.org>`_ >= 10.5
+* `Stylus <http://learnboost.github.io/stylus/>`_ >= 0.31
+* `Java <http://www.java.com>`_ >= 7.0 (aka 1.7.0)
+
+All other requirements are bundled as git submodules so make sure you have
+initialised them (the default when using `--recursive` with `git clone`)
 
 ****
 Demo
@@ -27,14 +41,14 @@ To build the demo locally:
 
 #. Build it::
 
-    $ ./build.py demo
+    $ python build.py demo
 
    .. note::
 
         If you like to see what is going on under the hood, run with a lower
         logging level::
 
-             $ ./build.py -v debug demo
+             $ python build.py -v debug demo
 
 #. Fire up a server::
 
@@ -43,7 +57,7 @@ To build the demo locally:
 
 #. Take a look::
 
-    Point your browser at http://0.0.0.0:8000/
+    Point your browser at http://localhost:8000/
 
 ***********
 Integration
@@ -64,14 +78,14 @@ better solution see the integrated build below.
 
 #. Build just the theme::
 
-    $ ./build.py theme
+    $ python build.py theme
 
    .. note::
 
         If you like to see what is going on under the hood, run with a lower
         logging level::
 
-            $ ./build.py -v debug theme
+            $ python build.py -v debug theme
 
 #. Copy (or link) the resulting package *dbootstrap/build/theme/dbootstrap*
    into the appropriate location in your project and ensure you notify Dojo
