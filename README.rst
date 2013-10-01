@@ -185,11 +185,27 @@ Integrated Build
 #. Build your project and view as normal.
 
 
-***********
-Bug tracker
-***********
+*********
+Community
+*********
 
-Found a bug? Report it at https://github.com/thesociable/dbootstrap/issues
+Reporting Issues
+================
+
+Bugs or enhancements can be reported by opening an issue at
+https://github.com/thesociable/dbootstrap/issues.
+
+When reporting a bug, please try to provide the following information:
+
+    * Affected browsers and Dojo versions.
+    * A clear list of steps to reproduce the problem.
+    * If the problem cannot be easily reproduced then please include an example
+      reduced test case (for example, as a `Gist <https://gist.github.com>`_).
+
+If you would like to propose a fix for a particular issue then you are welcome
+to fork dbootstrap, create a branch and submit a pull request. Please note that
+a `Dojo CLA <http://www.dojofoundation.org/about/cla>`_ is required for any
+non-trivial modifications.
 
 *********************
 Copyright and license
