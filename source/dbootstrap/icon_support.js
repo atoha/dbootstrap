@@ -5,23 +5,21 @@
 
 define(
 [
-    'require',
-    'dojo/_base/declare',
+	'dojo/_base/kernel',
     'dojo/_base/lang',
     'dojo/_base/array',
     'dojo/dom-construct',
-    'dojo/dom-class',
-    'dijit/_TemplatedMixin'
+    'dojo/dom-class'
 ],
 
-function(require, declare, lang, array, domConstruct, domClass, TemplatedMixin) {
+function(kernel, lang, array, domConstruct, domClass) {
     // Patch templated widgets to replace icon nodes that do no support pseudo
     // states with nodes that do. This enables Font-Awesome to be used
     // everywhere for the icons.
     //
     // To use, require this module *before* Dijit.
     //
-    var _replaceNodesForIconSupport = function(rootNode) {
+    function replaceNodesForIconSupport(rootNode) {
         // Replace nodes that don't support :before with nodes that do.
         //
         var reference_tag_names = ['IMG', 'INPUT'];
@@ -69,35 +67,36 @@ function(require, declare, lang, array, domConstruct, domClass, TemplatedMixin) 
         }
     }
 
-    if (TemplatedMixin.prototype._attachTemplateNodes === undefined) {
-        // Dojo 1.9+ introduced new _AttachMixin module that contains code
-        // to patch.
-        require(['dijit/_AttachMixin'], function(AttachMixin) {
-            var _original = AttachMixin.prototype._attachTemplateNodes;
+	function patchModule(module){
+		var original = module.prototype._attachTemplateNodes;
 
-            AttachMixin.prototype._attachTemplateNodes = function(rootNode) {
-                // Replace nodes.
-                _replaceNodesForIconSupport(rootNode);
+		module.prototype._attachTemplateNodes = function(rootNode) {
+			// Replace nodes.
+			replaceNodesForIconSupport(rootNode);
 
-                // Continue with normal parent method.
-                return _original.call(this, rootNode);
+			// Continue with normal parent method.
+			return original.apply(this, arguments);
+		};
+	}
 
+	return {
+		load: function (resourceId, req, load) {
 
-            };
-        });
-    } else {
-        var _original = TemplatedMixin.prototype._attachTemplateNodes;
-
-        TemplatedMixin.prototype._attachTemplateNodes = function(rootNode,
-                                                                 getAttrFunc) {
-            // Replace nodes.
-            _replaceNodesForIconSupport(rootNode);
-
-            // Continue with normal parent method.
-            return _original.call(this, rootNode, getAttrFunc);
-        }
-    }
-
-    return TemplatedMixin;
+			var v = kernel.version;
+			if ((v.major === 1 && v.minor >= 9) || v.major > 1){
+				// Need to patch dijit/_AttachMixin
+				req(['dijit/_AttachMixin', 'dijit/_TemplatedMixin'], function (AttachMixin, TemplatedMixin) {
+					patchModule(AttachMixin);
+					load(TemplatedMixin);
+				});
+			} else {
+				// Need to patch dijit/_TemplatedMixin
+				req(['dijit/_TemplatedMixin'], function (TemplatedMixin) {
+					patchModule(TemplatedMixin);
+					load(TemplatedMixin);
+				});
+			}
+		}
+	}
 });
 
