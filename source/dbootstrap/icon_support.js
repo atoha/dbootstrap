@@ -83,19 +83,19 @@ function(kernel, lang, array, domConstruct, domClass) {
 		load: function (resourceId, req, load) {
 
 			var v = kernel.version;
-			if ((v.major === 1 && v.minor >= 9) || v.major > 1){
-				// Need to patch dijit/_AttachMixin
-				req(['dijit/_AttachMixin', 'dijit/_TemplatedMixin'], function (AttachMixin, TemplatedMixin) {
-					patchModule(AttachMixin);
-					load(TemplatedMixin);
-				});
-			} else {
-				// Need to patch dijit/_TemplatedMixin
-				req(['dijit/_TemplatedMixin'], function (TemplatedMixin) {
-					patchModule(TemplatedMixin);
-					load(TemplatedMixin);
-				});
+			var deps = [ 'dijit/_TemplatedMixin' ];
+			// Dijit 1.9 splits the required functionality out to another mixin, but then does not
+			// always use the new mixin everywhere and there is no way to detect whether or not
+			// the new mixin exists without making a potentially-bad HTTP request, so we are
+			// stuck checking the version
+			if (v.minor >= 9) {
+				deps.push('dijit/_AttachMixin');
 			}
+
+			req(deps, function(TemplatedMixin, AttachMixin) {
+				patchModule(AttachMixin || TemplatedMixin);
+				load(TemplatedMixin);
+			});
 		}
 	}
 });
