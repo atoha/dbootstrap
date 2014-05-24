@@ -4,11 +4,9 @@
 */
 
 define([
-    'xstyle/css!./theme/dbootstrap/dbootstrap.css',
-    './icon_support'
-],
-
-function (TemplatedMixin) {
+    './icon_support!',
+    'xstyle/css!./theme/dbootstrap/dbootstrap.css'
+], function (TemplatedMixin) {
     return {
         'TemplatedMixin': TemplatedMixin
     };
