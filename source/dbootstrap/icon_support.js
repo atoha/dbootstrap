@@ -84,10 +84,11 @@ function(kernel, lang, array, domConstruct, domClass) {
 
             var v = kernel.version;
             var deps = [ 'dijit/_TemplatedMixin' ];
-            // Dijit 1.9 splits the required functionality out to another mixin, but then does not
-            // always use the new mixin everywhere and there is no way to detect whether or not
-            // the new mixin exists without making a potentially-bad HTTP request, so we are
-            // stuck checking the version
+            // Dijit 1.9 splits the required functionality out to another
+            // mixin, but then does not always use the new mixin everywhere and
+            // there is no way to detect whether or not the new mixin exists
+            // without making a potentially-bad HTTP request, so we are stuck
+            // checking the version
             if (v.minor >= 9) {
                 deps.push('dijit/_AttachMixin');
             }
