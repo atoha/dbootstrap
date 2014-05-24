@@ -6,15 +6,55 @@ Bootstrap theme for Dojo.
 
 .. image:: https://raw.github.com/thesociable/dbootstrap/master/resource/preview.png
 
+For a live preview of the theme using Dojo's Theme Tester, see
+http://thesociable.github.com/dbootstrap/
+
+********
+Download
+********
+
+Just want the theme for your project? Grab the latest built version from the
+`releases <https://github.com/thesociable/dbootstrap/releases>`_ page:
+
+#. Download and unzip the relevant zip file.
+
+#. Copy (or link) the folder *dbootstrap* into the appropriate location in your
+   project and ensure you notify Dojo about the location. One way to do this is
+   through the Dojo config::
+
+    'packages': [
+        ...,
+        {
+            location: '/path/to/dbootstrap',
+            name: 'dbootstrap'
+        }
+    ]
+
+#. Add a require call for dbootstrap. You must require dbootstrap before any
+   Dijit widgets are loaded for the icons to work correctly::
+
+    require(['dbootstrap', ...], function(dbootstrap) {
+        // Start application.
+    });
+
+#. Add *dbootstrap* as a css class to your `<body>` element::
+
+    <body class='dbootstrap'>
+
+#. View your project as normal.
+
 ************
 Get The Code
 ************
 
     $ git clone --recursive git://github.com/thesociable/dbootstrap.git
 
-******************
+**********************
+Building / Integration
+**********************
+
 Build Requirements
-******************
+==================
 
 To build the project locally you will need the following installed:
 
@@ -26,12 +66,8 @@ To build the project locally you will need the following installed:
 All other requirements are bundled as git submodules so make sure you have
 initialised them (the default when using `--recursive` with `git clone`)
 
-****
 Demo
-****
-
-For a live preview of the theme using Dojo's Theme Tester, see
-http://thesociable.github.com/dbootstrap/
+====
 
 To build the demo locally:
 
@@ -59,12 +95,6 @@ To build the demo locally:
 
     Point your browser at http://localhost:8000/
 
-***********
-Integration
-***********
-
-Want to use the theme in your own project? Here's a short guide to integrating
-it successfully.
 
 Standalone Package
 ==================
