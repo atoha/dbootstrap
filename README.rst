@@ -4,17 +4,17 @@ Dojo Bootstrap
 
 Bootstrap theme for Dojo.
 
-.. image:: https://raw.github.com/thesociable/dbootstrap/master/resource/preview.png
+.. image:: https://raw.github.com/martinpengellyphillips/dbootstrap/master/resource/preview.png
 
 For a live preview of the theme using Dojo's Theme Tester, see
-http://thesociable.github.com/dbootstrap/
+http://martinpengellyphillips.github.com/dbootstrap/
 
 ********
 Download
 ********
 
 Just want the theme for your project? Grab the latest built version from the
-`releases <https://github.com/thesociable/dbootstrap/releases>`_ page:
+`releases <https://github.com/martinpengellyphillips/dbootstrap/releases>`_ page:
 
 #. Download and unzip the relevant zip file.
 
@@ -47,7 +47,7 @@ Just want the theme for your project? Grab the latest built version from the
 Get The Code
 ************
 
-    $ git clone --recursive git://github.com/thesociable/dbootstrap.git
+    $ git clone --recursive git://github.com/martinpengellyphillips/dbootstrap.git
 
 **********************
 Building / Integration
@@ -223,7 +223,7 @@ Reporting Issues
 ================
 
 Bugs or enhancements can be reported by opening an issue at
-https://github.com/thesociable/dbootstrap/issues.
+https://github.com/martinpengellyphillips/dbootstrap/issues.
 
 When reporting a bug, please try to provide the following information:
 
