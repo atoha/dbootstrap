@@ -890,6 +890,7 @@ body .dijitAlignClient { position: absolute; }
 }
 
 .dijitSplitterCover {
+    background-color: transparent;
     position:absolute;
     z-index:-1;
     top:0;
